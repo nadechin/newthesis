@@ -1,0 +1,60 @@
+\chapter{本研究における問題定義と仮説}
+\label{approach}
+
+本章では，~\ref{introduction}章で述べた背景より，本章では,現状のHoneypotの問題点を整理し,この問題をどのように解決すれば良いのかを定義する.
+
+\section{本研究における問題定義}
+\label{approach:problem}
+
+\subsection{SSH\,Honeypotの現状の問題}
+\label{approach:problemofSshHoneypot}
+Honeypotには運用する上で大きな問題が2つある.一つは設置したHoneypotに悪意のある侵入者が侵入先をHoneypotであると検知してしまう問題である.もう一つはHoneypotに侵入を許した侵入者にHoneypotを設置した機器から攻撃が仕掛けられてしまう危険があることである.
+
+\subsubsection{SSHの低対話型Honeypotにおける問題}
+\label{approach:problemofSshLowHoneypot}
+SSHの低対話型Honeypotは実際のShellの挙動をエミュレートしたものであるのでコマンドやその挙動についての機能が限定されており,実際のShellの機能として不足がある.またSSHの低対話型Honeypot特有の以上な挙動も存在する.そのため侵入者に侵入先がHoneypotであると検知され,本来取れるはずの攻撃ログが収集できなくなってしまう可能性を含んでいるため,収集ログの精度に問題がある.
+以下のプログラム\,1とプログラム\,2にその一例を示す.
+
+\vspace{5mm}
+\lstnewenvironment{mylisting}[1][]
+    {\lstset{
+        frame=single,
+        basicstyle=\ttfamily,
+        numbers=left,
+        numbersep=10pt,
+        tabsize=2,
+        extendedchars=true,
+        xleftmargin=17pt,
+        framexleftmargin=17pt,
+        #1
+    }
+}{}
+
+\begin{mylisting}[language=sh,caption=正しいShellの挙動]
+nadechin@cpu:~$ echo -n test
+testnadechin@cpu:~$
+\end{mylisting}
+
+\begin{mylisting}[language=sh,caption=Kippo特有の異常な挙動の例]
+s15445ys@s15445ys-neco:~$ echo -n hello
+-n hello
+s15445ys@s15445ys-neco:~$
+\end{mylisting}
+上のプログラムが通常の挙動で下のプログラムがKippoの挙動である.echoコマンドの-nオプションは改行をしないようにするというものであるが,実際のShellの挙動が改行がされることなく正しく出力されているのに対して,Honeypotの挙動ではオプション部分も出力されてしまっているという問題がある.これは有名なKippo特有の挙動であるため,これによってHoneypotであると検知されてしまう可能性がある.
+
+\subsubsection{SSHの高対話型Honeypotにおける問題}
+\label{approach:problemofSshHighHoneypot}
+一方で高対話型Honeypotは,実際に脆弱性を残した実際のOSやアプリケーションシステムを利用したものであるので,侵入を許すと設置したOSの予期せぬ脆弱性を突かれたり新たなウイルスによってroot権限を取られ,設置したOSから他のホストへと攻撃してしまう可能性を含んでいるため,設置コストやリスクに問題がある.
+
+\subsection{本研究の問題}
+\label{approach:subproblem}
+第2章の図2の「Honeypotの検知のされやすさ」で示したように,本研究では設置したHoneypotが悪意のある侵入者に侵入先をHoneypotであると検知されてしまい,本来実際のOSへの攻撃であれば取得できたはずの侵入ログが収集できない.
+
+\section{問題解決のための要点}
+\label{approach:YotenForProblem}
+本研究の問題解決には,設置したSSHの低対話型Honeypotが悪意のある侵入者に侵入先をSSHの低対話型Honeypotであると検知されないようすることが十分条件である.
+
+%%% Local Variables:
+%%% mode: japanese-latex
+%%% TeX-master: "．/thesis"
+%%% End:
