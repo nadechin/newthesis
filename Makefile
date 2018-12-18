@@ -27,7 +27,7 @@ ps: dvi
 dvi_view: dvi
 	$(DVI_VIEW) $(NAME).dvi &
 
-dvi : $(NAME).tex
+dvi: $(NAME).tex
 	$(LATEX) $(NAME).tex
 	$(BIBTEX) $(NAME)
 	$(LATEX) $(NAME).tex

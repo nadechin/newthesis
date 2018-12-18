@@ -5,15 +5,26 @@
 
 \section{本研究における問題定義}
 \label{approach:problem}
+現状のHoneypotの問題点を列挙していき,整理する.
 
 \subsection{SSH\,Honeypotの現状の問題}
 \label{approach:problemofSshHoneypot}
-Honeypotには運用する上で大きな問題が2つある.一つは設置したHoneypotに悪意のある侵入者が侵入先をHoneypotであると検知してしまう問題である.もう一つはHoneypotに侵入を許した侵入者にHoneypotを設置した機器から攻撃が仕掛けられてしまう危険があることである.
+Honeypotには運用する上で大きな問題が2つある.一つは設置したHoneypotに悪意のある侵入者が侵入先をHoneypotであると検知してしまう問題である.もう一つはHoneypotに侵入を許した侵入者にHoneypotを設置した機器から攻撃が仕掛けられてしまう危険がある問題である.
+本研究ではこのうち,SSHの低対話型Honeypotが設置したHoneypotに悪意のある侵入者が侵入先をHoneypotであると検知してしまう問題に着目した.
 
 \subsubsection{SSHの低対話型Honeypotにおける問題}
 \label{approach:problemofSshLowHoneypot}
-SSHの低対話型Honeypotは実際のShellの挙動をエミュレートしたものであるのでコマンドやその挙動についての機能が限定されており,実際のShellの機能として不足がある.またSSHの低対話型Honeypot特有の以上な挙動も存在する.そのため侵入者に侵入先がHoneypotであると検知され,本来取れるはずの攻撃ログが収集できなくなってしまう可能性を含んでいるため,収集ログの精度に問題がある.
-以下のプログラム\,1とプログラム\,2にその一例を示す.
+SSHの低対話型Honeypotは実際のShellの挙動をエミュレートしたものであるのでコマンドやその挙動についての機能が限定されており,実際のShellの機能として不足がある.またSSHの低対話型Honeypot特有の以上な挙動も存在する.さらに,SSHでHoneypotにセッションを確立する際に,そのレイテンシを計測し,そのレイテンシがHoneypotの場合に通常とは明らかに異なることにより,Honeypotであると検知されてしまう問題がある.また,Honeypotのusernameが"Richard"がデフォルトのため,これによってHoneypotであることを検知されてしまう問題もある.そのため侵入者に侵入先がHoneypotであると検知され,本来取れるはずの攻撃ログが収集できなくなってしまう可能性を含んでいるため,収集ログの精度に問題がある.
+
+\subsubsubsection{SSHでのセッション確立におけるレイテンシの問題}
+\label{approach:LowHoneypotLatency}
+
+\subsubsubsection{HoneypotのUsernameの問題}
+\label{approach:LowHoneypotUsername}
+
+\subsubsubsection{Honeypotのコマンドの実装の問題}
+\label{approach:LowHoneypotCommand}
+SSHの低対話型Honeypotは実際のShellの挙動をエミュレートしたものであるのでコマンドやその挙動についての機能が限定されており,実際のShellの機能として不足がある.~\ref{tech:BusyBox}で述べたように,"Linux上で最小の実行ファイル"となるよう設計されているBusyBoxに含まれるコマンドの数が200以上あるのに対し,現状で広く使われているSSHの低対話型HoneypotであるCowrieに実装されているコマンドは~\ref{tech:Cowrie}でも述べた通り,38しか存在しない.また,SSHの低対話型Honeypot特有の挙動が存在し,以下にその1例であるプログラム\,1とプログラム\,2を示す.
 
 \vspace{5mm}
 \lstnewenvironment{mylisting}[1][]
@@ -31,28 +42,29 @@ SSHの低対話型Honeypotは実際のShellの挙動をエミュレートした�
 }{}
 
 \begin{mylisting}[language=sh,caption=正しいShellの挙動]
-nadechin@cpu:~ echo -n test
-testnadechin@cpu:~
+nadechin@cpu:~$ echo -n test
+testnadechin@cpu:~$
 \end{mylisting}
 
 \begin{mylisting}[language=sh,caption=Kippo特有の異常な挙動の例]
-s15445ys@s15445ys-neco:~ echo -n hello
+s15445ys@s15445ys-neco:~$ echo -n hello
 -n hello
-s15445ys@s15445ys-neco:~
+s15445ys@s15445ys-neco:~$
 \end{mylisting}
-上のプログラムが通常の挙動で下のプログラムがKippoの挙動である.echoコマンドの-nオプションは改行をしないようにするというものであるが,実際のShellの挙動が改行がされることなく正しく出力されているのに対して,Honeypotの挙動ではオプション部分も出力されてしまっているという問題がある.これは有名なKippo特有の挙動であるため,これによってHoneypotであると検知されてしまう可能性がある.
 
-\subsubsection{SSHの高対話型Honeypotにおける問題}
-\label{approach:problemofSshHighHoneypot}
-一方で高対話型Honeypotは,実際に脆弱性を残した実際のOSやアプリケーションシステムを利用したものであるので,侵入を許すと設置したOSの予期せぬ脆弱性を突かれたり新たなウイルスによってroot権限を取られ,設置したOSから他のホストへと攻撃してしまう可能性を含んでいるため,設置コストやリスクに問題がある.
+上のプログラムが通常の挙動で下のプログラムがSSHの低対話型Honeypotの挙動である.echoコマンドの-nオプションは改行をしないようにするというものであるが,実際のShellの挙動が改行がされることなく正しく出力されているのに対して,Honeypotの挙動ではオプション部分も出力されてしまっているという問題がある.これはSSHの低対話型Honeypot特有の挙動であるため,これによってHoneypotであると検知されてしまう可能性がある.
+
+%\subsubsection{SSHの高対話型Honeypotにおける問題}
+%\label{approach:problemofSshHighHoneypot}
+%一方で高対話型Honeypotは,実際に脆弱性を残した実際のOSやアプリケーションシステムを利用したものであるので,侵入を許すと設置したOSの予期せぬ脆弱性を突かれたり新たなウイルスによってroot権限を取られ,設置したOSから他のホストへと攻撃してしまう可能性を含んでいるため,設置コストやリスクに問題がある.
 
 \subsection{本研究の問題}
 \label{approach:subproblem}
-第2章の図2の「Honeypotの検知のされやすさ」で示したように,本研究では設置したHoneypotが悪意のある侵入者に侵入先をHoneypotであると検知されてしまい,本来実際のOSへの攻撃であれば取得できたはずの侵入ログが収集できない.
+~\ref{approach:problemofSshLowHoneypot}で列挙したSSHの低対話型Honeypotの問題の中で,実際のShellの機能として不足がある.またSSHの低対話型Honeypot特有の以上な挙動も存在ため,設置したHoneypotが悪意のある侵入者に侵入先をHoneypotであると検知されてしまい,本来実際のOSの侵入ログと比較して違いが大きく出てしまう問題に着目した.
 
 \section{問題解決のための要点}
 \label{approach:YotenForProblem}
-本研究の問題解決には,設置したSSHの低対話型Honeypotが悪意のある侵入者に侵入先をSSHの低対話型Honeypotであると検知されないようすることが十分条件である.
+~\ref{approach:subproblem}
 
 %%% Local Variables:
 %%% mode: japanese-latex
