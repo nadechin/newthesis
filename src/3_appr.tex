@@ -9,7 +9,7 @@
 
 \subsection{SSH\,Honeypotの現状の問題}
 \label{approach:problemofSshHoneypot}
-Honeypotには運用する上で大きな問題が2つある.一つは設置したHoneypotに悪意のある侵入者が侵入先をHoneypotであると検知してしまう問題である.もう一つはHoneypotに侵入を許した侵入者にHoneypotを設置した機器から攻撃が仕掛けられてしまう危険がある問題である.
+Honeypotには運用する上で大きな問題が2つある.一つは設置したHoneypotに侵入した悪意のある侵入者が侵入先をHoneypotであると検知してしまう問題である.もう一つはHoneypotに侵入を許した侵入者にHoneypotを設置した機器から攻撃が仕掛けられてしまう危険がある問題である.
 本研究ではこのうち,SSHの低対話型Honeypotが設置したHoneypotに悪意のある侵入者が侵入先をHoneypotであると検知してしまう問題に着目した.
 
 \subsubsection{SSHの低対話型Honeypotにおける問題}
@@ -60,11 +60,22 @@ s15445ys@s15445ys-neco:~$
 
 \subsection{本研究の問題}
 \label{approach:subproblem}
-~\ref{approach:problemofSshLowHoneypot}で列挙したSSHの低対話型Honeypotの問題の中で,実際のShellの機能として不足がある.またSSHの低対話型Honeypot特有の以上な挙動も存在ため,設置したHoneypotが悪意のある侵入者に侵入先をHoneypotであると検知されてしまい,本来実際のOSの侵入ログと比較して違いが大きく出てしまう問題に着目した.
+~\ref{approach:problemofSshLowHoneypot}で列挙したSSHの低対話型Honeypotの問題の中で,実際のShellに実装されているコマンドの不足がある.またSSHの低対話型Honeypotに特有の異常な挙動も存在するため,設置したHoneypotが悪意のある侵入者に侵入先をHoneypotであると検知されてしまい,実際のOSに悪意のある侵入者が侵入した時の侵入ログとの違いが大きく出てしまう問題に着目した.
 
 \section{問題解決のための要点}
 \label{approach:YotenForProblem}
-~\ref{approach:subproblem}
+~\ref{approach:subproblem}で着目した問題を解決するためには,以下2つの手法を取る必要がある.
+
+\begin{itemize}
+\setlength{\leftskip}{1.0cm}
+ \item[コマンドの追加実装] 実際のShellに実装されているコマンドで,SSHの低対話型Honeypotに実装されていないコマンドを実装する
+ \item[既実装コマンドの修正] SSHの低対話型Honeypotに特有の異常な挙動をする既実装コマンドを修正する
+\end{itemize}
+
+
+\section{仮説}
+\label{approach:Hypothesis}
+~\ref{approach:YotenForProblem}で示した2つの手法を用いれば,SSHの低対話型Honeypotに侵入した悪意のある侵入者に侵入先をHoneypotであると検知させず,SSHの低対話型Honeypotに悪意のある侵入者が侵入した時の侵入ログを,実際のOSに悪意のある侵入者が侵入した時の侵入ログに近似できるのでないか.
 
 %%% Local Variables:
 %%% mode: japanese-latex
