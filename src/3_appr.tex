@@ -9,8 +9,18 @@
 
 \subsection{SSH\,Honeypotの現状の問題}
 \label{approach:problemofSshHoneypot}
-Honeypotには運用する上で大きな問題が2つある.一つは設置したHoneypotに侵入した悪意のある侵入者が侵入先をHoneypotであると検知してしまう問題である.もう一つはHoneypotに侵入を許した侵入者にHoneypotを設置した機器から攻撃が仕掛けられてしまう危険がある問題である.
-本研究ではこのうち,SSHの低対話型Honeypotが設置したHoneypotに悪意のある侵入者が侵入先をHoneypotであると検知してしまう問題に着目した.
+Honeypotには運用する上で大きな問題が2つある.一つは設置したHoneypotに侵入した悪意のある侵入者が侵入先をHoneypotであると検知してしまう問題である.もう一つはHoneypotに侵入を許した侵入者にHoneypotを設置した機器から攻撃が仕掛けられてしまう危険がある問題である.\\
+以下の図2は,悪意のある侵入者が不正に機器に侵入してから踏み台にして他の機器に攻撃を仕掛けるまでの一般的なフローであるが,2番目のフローの悪意のある侵入者が侵入した先がHoneypotであると検知してしまうことや,3番目のフロのHoneypotに侵入を許した侵入者にHoneypotを設置した機器から攻撃が仕掛けられてしまう危険があることが今回の問題である.
+
+\vspace{10mm}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figures/nagare.png}
+    \caption{不正なSSH侵入者の想定行動フロー}
+    \label{fig:evo}
+\end{figure}
+
+本研究ではこの中でも,2番目のフローのSSHの低対話型Honeypotが設置したHoneypotに悪意のある侵入者が侵入先をHoneypotであると検知してしまう問題に着目した.
 
 \subsubsection{SSHの低対話型Honeypotにおける問題}
 \label{approach:problemofSshLowHoneypot}
@@ -68,8 +78,8 @@ s15445ys@s15445ys-neco:~$
 
 \begin{itemize}
 \setlength{\leftskip}{3.2cm}
- \item[コマンドの追加実装] 実際のShellに実装されているコマンドで,SSHの低対話型Honeypotに実装されていないコマンドを実装する
- \item[既実装コマンドの修正] SSHの低対話型Honeypotに特有の異常な挙動をする既実装コマンドを修正する
+ \item[コマンドの追加実装:] 実際のShellに実装されているコマンドで,SSHの低対話型Honeypotに実装されていないコマンドを実装する
+ \item[既実装コマンドの修正:] SSHの低対話型Honeypotに特有の異常な挙動をする既実装コマンドを修正する
 \end{itemize}
 
 
