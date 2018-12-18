@@ -1,0 +1,76 @@
+\begin{thebibliography}{10}
+
+\bibitem{word2vecpaper}
+Greg Corrado Jeffrey~Dean Tomas~Mikolov, Kai~Chen.
+\newblock Efficient estimation of word representations in vector space.
+\newblock {\em ACM Transactions on Graphics (TOG)}, 32(4):138, 2013.
+
+\bibitem{word2vecpaper2}
+Xin Rong.
+\newblock Word2vec parameter learning explained.
+\newblock {\em ACM Transactions on Graphics (TOG)}, 32(4):138, 2013.
+
+\bibitem{honeypot}
+Kippo.
+\newblock Kippo.
+\newblock \url{https://github.com/desaster/kippo}, 2014.
+
+\bibitem{kojoney}
+Satoshi Nakamoto.
+\newblock kojoney: Kojoney.
+\newblock \url{http://kojoney.sourceforge.net/}, 2008.
+
+\bibitem{twisted}
+Vitalik Buterin.
+\newblock Twisted.
+\newblock \url{https://twistedmatrix.com/trac/}, 2014.
+
+\bibitem{rasp}
+Raspberry pi.
+\newblock \url{http://www.idc.com/getdoc.jsp?containerId=prUS40960716}, 2016.
+
+\bibitem{singleboard}
+Single board computer.
+\newblock \url{http://fablabjapan.org/}.
+
+\bibitem{iot}
+Catarina Mota.
+\newblock Iotデバイスの普及.
+\newblock {\em Proceedings of the 8th ACM conference on Creativity and
+  cognition}, pages 279--288, 2011.
+
+\bibitem{kippowiki}
+Kippoのプロジェクトの現在.
+\newblock \url{http://www.thingiverse.com/}.
+
+\bibitem{kippocommand}
+Number of kippo'commands.
+\newblock \url{https://github.com/desaster/kippo/tree/master/txtcmds}.
+
+\bibitem{cowriecommand}
+Number of cowrie'commands.
+\newblock
+  \url{https://github.com/cowrie/cowrie/tree/master/src/cowrie/commands}.
+
+\bibitem{differfromkippo}
+消費者庁.
+\newblock Kippoとcowrieの実装コマンドの違い.
+\newblock
+  \url{http://www.caa.go.jp/seikatsu/shingikai2/kako/spc13/houkoku_g/spc13-houkoku_g-4-1.html},
+  1992.
+
+\bibitem{ssh}
+Karl~DD Willis and Andrew~D Wilson.
+\newblock Secure shell.
+\newblock {\em ACM Transactions on Graphics (TOG)}, 32(4):138, 2013.
+
+\bibitem{busybox}
+Busybox.
+\newblock \url{https://proofofexistence.com/}.
+
+\bibitem{siso}
+松下 栄一 末岡~隆史 国分~芳宏, 梅北~浩二.
+\newblock シソーラスを組み込んだ意味解析システム.
+\newblock {\em ACM Transactions on Graphics (TOG)}, 32(4):138, 2013.
+
+\end{thebibliography}

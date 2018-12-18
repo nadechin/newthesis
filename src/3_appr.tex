@@ -31,14 +31,14 @@ SSHの低対話型Honeypotは実際のShellの挙動をエミュレートした�
 }{}
 
 \begin{mylisting}[language=sh,caption=正しいShellの挙動]
-nadechin@cpu:~$ echo -n test
-testnadechin@cpu:~$
+nadechin@cpu:~ echo -n test
+testnadechin@cpu:~
 \end{mylisting}
 
 \begin{mylisting}[language=sh,caption=Kippo特有の異常な挙動の例]
-s15445ys@s15445ys-neco:~$ echo -n hello
+s15445ys@s15445ys-neco:~ echo -n hello
 -n hello
-s15445ys@s15445ys-neco:~$
+s15445ys@s15445ys-neco:~
 \end{mylisting}
 上のプログラムが通常の挙動で下のプログラムがKippoの挙動である.echoコマンドの-nオプションは改行をしないようにするというものであるが,実際のShellの挙動が改行がされることなく正しく出力されているのに対して,Honeypotの挙動ではオプション部分も出力されてしまっているという問題がある.これは有名なKippo特有の挙動であるため,これによってHoneypotであると検知されてしまう可能性がある.
 

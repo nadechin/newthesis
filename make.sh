@@ -1,0 +1,2 @@
+make
+dvipdfmx thesis.dvi
