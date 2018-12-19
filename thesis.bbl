@@ -21,6 +21,10 @@ Ken Fujiyoshi, Chihiro Fukai, Hiroya Tanaka, Jin Mitsugi, and Jun Murai.
 \newblock {\em NIP \& Digital Fabrication Conference 2014 1}, pages 316--319,
   2014.
 
+\bibitem{kippo}
+Kippo.
+\newblock \url{https://github.com/desaster/kippo/}.
+
 \bibitem{kojoney}
 Satoshi Nakamoto.
 \newblock kojoney: Kojoney.
@@ -72,5 +76,9 @@ Busybox.
 松下 栄一 末岡~隆史 国分~芳宏, 梅北~浩二.
 \newblock シソーラスを組み込んだ意味解析システム.
 \newblock {\em ACM Transactions on Graphics (TOG)}, 32(4):138, 2013.
+
+\bibitem{cowrie}
+Cowrie.
+\newblock \url{https://github.com/cowrie/cowrie/}.
 
 \end{thebibliography}
