@@ -73,6 +73,6 @@
 \contentsline {chapter}{\numberline {第9章}結論}{23}{chapter.9}
 \contentsline {section}{\numberline {9.1}本研究のまとめ}{23}{section.9.1}
 \contentsline {section}{\numberline {9.2}本研究の課題と展望}{23}{section.9.2}
-\contentsline {subsection}{\numberline {9.2.1}うんちっち～}{23}{subsection.9.2.1}
-\contentsline {subsection}{\numberline {9.2.2}うんちへの応用}{23}{subsection.9.2.2}
+\contentsline {subsection}{\numberline {9.2.1}課題}{23}{subsection.9.2.1}
+\contentsline {subsection}{\numberline {9.2.2}展望}{23}{subsection.9.2.2}
 \contentsline {chapter}{謝辞}{24}{chapter*.4}
