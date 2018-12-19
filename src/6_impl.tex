@@ -1,7 +1,7 @@
 \chapter{実装}
 \label{impl}
 
-本章では，~\ref{meth:appr}節で述べた手法を用いて純正のHoneypotにどのようなコマンドを実装し,Honeypot特有の異常な挙動を修正したのかを説明する.
+本章では，~\ref{meth:appr}節で述べた手法を用いて純正のHoneypotにどのようなコマンドを実装し，Honeypot特有の異常な挙動を修正したのかを説明する．
 
 \section{実装環境}
 \label{impl:env}
@@ -20,11 +20,11 @@ TBD
 %            \hline
 %            3Dプリンタ & simple metal & 1403 \\
 %            \hline
-%            3Dプリンタ制御 & Octoprint & 1.3.0 \\
+%            3Dプリンタ制御 & Octoprint & 1．3．0 \\
 %            \hline
-%            Blockchainクライアント & Geth & 1.5.8 \\
+%            Blockchainクライアント & Geth & 1．5．8 \\
 %            \hline
-%            アプリケーションフレームワーク & laravel & 5.2 \\
+%            アプリケーションフレームワーク & laravel & 5．2 \\
 %            \hline
 %        \end{tabular}
 %        \label{table:usedversion}
@@ -58,7 +58,7 @@ TBD
 
 %\begin{figure}[h]
 %    \begin{center}
-%        \includegraphics[scale=0.4]{./img/si-kensu.pdf}
+%        \includegraphics[scale=0．4]{．/img/si-kensu．pdf}
 %        \caption{システムシーケンス図}
 %        \label{img:sequence}
 %    \end{center}
@@ -88,11 +88,11 @@ TBD
 
 \subsection{純正のHoneypotで未実装のコマンドの実装}
 \label{impl:ImplBusyBox}
-本研究において純正のHoneypotはCowrie\cite{cowrie}を使用し,実際のShellには実装されているが,純正のHoneypotで未実装のコマンドについてはBusyBox\cite{busybox}に含まれるコマンドの実装を行なった.2.1.1.2や2.2.2で紹介した通り,BusyBoxに含まれるコマンドの種類が219ある中で,Cowrieの実装コマンド数は38しか存在しない.この差分をPythonで実装する.\\
-実装例は以下の通り.(付録にて例で紹介できなかったコマンドを掲載する)\\
+本研究において純正のHoneypotはCowrie\cite{cowrie}を使用し，実際のShellには実装されているが，純正のHoneypotで未実装のコマンドについてはBusyBox\cite{busybox}に含まれるコマンドの実装を行なった．2．1．1．2や2．2．2で紹介した通り，BusyBoxに含まれるコマンドの種類が219ある中で，Cowrieの実装コマンド数は38しか存在しない．この差分をPythonで実装する．\\
+実装例は以下の通り．(付録にて例で紹介できなかったコマンドを掲載する)\\
 
 
 %%% Local Variables:
 %%% mode: japanese-latex
-%%% TeX-master: "../bthesis"
+%%% TeX-master: "．．/bthesis"
 %%% End:
