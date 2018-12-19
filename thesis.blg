@@ -19,7 +19,7 @@ Too many commas in name 1 of "国分 芳宏, 梅北 浩二, 松下 栄一, 末�
 while executing---line 944 of file unsrt.bst
 You've used 15 entries,
             1791 wiz_defined-function locations,
-            509 strings with 4827 characters,
+            508 strings with 4815 characters,
 and the built_in function-call counts, 1981 in all, are:
 = -- 165
 > -- 46
