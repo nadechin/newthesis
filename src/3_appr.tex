@@ -15,7 +15,7 @@ Honeypotには運用する上で大きな問題が2つある．一つは設置�
 \vspace{10mm}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1．0\textwidth]{figures/nagare．png}
+    \includegraphics[width=1.0\textwidth]{figures/nagare.png}
     \caption{不正なSSH侵入者の想定行動フロー}
     \label{fig:evo}
 \end{figure}
@@ -39,24 +39,24 @@ SSHの低対話型Honeypotは実際のShellの挙動をエミュレートした�
 \vspace{5mm}
 \lstnewenvironment{mylisting}[1][]
     {\lstset{
-        frame=single，
-        basicstyle=\ttfamily，
-        numbers=left，
-        numbersep=10pt，
-        tabsize=2，
-        extendedchars=true，
-        xleftmargin=17pt，
-        framexleftmargin=17pt，
+        frame=single,
+        basicstyle=\ttfamily,
+        numbers=left,
+        numbersep=10pt,
+        tabsize=2,
+        extendedchars=true,
+        xleftmargin=17pt,
+        framexleftmargin=17pt,
         #1
     }
 }{}
 
-\begin{mylisting}[language=sh，caption=正しいShellの挙動]
+\begin{mylisting}[language=sh,caption=正しいShellの挙動]
 nadechin@cpu:~$ echo -n test
 testnadechin@cpu:~$
 \end{mylisting}
 
-\begin{mylisting}[language=sh，caption=Kippo特有の異常な挙動の例]
+\begin{mylisting}[language=sh,caption=Kippo特有の異常な挙動の例]
 s15445ys@s15445ys-neco:~$ echo -n hello
 -n hello
 s15445ys@s15445ys-neco:~$
