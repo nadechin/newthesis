@@ -7,7 +7,7 @@
 \label{appr:problem}
 現状のHoneypotの問題点を列挙していき，整理する．
 
-\subsection{SSH\，Honeypotの現状の問題}
+\subsection{SSH\,Honeypotの現状の問題}
 \label{appr:problemofSshHoneypot}
 Honeypotには運用する上で大きな問題が2つある．一つは設置したHoneypotに侵入した悪意のある侵入者が侵入先をHoneypotであると検知してしまう問題である．もう一つはHoneypotに侵入を許した侵入者にHoneypotを設置した機器から攻撃が仕掛けられてしまう危険がある問題である．\\
 以下の図2は，悪意のある侵入者が不正に機器に侵入してから踏み台にして他の機器に攻撃を仕掛けるまでの一般的なフロ--であるが，2番目のフロ--の悪意のある侵入者が侵入した先がHoneypotであると検知してしまうことや，高対話型Honeypotで使用したOS自体の新たな脆弱性を突かれることに限った状況では，3番目のフロ--のHoneypotに侵入を許した侵入者にHoneypotを設置した機器から攻撃が仕掛けられてしまう危険があることが今回の問題である．
@@ -34,7 +34,7 @@ SSHの低対話型Honeypotは実際のShellの挙動をエミュレートした�
 
 \subsubsubsection{Honeypotのコマンドの実装の問題}
 \label{appr:LowHoneypotCommand}
-SSHの低対話型Honeypotは実際のShellの挙動をエミュレートしたものであるのでコマンドやその挙動についての機能が限定されており，実際のShellの機能として不足がある．~\ref{tech:BusyBox}で述べたように，"Linux上で最小の実行ファイル"となるよう設計されているBusyBoxに含まれるコマンドの数が200以上あるのに対し，現状で広く使われているSSHの低対話型HoneypotであるCowrieに実装されているコマンドは~\ref{tech:Cowrie}でも述べた通り，38しか存在しない．また，SSHの低対話型Honeypot特有の挙動が存在し，以下にその1例であるプログラム\，1とプログラム\，2を示す．
+SSHの低対話型Honeypotは実際のShellの挙動をエミュレートしたものであるのでコマンドやその挙動についての機能が限定されており，実際のShellの機能として不足がある．~\ref{tech:BusyBox}で述べたように，"Linux上で最小の実行ファイル"となるよう設計されているBusyBoxに含まれるコマンドの数が200以上あるのに対し，現状で広く使われているSSHの低対話型HoneypotであるCowrieに実装されているコマンドは~\ref{tech:Cowrie}でも述べた通り，38しか存在しない．また，SSHの低対話型Honeypot特有の挙動が存在し，以下にその1例であるプログラム\,1とプログラム\,2を示す．
 
 \vspace{5mm}
 \lstnewenvironment{mylisting}[1][]
@@ -62,7 +62,7 @@ s15445ys@s15445ys-neco:~$ echo -n hello
 s15445ys@s15445ys-neco:~$
 \end{mylisting}
 
-プログラム\，3．1が通常の挙動でプログラム\，3．2がSSHの低対話型Honeypotの挙動である．echoコマンドの-nオプションは改行をしないようにするというものであるが，実際のShellの挙動が改行がされず，正しく出力されているのに対して，Honeypotの挙動ではオプション部分も出力されてしまう．これはSSHの低対話型Honeypot特有の挙動であるため，これによってHoneypotであると検知されてしまう可能性がある．
+プログラム\,3．1が通常の挙動でプログラム\,3．2がSSHの低対話型Honeypotの挙動である．echoコマンドの-nオプションは改行をしないようにするというものであるが，実際のShellの挙動が改行がされず，正しく出力されているのに対して，Honeypotの挙動ではオプション部分も出力されてしまう．これはSSHの低対話型Honeypot特有の挙動であるため，これによってHoneypotであると検知されてしまう可能性がある．
 
 %\subsubsection{SSHの高対話型Honeypotにおける問題}
 %\label{appr:problemofSshHighHoneypot}
