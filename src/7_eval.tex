@@ -1,12 +1,12 @@
 \chapter{評価および考察}
-\label{evaluation}
+\label{eval}
 
-本章では，\ref{implementation}章で実装した本研究での提案手法の評価とその考察を述べる．
+本章では，\ref{impl}章で実装した本研究での提案手法の評価とその考察を述べる．
 
 \section{評価手法}
-\label{evaluation:method}
+\label{eval:meth}
 
-本実験システムの評価として，~\ref{approach:YotenForProblem}節で述べた要件に対して評価を行う．\\
+本実験システムの評価として，~\ref{appr:YotenForProblem}節で述べた要件に対して評価を行う．\\
 
 本研究では,以下の三種類のHoneypotを設置する.\\
 1. 広く利用されているSSHの低対話型Honeypot\\
@@ -41,7 +41,7 @@
 
 
 \subsection{評価手法の実装}
-\label{evaluation:impl}
+\label{eval:impl}
 純正の低対話型Honeypotで収集した侵入ログでskip-gramモデルの隠れ層の重みを学習させ(これをモデル1
 とする),同様にして高対話型Honeypotで収集した侵入ログもskip-gramモデルの隠れ層の重みを学習させる(これをモデル2とする)．次に修正済みのHoneypotで収集したログをセッション開始からセッション終了までに打たれたコマンドごとに(以降これを1セッションごとと呼ぶ)モデル1とモデル2のそれぞれに入力していき,出力された数値aを活性化関数としてソフトマックス関数をかけることで,0≦a≦1の範囲を取るようにし確率的な数値として出力することでスコアリングを行う．このため入力に対して多数存在する出力を全てを合計すると1になる．
 純正の低対話型Honeypotや高対話型Honeypotの収集ログをモデル化する際、入力層として収集ログのコマンドの入力に対してそのコマンドの周辺のコマンドを出力として与えることでこれを学習させる．\\
@@ -95,10 +95,10 @@
 
 
 \subsubsection{コマンド群データのベクトル表現}
-\label{evaluation:CommandVector}
+\label{eval:CommandVector}
 
 \subsubsection{SSHの低対話型Honeypotの攻撃ログの比較}
-\label{evaluation:CompareLog}
+\label{eval:CompareLog}
 
 
 
