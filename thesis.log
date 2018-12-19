@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  19 DEC 2018 03:27
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  19 DEC 2018 03:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -509,10 +509,6 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 6.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 6.
-
-Package natbib Warning: Citation `HighIntHoney' on page 1 undefined on input li
-ne 16.
-
 [1
 
 
@@ -545,7 +541,7 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 19.
 
-Package natbib Warning: Citation `kippo' on page 4 undefined on input line 28.
+Package natbib Warning: Citation `kippo' on page 4 undefined on input line 27.
 
 [4
 
@@ -706,19 +702,19 @@ LaTeX Font Warning: Font shape `JY1/gt/m/it' undefined
 (Font)              using `JY1/gt/m/n' instead on input line 6.
 
 
-Underfull \hbox (badness 1466) in paragraph at lines 33--35
+Underfull \hbox (badness 1466) in paragraph at lines 34--36
 []\OT1/cmr/m/n/12 Raspberry pi.  []$\OT1/cmtt/m/n/12 http : / / www . idc . com
  / getdoc . jsp ? containerId = prUS40960716$[]\OT1/cmr/m/n/12 ,
  []
 
 
-Underfull \hbox (badness 5374) in paragraph at lines 51--53
+Underfull \hbox (badness 5374) in paragraph at lines 52--54
 []\OT1/cmr/m/n/12 Number of kippo'commands.  []$\OT1/cmtt/m/n/12 https : / / gi
 thub . com / desaster / kippo / tree /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--65
+Underfull \hbox (badness 10000) in paragraph at lines 61--66
 \OT1/cmtt/m/n/12 seikatsu / shingikai2 / kako / spc13 / houkoku _ g / spc13-[]h
 oukoku _ g-[]4-[]1 . html$[]\OT1/cmr/m/n/12 ,
  []
@@ -735,12 +731,7 @@ Package atveryend Info: Executing hook `AfterLastShipout' on input line 146.
 \BKM@file=\write7
 \openout7 = `thesis.out.ps'.
 
- (./thesis.aux
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-)
+ (./thesis.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 146.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 146.
 
@@ -754,11 +745,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 146.
  ) 
 Here is how much of TeX's memory you used:
  8094 strings out of 494865
- 116540 string characters out of 6179768
+ 116549 string characters out of 6179768
  243747 words of memory out of 5000000
  11329 multiletter control sequences out of 15000+600000
  22461 words of font info for 91 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
  33i,12n,58p,1612b,1202s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (33 pages, 102496 bytes).
+Output written on thesis.dvi (33 pages, 102740 bytes).
