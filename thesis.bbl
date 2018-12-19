@@ -11,14 +11,15 @@ Xin Rong.
 \newblock {\em ACM Transactions on Graphics (TOG)}, 32(4):138, 2013.
 
 \bibitem{highinthoney}
-wiki.
-\newblock High-interaction honeyの普及率について.
-\newblock \url{https://www.honeynet.org/}, 2014.
-
-\bibitem{honeypot}
 Kippo.
 \newblock Kippo.
 \newblock \url{https://github.com/desaster/kippo}, 2014.
+
+\bibitem{honeypot}
+Ken Fujiyoshi, Chihiro Fukai, Hiroya Tanaka, Jin Mitsugi, and Jun Murai.
+\newblock Honeypot.
+\newblock {\em NIP \& Digital Fabrication Conference 2014 1}, pages 316--319,
+  2014.
 
 \bibitem{kojoney}
 Satoshi Nakamoto.
