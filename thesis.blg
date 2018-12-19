@@ -9,11 +9,11 @@ Warning--string name "january" is undefined
 --line 32 of file ./bib/cites.bib
 Too many commas in name 1 of "Tomas Mikolov, Kai Chen, Greg Corrado, Jeffrey Dean" for entry word2vecpaper
 while executing---line 944 of file unsrt.bst
-Too many commas in name 1 of "国分 芳宏, 梅北 浩二, 松下 栄一, 末岡 隆史" for entry siso
+Too many commas in name 1 of "国分芳宏, 梅北浩二, 松下栄一, 末岡隆史" for entry siso
 while executing---line 944 of file unsrt.bst
 You've used 17 entries,
             1791 wiz_defined-function locations,
-            512 strings with 4971 characters,
+            512 strings with 4967 characters,
 and the built_in function-call counts, 2422 in all, are:
 = -- 206
 > -- 61
