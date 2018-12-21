@@ -4,9 +4,9 @@ The top-level auxiliary file: thesis.aux
 The style file: unsrt.bst
 Database file #1: ./bib/cites.bib
 Warning--string name "april" is undefined
---line 28 of file ./bib/cites.bib
+--line 30 of file ./bib/cites.bib
 Warning--string name "january" is undefined
---line 43 of file ./bib/cites.bib
+--line 45 of file ./bib/cites.bib
 Too many commas in name 1 of "Tomas Mikolov, Kai Chen, Greg Corrado, Jeffrey Dean" for entry word2vecpaper
 while executing---line 944 of file unsrt.bst
 You've used 18 entries,
