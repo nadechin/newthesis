@@ -77,26 +77,21 @@ BusyBoxをインストールして実際に各コマンドを実行するため�
 
 \subsection{自然言語処理}
 \label{tech:NLP}
-過去のデータの入力に対して未知のデータをどのようにして出力するのかについては様々な手法がある．本研究において，自然言語処理は意味解析のために使用した．
+人間が日常的に使っている自然言語をコンピュータに処理させる一連の技術である．本研究において，自然言語処理は意味解析のために使用した．意味解析には様々な手法があり，現在では大きくシソーラス解析とベクトル空間分析がある．
 
-\subsubsection{統計的意味解析}
-\label{tech:tokei}
-過去のデータの入力に対して未知のデータを統計的に出力する．
-
-\subsubsubsection{マルコフ連鎖}
-\label{tech:Markov}
-
-\subsubsubsection{コーパス}
-\label{tech:Copus}
-
-\subsubsubsection{シソーラス}
+\subsubsection{シソーラス解析}
 \label{tech:Siso}
-シソーラス\cite{siso}
+シソーラスとは単語を意味レベルで分解し，抽象度の高いものから低いものへと遡っていくことができ，それを体系づけた類語辞書のことである．シソーラスには様々な言語において有名な辞書が存在する．有名なシソーラスとしてはPrinceton UniversityのWordNetがある．\cite{wordnet}
 
-\subsubsection{ベクトル空間表現}
+\subsubsubsection{Wordnet}
+\label{tech:Wordnet}
+WordNetでは英単語がsynsetと呼ばれる同義語のグループに分類され，簡単な定義や，他の同義語のグループとの関係が記述されている．\cite{wordnetwiki}
+
+\subsubsection{ベクトル空間解析}
 \label{tech:Vector}
 
-\subsubsubsection{word2vec}
+
+\subsubsubsection{Word2Vec}
 \label{tech:Word2vec}
 
 %%% Local Variables:
