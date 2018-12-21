@@ -72,10 +72,13 @@ Karl~DD Willis and Andrew~D Wilson.
 Busybox.
 \newblock \url{https://proofofexistence.com/}.
 
-\bibitem{siso}
-松下栄一~末岡隆史 国分芳宏, 梅北浩二.
-\newblock シソーラスを組み込んだ意味解析システム.
-\newblock {\em ACM Transactions on Graphics (TOG)}, 32(4):138, 2013.
+\bibitem{wordnet}
+Wordnet.
+\newblock \url{https://wordnet.princeton.edu/}.
+
+\bibitem{wordnetwiki}
+Wordnet wikipedia.
+\newblock \url{https://ja.wikipedia.org/wiki/WordNet}.
 
 \bibitem{cowrie}
 Cowrie.
