@@ -85,14 +85,25 @@ BusyBoxをインストールして実際に各コマンドを実行するため�
 
 \subsubsubsection{Wordnet}
 \label{tech:Wordnet}
-WordNetでは英単語がsynsetと呼ばれる同義語のグループに分類され，簡単な定義や，他の同義語のグループとの関係が記述されている．\cite{wordnetwiki}
+WordNetは英単語がsynsetと呼ばれる同義語のグループに分類され，簡単な定義や，他の同義語のグループとの関係が記述されているデータベースである．WordNetのデータベースは約11万5000のsynsetに分類された約15万語を収録し，全体で20万3000の単語と意味の組み合わせがある．\cite{wordnetwiki}
 
 \subsubsection{ベクトル空間解析}
 \label{tech:Vector}
+単語の意味を表現するため，単語の文章での出現回数や，その単語の周辺の単語をマトリクス上に表現することで，その単語を数学的に解釈できるようにしている．
 
+\subsubsubsection{TF-IDF}
+\label{tech:tfidf}
+\begin{equation}
+tfidf_{i,j}=tf_{i,j}$\cdot$idf_{i,j}
+\end{equation}
+
+\subsubsubsection{ベクトル空間モデル}
+\label{tech:voctorkukan}
 
 \subsubsubsection{Word2Vec}
 \label{tech:Word2vec}
+
+
 
 %%% Local Variables:
 %%% mode: japanese-latex
