@@ -4,14 +4,15 @@ The top-level auxiliary file: thesis.aux
 The style file: unsrt.bst
 Database file #1: ./bib/cites.bib
 Warning--string name "april" is undefined
---line 30 of file ./bib/cites.bib
+--line 35 of file ./bib/cites.bib
 Warning--string name "january" is undefined
---line 45 of file ./bib/cites.bib
+--line 50 of file ./bib/cites.bib
+Warning--I didn't find a database entry for "voctormodel"
 Too many commas in name 1 of "Tomas Mikolov, Kai Chen, Greg Corrado, Jeffrey Dean" for entry word2vecpaper
 while executing---line 944 of file unsrt.bst
 You've used 18 entries,
             1791 wiz_defined-function locations,
-            515 strings with 5008 characters,
+            516 strings with 5019 characters,
 and the built_in function-call counts, 2449 in all, are:
 = -- 207
 > -- 59
