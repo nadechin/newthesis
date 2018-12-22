@@ -98,7 +98,14 @@ TFとはTerm Frequencyのことで，文章内での単語の出現頻度を表�
 \[
 tf(t，d) = \frac{n_{t，d}}{\sum_{s \ni{d}}n_{s，d}}
 \]
-
+左辺の$ tf(t，d) $はTFの値で，文章d内に含まれる単語tの出現頻度を表す．
+右辺の分子の$ n_{t，d} $は文章dにおける単語tの出現回数を表す．
+右辺の分母の$ \sum_{s \ni{d}}n_{s，d} $は文章dにおける全ての単語の出現回数を表す．
+つまり，
+\[
+\mbox{文章d内に含まれる単語tの出現頻度} = \frac{\mbox{文章dにおける単語tの出現回数}}{\mbox{文章dにおける全ての単語の出現回数}}
+\]
+を数式で表す．
 \subsubsubsection{ベクトル空間モデル}
 \label{tech:voctorkukan}
 
