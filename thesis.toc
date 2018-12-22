@@ -23,8 +23,8 @@
 \contentsline {subsection}{\numberline {2.3.1}シソーラス解析}{6}{subsection.2.3.1}
 \contentsline {subsubsection}{\numberline {2.3.1.1}Wordnet}{7}{subsubsection.2.3.1.1}
 \contentsline {subsection}{\numberline {2.3.2}ベクトル空間解析}{7}{subsection.2.3.2}
-\contentsline {subsubsection}{\numberline {2.3.2.1}TF-IDF}{7}{subsubsection.2.3.2.1}
-\contentsline {paragraph}{\numberline {2.3.2.1.1}ベクトル空間モデル}{8}{paragraph.2.3.2.1.1}
+\contentsline {subsubsection}{\numberline {2.3.2.1}ベクトル空間モデル}{7}{subsubsection.2.3.2.1}
+\contentsline {paragraph}{\numberline {2.3.2.1.1}TF-IDF}{7}{paragraph.2.3.2.1.1}
 \contentsline {subsubsection}{\numberline {2.3.2.2}Word2Vec}{8}{subsubsection.2.3.2.2}
 \contentsline {chapter}{\numberline {第3章}本研究における問題定義と仮説}{9}{chapter.3}
 \contentsline {section}{\numberline {3.1}本研究における問題定義}{9}{section.3.1}
