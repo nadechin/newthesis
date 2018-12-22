@@ -93,8 +93,10 @@ WordNetは英単語がsynsetと呼ばれる同義語のグループに分類さ�
 
 \subsubsubsection{TF-IDF}
 \label{tech:tfidf}
+TFとはTerm Frequencyのことで，文章内での単語の出現頻度を表す．
+数式で表すと以下のように表される．
 \[
-tfidf_{i,j}=tf_{i,j} \cdot idf_{i,j}
+tf(t，d) = \frac{n_{t，d}}{\sum_{s \ni{d}}n_{s，d}}
 \]
 
 \subsubsubsection{ベクトル空間モデル}
