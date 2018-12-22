@@ -62,54 +62,60 @@ Kippo特有の異常な挙動を改善しており，実装コマンド数は38\
 % \item[信頼責任] 製造者は自己の製品の安全性についてPRしており消費者はその品質が担保されているものであると期待する
 %\end{itemize}
 
-\subsection{Shell}
+\section{Shell}
 \label{tech:Shell}
 ShellはOSのユーザーのためにインタフェースで，カーネルのサービスへのアクセスを提供するソフトウェアである．本研究での"Shell"はコマンドラインシェルのことを指す．
 
-\subsubsection{Secure Shell}
+\subsection{Secure Shell}
 \label{tech:Secure Shell}
 Secure Shell（セキュアシェル、SSH）は、暗号や認証の技術を利用して、安全にリモートコンピュータと通信するためのプロトコルである．パスワードなどの認証部分を含むすべてのネットワーク上の通信が暗号化される．\cite{ssh}SSHにおける問題としては，通信する上での認証方法には鍵認証を推奨されているが，デフォルトではパスワード認証になっている．パスワード認証のままだとパスワードの総当たり攻撃を受けたり，パスワードが標準のままの設定であることで不正なログイン試行によって侵入を許してしまう．
 
-\subsubsection{BusyBox}
+\subsection{BusyBox}
 \label{tech:BusyBox}
 BusyBoxは標準UNIXコマンドで重要な多数のプログラムを単一のバイナリファイルに含むプログラムである．BusyBoxに含まれる，多数の標準UNIXコマンドで必要とするプログラムの実行ファイルは，LinuxというOSをBusyBoxだけでディストリビューションできるよう，"Linux上で最小の実行ファイル"として設計されている．一般にインストールされる実行ファイルは一部だけを実装できるように選択することができる．一般的にはBusyBoxのコマンドは200以上も用意されている．\cite{busybox}\footnote{今回使用したBusyBoxに含まれるコマンドの数は219}．
 BusyBoxをインストールして実際に各コマンドを実行するためには，BusyBox内にある各コマンドにアクセス可能なようにpathを通すだけで良い．
 
-\subsection{自然言語処理}
+\section{自然言語処理}
 \label{tech:NLP}
 人間が日常的に使っている自然言語をコンピュータに処理させる一連の技術である．本研究において，自然言語処理は意味解析のために使用した．意味解析には様々な手法があり，現在では大きくシソーラス解析とベクトル空間分析がある．
 
-\subsubsection{シソーラス解析}
+\subsection{シソーラス解析}
 \label{tech:Siso}
 シソーラスとは単語を意味レベルで分解し，抽象度の高いものから低いものへと遡っていくことができ，それを体系づけた類語辞書のことである．シソーラスには様々な言語において有名な辞書が存在する．有名なシソーラスとしてはPrinceton UniversityのWordNetがある．\cite{wordnet}
 
-\subsubsubsection{Wordnet}
+\subsubsection{Wordnet}
 \label{tech:Wordnet}
 WordNetは英単語がsynsetと呼ばれる同義語のグループに分類され，簡単な定義や，他の同義語のグループとの関係が記述されているデータベースである．WordNetのデータベースは約11万5000のsynsetに分類された約15万語を収録し，全体で20万3000の単語と意味の組み合わせがある．\cite{wordnetwiki}
 
-\subsubsection{ベクトル空間解析}
+\subsection{ベクトル空間解析}
 \label{tech:Vector}
 単語の意味を表現するため，単語の文章での出現回数や，その単語の周辺の単語をマトリクス上に表現することで，その単語を数学的に解釈できるようにしている．
 
-\subsubsubsection{TF-IDF}
+\subsubsection{TF-IDF}
 \label{tech:tfidf}
 TFとはTerm Frequencyのことで，文章内での単語の出現頻度を表す．
 数式で表すと以下のように表される．
+\vspace{3mm}
 \[
 tf(t，d) = \frac{n_{t，d}}{\sum_{s \ni{d}}n_{s，d}}
 \]
+\vspace{3mm}
 左辺の$ tf(t，d) $はTFの値で，文章d内に含まれる単語tの出現頻度を表す．
 右辺の分子の$ n_{t，d} $は文章dにおける単語tの出現回数を表す．
 右辺の分母の$ \sum_{s \ni{d}}n_{s，d} $は文章dにおける全ての単語の出現回数を表す．
 つまり，
+\vspace{3mm}
 \[
 \mbox{文章d内に含まれる単語tの出現頻度} = \frac{\mbox{文章dにおける単語tの出現回数}}{\mbox{文章dにおける全ての単語の出現回数}}
 \]
+\vspace{3mm}
 を数式で表す．
-\subsubsubsection{ベクトル空間モデル}
+
+
+\subsubsection{ベクトル空間モデル}
 \label{tech:voctorkukan}
 
-\subsubsubsection{Word2Vec}
+\subsubsection{Word2Vec}
 \label{tech:Word2vec}
 
 
