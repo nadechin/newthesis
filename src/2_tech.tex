@@ -137,6 +137,9 @@ m個の単語が使用されている文章dにおける各単語の重要度を
             &= \frac{ \sum_{i=1}^{m} ((tf(t_{i},d) \cdot idf(t_{i}))(tf(t_{i},e) \cdot idf(t_{i}))}{\sum_{i=1}^{m} \sqrt{(tf(t_{i},d) \cdot idf(t_{i}))^2} \sum_{i=1}^{n} \sqrt{(tf(t_{i},e) \cdot idf(t_{i}))^2}} \nonumber
 \end{align}
 
+と表すことができる．これがベクトル空間でTF-IDFで抽出した単語の重み付けを行い，二つの文章の類似を算出するモデルである．
+
+
 \subsubsubsection{TF-IDF}
 \label{tech:tfidf}
 TFとはTerm Frequencyのことで，文章内での単語の出現頻度を表す．
