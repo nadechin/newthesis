@@ -97,20 +97,20 @@ WordNetは英単語がsynsetと呼ばれる同義語のグループに分類さ�
 m個の単語が使用されている文章dにおける各単語の重要度を$ w_{d1}，w_{d2}，w_{d3}， \ldots ，w_{dm} $とすると，文章dのベクトルは以下のように表される．
 
 \begin{align}
-\vec{d} = (w_{d1}，w_{d2}，w_{d3}， \ldots ，w_{dm})
+\vec{d} = (w_{d1}，w_{d2}，w_{d3}， \ldots ，w_{dm}) \nonumber
 \end{align}
 
 また，同様にしてn個の単語が使用されている文章eをベクトル表現すると，
 
 \begin{align}
-\vec{e} = (w_{e1}，w_{e2}，w_{e3}， \ldots ，w_{en})
+\vec{e} = (w_{e1}，w_{e2}，w_{e3}， \ldots ，w_{en}) \nonumber
 \end{align}
 
 と表すことができる．
 したがって，$ \vec{d} $ と $ \vec{e} $のなす角$ \theta $における$ \cos \theta $は以下のように表される．
 
 \begin{align}
-\cos \theta = \frac{\vec{d} \cdot \vec{e}}{|\vec{d}| |\vec{e}|}
+\cos \theta = \frac{\vec{d} \cdot \vec{e}}{|\vec{d}| |\vec{e}|} \nonumber
 \end{align}
 
 ベクトル化した時の単語の重要度はTF-IDFのアルゴリズム(※~\ref{tech:tfidf})を用いて算出した重みを用いることで，これを表すことができる．~\cite{voctormodel}
@@ -118,19 +118,19 @@ m個の単語が使用されている文章dにおける各単語の重要度を
 であるので，文章dのベクトルは以下のように表される．
 
 \begin{align}
-\vec{d} = (tf(t_{1},d) \cdot idf(t_{1})，tf(t_{2},d) \cdot idf(t_{2})，tf(t_{3},d) \cdot idf(t_{3})， \ldots ，tf(t_{m},d) \cdot idf(t_{m}))
+\vec{d} = (tf(t_{1},d) \cdot idf(t_{1})，tf(t_{2},d) \cdot idf(t_{2})，tf(t_{3},d) \cdot idf(t_{3})， \ldots ，tf(t_{m},d) \cdot idf(t_{m})) \nonumber
 \end{align}
 
 また，同様にして文章eもベクトル表現すると，
 
 \begin{align}
-\vec{d} = (tf(t_{1},e) \cdot idf(t_{1})，tf(t_{2},e) \cdot idf(t_{2})，tf(t_{3},e) \cdot idf(t_{3})， \ldots ，tf(t_{n},e) \cdot idf(t_{n}))
+\vec{d} = (tf(t_{1},e) \cdot idf(t_{1})，tf(t_{2},e) \cdot idf(t_{2})，tf(t_{3},e) \cdot idf(t_{3})， \ldots ，tf(t_{n},e) \cdot idf(t_{n})) \nonumber
 \end{align}
 
-と表すことができ，これを$ \cos \theta = \frac{\vec{d} \cdot \vec{e}}{|\vec{d}| |\vec{e}|} $に代入すると，
+と表すことができ，これを$ \cos \theta = \frac{\vec{d} \cdot \vec{e}}{|\vec{d}| |\vec{e}|} $に代入すると(※\,$ m \leqq n $)，
 \begin{align}
-\cos \theta &= \frac{\vec{d} \cdot \vec{e}}{|\vec{d}| |\vec{e}|} \\
-            &= test
+\cos \theta &= \frac{\vec{d} \cdot \vec{e}}{|\vec{d}| |\vec{e}|} \nonumber \\
+            &= \frac{(tf(t_{1},d) \cdot idf(t_{1}))(tf(t_{1},e) \cdot idf(t_{1})) + (tf(t_{1},d) \cdot idf(t_{2}))(tf(t_{2},e) \cdot idf(t_{2})) + (tf(t_{3},d) \cdot idf(t_{3}))(tf(t_{3},e) \cdot idf(t_{3})) + \ldots + (tf(t_{m},d) \cdot idf(t_{m}))(tf(t_{m},e) \cdot idf(t_{m}))}{\sqrt{((tf(t_{1},d) \cdot idf(t_{1})))^2 + ((tf(t_{2},d) \cdot idf(t_{2})))^2 + ((tf(t_{3},d) \cdot idf(t_{3})))^2 + \ldots + ((tf(t_{m},d) \cdot idf(t_{m}))(tf(t_{m},e)))^2}\sqrt{((tf(t_{1},e) \cdot idf(t_{1})))^2 + ((tf(t_{2},e) \cdot idf(t_{2})))^2 + ((tf(t_{3},e) \cdot idf(t_{3})))^2 + \ldots + ((tf(t_{m},e) \cdot idf(t_{m}))(tf(t_{m},e)))^2}} \nonumber
 \end{align}
 
 \subsubsubsection{TF-IDF}
@@ -138,42 +138,42 @@ m個の単語が使用されている文章dにおける各単語の重要度を
 TFとはTerm Frequencyのことで，文章内での単語の出現頻度を表す．
 数式では以下のように表される．
 
-\[
-tf(t，d) = \frac{n_{t，d}}{\sum_{s \ni{d}}n_{s，d}}
-\]
+\begin{align}
+tf(t，d) = \frac{n_{t，d}}{\sum_{s \ni{d}}n_{s，d}} \nonumber
+\end{align}
 
 $ tf(t，d) $はTFの値で，文章d内に含まれる単語tの出現頻度を表す．\\
 $ n_{t，d} $は文章dにおける単語tの出現回数を表す．\\
 $ \sum_{s \ni{d}}n_{s，d} $は文章dにおける全ての単語の出現回数を表す．\\
 以上を踏まえTFの値とは，
 
-\[
-\mbox{文章d内に含まれる単語tの出現頻度} = \frac{\mbox{文章dにおける単語tの出現回数}}{\mbox{文章dにおける全ての単語の出現回数}}
-\]
+\begin{align}
+\mbox{文章d内に含まれる単語tの出現頻度} = \frac{\mbox{文章dにおける単語tの出現回数}}{\mbox{文章dにおける全ての単語の出現回数}} \nonumber
+\end{align}
 
 を数式で表したものである．\\
 IDFとはInverse Document Frequencyのことで，ある単語が様々な文章においてどれほど使われているのかを表す．
 数式では以下のように表される．
 
-\[
-idf(t) = \log{\frac{N}{df(t)}+1}
-\]
+\begin{align}
+idf(t) = \log{\frac{N}{df(t)}+1} \nonumber
+\end{align}
 
 $ idf(t) $はIDFの値で，単語tが全文章数Nでどれほど使われているのかを表す．\\
 $ N $は全文章数を表す．\\
 $ df(t) $は単語tが出現する文章の数を表す．\\
 以上を踏まえIDFの値とは，
 
-\[
-\mbox{単語tが全文章数Nでどれほど使われているのか} = \frac{\mbox{全文章数}}{\mbox{単語tが出現する文章の数}＋1}
-\]
+\begin{align}
+\mbox{単語tが全文章数Nでどれほど使われているのか} = \frac{\mbox{全文章数}}{\mbox{単語tが出現する文章の数}＋1} \nonumber
+\end{align}
 
 を数式で表したものである．\\
 このようなTFの値とIDFの値を重みとすることで，文章を特徴付ける単語の抽出をするものがTF-IDFである．
 上記のTFとIDFの値より，if-idfの値は
-\[
-ifidf(t,d) = tf(t,d) \cdot idf(t)
-\]
+\begin{align}
+ifidf(t,d) = tf(t,d) \cdot idf(t) \nonumber
+\end{align}
 から算出することができる．
 
 \subsubsection{word2vec}
@@ -185,14 +185,14 @@ word2vecは2層からなるニューラルネットワークである．word2vec
 $ Skip-gram Model $は先述の通り，与えられた単語に対してその周辺語を予測するためのモデルのことである．このモデルは2層からなるニューラルネットで，入力にはOne-hotベクトルを用いる．One-hotベクトルとは$ (0，0，0， \ldots ，1， \ldots ，0) $のように，単語のインデックスから抽出する単語だけを$ 1 $と表記することで表現するベクトルのことである．\\
 入力層から隠れ層への重みは$ V \times N $のマトリクス$ W $で表され，Wの各列は単語ベクトルとなっている．隠れ層から出力層への重みはマトリクス$ W $を転置した$ N \times V $のマトリクス$ W^{\prime} $となっている．\\
 このようなモデルを条件付き確率で表現すると，
-\[
-p(w_{O}|w_{I}) = \frac{exp({{v^{\prime}}^{\mathrm{T}}_{W_{V}}} \cdot v_{w_{I}})}{\sum_{W_{v} \in{V}}exp({{v^{\prime}}^{\mathrm{T}}_{W_{V}}} \cdot v_{w_{I}})}
-\]
+\begin{align}
+p(w_{O}|w_{I}) = \frac{exp({{v^{\prime}}^{\mathrm{T}}_{W_{V}}} \cdot v_{w_{I}})}{\sum_{W_{v} \in{V}}exp({{v^{\prime}}^{\mathrm{T}}_{W_{V}}} \cdot v_{w_{I}})} \nonumber
+\end{align}
 と表せる．この$ w_{I} $は入力する単語，$ w_{O} $は$ w_{I} $の周辺語を表す．$ v_{w_{I}} $ や　$ {v^{\prime}}^{\mathrm{T}}_{W_{V}} $は単語を表すベクトルであり，$ v $は入力ベクトルで$ v^{\prime} $は出力ベクトルである．
 コンテクストサイズとは先述したように，入力単語の周辺語をどこまでとするかのサイズのことである．$ p(w_{O}|w_{I}) $はコンテクストサイズを考慮していない確率であるが，このコンテクストサイズを考慮して先述したモデルの同時確率$ p(w_{O,1}，w_{O,2}，w_{O,3}， \ldots ，w_{O,C}|w_{I}) $は，
-\[
-p(w_{O,1}，w_{O,2}，w_{O,3}， \ldots ，w_{O,C}|w_{I}) = \prod_{c=1}^{C} \frac{exp({{v^{\prime}}^{\mathrm{T}}_{W_{V}}} \cdot v_{w_{I}})}{\sum_{W_{v} \in{V}}exp({{v^{\prime}}^{\mathrm{T}}_{W_{V}}} \cdot v_{w_{I}})}
-\]
+\begin{align}
+p(w_{O,1}，w_{O,2}，w_{O,3}， \ldots ，w_{O,C}|w_{I}) = \prod_{c=1}^{C} \frac{exp({{v^{\prime}}^{\mathrm{T}}_{W_{V}}} \cdot v_{w_{I}})}{\sum_{W_{v} \in{V}}exp({{v^{\prime}}^{\mathrm{T}}_{W_{V}}} \cdot v_{w_{I}})} \nonumber
+\end{align}
 と表される．\\
 この$ p(w_{O,1}，w_{O,2}，w_{O,3}， \ldots ，w_{O,C}|w_{I}) $という確率を表す関数$ \prod_{c=1}^{C} \frac{exp({{v^{\prime}}^{\mathrm{T}}_{W_{V}}} \cdot v_{w_{I}})}{\sum_{W_{v} \in{V}}exp({{v^{\prime}}^{\mathrm{T}}_{W_{V}}} \cdot v_{w_{I}})} $を最大にするベクトル$ v $を求めることで，周辺語が適切に出力されるものとなる．\\
 このモデルを用いてニューラルネットを構築する．左から入力層，隠れ層，出力層で，Vはボキャブラリ数，Nは単語ベクトルの次元数，Cはコンテクストサイズ，Wは入力層から隠れ層への重み，W'は隠れ層から出力層への重みでWの転置マトリクスを表し，以下の図のようになる．\\
