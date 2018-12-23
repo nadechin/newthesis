@@ -154,8 +154,14 @@ $ df(t) $は単語tが出現する文章の数を表す．\\
 このようなTFの値とIDFの値を重みとすることで，文章を特徴付ける単語の抽出をするものがTF-IDFである．
 
 
-\subsubsection{Word2Vec}
-\label{tech:Word2vec}
+\subsubsection{word2Vec}
+\label{tech:word2vec}
+word2vecは2層からなるニューラルネットワークである．word2vecには2つのアーキテクチャがあり，一つは$ Continuous Skip-gram Model $，もう一つは$ Continuous Bag-of-Words Model $である．$ Continuous Skip-gram Model $は入力に文章中の任意の単語を用意し，出力に文章においてその任意の単語の前後の周辺語を用意し，ニューラルネットワークに読み込ませることで第一層から第二層への重みを獲得することが目的である．$ Continuous Bag-of-Words Model $では逆に出力に文章中の任意の単語を用意し，入力に文章においてその任意の単語の前後の周辺語を用意し，同様にしてニューラルネットワークに読み込ませることで第一層から第二層への重みを獲得することが目的である．本研究ではより精度の高い$ Continuous Skip-gram Model $（以降，$ Skip-gram Model $と呼ぶ．）を使用した．\cite{word2vecpaper}
+
+\subsubsection{Continuous Skip-gram Model}
+\label{tech:skipgram}
+$ Skip-gram Model $は先述の通り，与えられた単語に対してその周辺語を予測するためのモデルのことである．このモデルは2層からなるニューラルネットで，入力にはOne-hotベクトルを用いる．One-hotベクトルとは$ (0，0，0， \ldots ，1， \ldots ，0) $のように，単語のインデックスから抽出する単語だけを$ 1 $と表記することで表現するベクトルのことである．\\
+入力層から隠れ層への重みは$ V \times W $のマトリクス$ W $で表され，
 
 
 
