@@ -130,7 +130,7 @@ m個の単語が使用されている文章dにおける各単語の重要度を
 と表すことができ，これを$ \cos \theta = \frac{\vec{d} \cdot \vec{e}}{|\vec{d}| |\vec{e}|} $に代入すると(※\,$ m \leqq n $)，
 \begin{align}
 \cos \theta &= \frac{\vec{d} \cdot \vec{e}}{|\vec{d}| |\vec{e}|} \nonumber \\
-            &= \frac{(tf(t_{1},d) \cdot idf(t_{1}))(tf(t_{1},e) \cdot idf(t_{1})) + (tf(t_{1},d) \cdot idf(t_{2}))(tf(t_{2},e) \cdot idf(t_{2})) + (tf(t_{3},d) \cdot idf(t_{3}))(tf(t_{3},e) \cdot idf(t_{3})) + \ldots + (tf(t_{m},d) \cdot idf(t_{m}))(tf(t_{m},e) \cdot idf(t_{m}))}{\sqrt{(tf(t_{1},d) \cdot idf(t_{1}))^2 + (tf(t_{2},d) \cdot idf(t_{2}))^2 + \ldots + (tf(t_{m},d) \cdot idf(t_{m}))^2}\sqrt{(tf(t_{1},e) \cdot idf(t_{1}))^2 + (tf(t_{2},e) \cdot idf(t_{2}))^2 + \ldots + (tf(t_{m},e) \cdot idf(t_{m}))^2}} \nonumber
+            &= \frac{(tf(t_{1},d) \cdot idf(t_{1}))(tf(t_{1},e) \cdot idf(t_{1})) + (tf(t_{1},d) \cdot idf(t_{2}))(tf(t_{2},e) \cdot idf(t_{2})) + \ldots + (tf(t_{m},d) \cdot idf(t_{m}))(tf(t_{m},e) \cdot idf(t_{m}))}{\sqrt{(tf(t_{1},d) \cdot idf(t_{1}))^2 + (tf(t_{2},d) \cdot idf(t_{2}))^2 + \ldots + (tf(t_{m},d) \cdot idf(t_{m}))^2}\sqrt{(tf(t_{1},e) \cdot idf(t_{1}))^2 + (tf(t_{2},e) \cdot idf(t_{2}))^2 + \ldots + (tf(t_{m},e) \cdot idf(t_{m}))^2}} \nonumber
 \end{align}
 
 \subsubsubsection{TF-IDF}
