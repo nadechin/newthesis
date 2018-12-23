@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  23 DEC 2018 14:16
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  23 DEC 2018 14:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -647,14 +647,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [9]
 File: figures/skip-gram.pdf Graphic file (type pdf)
- <figures/skip-gram.pdf>) (./src/3_appr.tex
+ <figures/skip-gram.pdf>
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10]
+[10]) (./src/3_appr.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[11]
 第 3 章
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -662,7 +669,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removed on input line 10.
 
 File: figures/nagare.png Graphic file (type bmp)
-<figures/nagare.png> [11
+<figures/nagare.png> [12
 
 ]
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
@@ -681,24 +688,24 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[12]) (./src/5_meth.tex
+[13]) (./src/5_meth.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13]
+[14]
 第 4 章
-) (./src/6_impl.tex [14
+) (./src/6_impl.tex [15
 
 ]
 第 5 章
-) (./src/7_eval.tex [15
+) (./src/7_eval.tex [16
 
 ]
 第 6 章
-[16
+[17
 
 ]
 File: figures/term.png Graphic file (type bmp)
@@ -711,14 +718,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[17]
+[18]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[18]
+[19]
 File: figures/termhyoka.png Graphic file (type bmp)
  <figures/termhyoka.png>
 File: figures/sotuhyoka.png Graphic file (type bmp)
@@ -729,12 +736,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[19]
+[20]
 
-LaTeX Warning: Reference `tech:Markov' on page 20 undefined on input line 92.
+LaTeX Warning: Reference `tech:Markov' on page 21 undefined on input line 92.
 
 
-LaTeX Warning: Reference `tech:tokei' on page 20 undefined on input line 94.
+LaTeX Warning: Reference `tech:tokei' on page 21 undefined on input line 94.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -742,7 +749,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[20]
+[21]
 File: figures/model.png Graphic file (type bmp)
  <figures/model.png>
 
@@ -751,7 +758,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[21]
+[22]
 File: figures/evalflow.png Graphic file (type bmp)
  <figures/evalflow.png>
 
@@ -760,20 +767,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[22]) (./src/8_rela.tex
+[23]) (./src/8_rela.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[23]
+[24]
 第 7 章
-) (./src/9_conc.tex [24
+) (./src/9_conc.tex [25
 
 ]
 第 8 章
-[25
+[26
 
 ]) (./src/acknowledgement.tex
 
@@ -782,7 +789,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[26]) (./bib/biblio.tex (./thesis.bbl [27
+[27]) (./bib/biblio.tex (./thesis.bbl [28
 
 ]
 
@@ -811,11 +818,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 60--65
 oukoku _ g-[]4-[]1 . html$[]\OT1/cmr/m/n/12 ,
  []
 
-[28
+[29
 
 ]))
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 147.
- [29]
+ [30]
 Package atveryend Info: Executing hook `AfterLastShipout' on input line 147.
 \BKM@file=\write7
 \openout7 = `thesis.out.ps'.
@@ -844,4 +851,4 @@ Here is how much of TeX's memory you used:
  264 hyphenation exceptions out of 8191
  33i,12n,58p,1799b,1213s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (36 pages, 133324 bytes).
+Output written on thesis.dvi (37 pages, 133640 bytes).
