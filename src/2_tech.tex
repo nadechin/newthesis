@@ -219,9 +219,9 @@ u_{c} = W^{\prime}h = W^{\prime}v_{w_{I}} \nonumber
 と表すことができる．
 また，出力層はコンテクストサイズに応じて出力のユニット数$ c $が変動する．したがって，任意のユニット$ C $における最終的な出力$ y_{c,i} $はsoftmax関数を掛けて，
 \begin{align}
-y_{c,i} = \frac{exp(u_{c,i})}{\sum_{v=1}^{V}exp(u_{c,v})} \nonumber \\
-       &= \frac{exp({v^{\prime}}_{i} \cdot v_{w_{I}})}{\sum_{v=1}^{V}exp({v^{\prime}}_{v} \cdot v_{w_{I}})} \nonumber \\
-       &= p(w_{i}|w_{I}) \nonumber
+y_{c,i} &= \frac{exp(u_{c,i})}{\sum_{v=1}^{V}exp(u_{c,v})} \nonumber \\
+        &= \frac{exp({v^{\prime}}_{i} \cdot v_{w_{I}})}{\sum_{v=1}^{V}exp({v^{\prime}}_{v} \cdot v_{w_{I}})} \nonumber \\
+        &= p(w_{i}|w_{I}) \nonumber
 \end{align}
 となる．
 以上をまとめるとニューラルネットは以下の図のようになる．\\
