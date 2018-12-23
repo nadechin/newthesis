@@ -45,7 +45,7 @@ Kippo特有の異常な挙動を改善しており，実装コマンド数は38\
 
 \subsection{SSHのHoneypotの比較}
 \label{tech:CompareHoneypot}
-以上をまとめたSSHの低対話型HoneypotとSSHの高対話型Honeypotの比較を行った表を図2.1に示す．
+以上をまとめたSSHの低対話型HoneypotとSSHの高対話型Honeypotの比較を行った表を図~\ref{fig:evo}に示す．
 
 \vspace{10mm}
 \begin{figure}[H]
@@ -223,11 +223,15 @@ y_{c,i} &= \frac{exp(u_{c,i})}{\sum_{v=1}^{V}exp(u_{c,v})} \nonumber \\
         &= \frac{exp({v^{\prime}}_{i} \cdot v_{w_{I}})}{\sum_{v=1}^{V}exp({v^{\prime}}_{v} \cdot v_{w_{I}})} \nonumber \\
         &= p(w_{i}|w_{I}) \nonumber
 \end{align}
-となる．
-以上をまとめるとニューラルネットは以下の図のようになる．\\
-\begin{center}
-  \includegraphics[width=80mm,height=120mm]{figures/skip-gram.pdf}
-\end{center}
+と表される．\\
+以上をまとめるとニューラルネットは以下の図\ref{fig:neuralnet}のようになる．
+\begin{figure}[htbp]
+　\begin{center}
+   \includegraphics[width=100mm,height=140mm]{figures/skip-gram.pdf}
+   \caption{コンテクストサイズCのSkip-gram Modelのニューラルネットワーク}
+   \label{fig:neuralnet}
+　\end{center}
+\end{figure}
 
 %%% Local Variables:
 %%% mode: japanese-latex
