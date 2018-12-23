@@ -202,9 +202,31 @@ p(w_{O,1}，w_{O,2}，w_{O,3}， \ldots ，w_{O,C}|w_{I}) = \prod_{c=1}^{C} \fra
 \end{align}
 と表される．\\
 この$ p(w_{O,1}，w_{O,2}，w_{O,3}， \ldots ，w_{O,C}|w_{I}) $という確率を表す関数$ \prod_{c=1}^{C} \frac{exp({{v^{\prime}}^{\mathrm{T}}_{W_{V}}} \cdot v_{w_{I}})}{\sum_{W_{v} \in{V}}exp({{v^{\prime}}^{\mathrm{T}}_{W_{V}}} \cdot v_{w_{I}})} $を最大にするベクトル$ v $を求めることで，周辺語が適切に出力されるものとなる．\\
-このモデルを用いてニューラルネットを構築する．左から入力層，隠れ層，出力層で，Vはボキャブラリ数，Nは単語ベクトルの次元数，Cはコンテクストサイズ，Wは入力層から隠れ層への重み，W'は隠れ層から出力層への重みでWの転置マトリクスを表し，以下の図のようになる．\\
+このモデルを用いてニューラルネットを構築する．先述の通り，入力層$ x $はOne-hotベクトルを用いる．One-hotベクトルとは$ (0，0，0， \ldots ，1， \ldots ，0) $のように，単語のインデックスから抽出する単語だけを$ 1 $と表記することで表現するベクトルのことである．\\
+隠れ層$ h $は，入力層から隠れ層への重み$ W $を入力データ$ x $にかけたものである．したがって隠れ層$ h $は
+\begin{align}
+h = Wx \nonumber
+\end{align}
+と表すことができる．また，任意の入力$ w_{I} $ $ (= x_{i}) $は重み$ W $が掛けられるが，入力がOne-hotベクトルなので，$ w_{I} $に対応する単語ベクトルがそのまま出力されることになる．したがって，隠れ層は
+\begin{align}
+h = Wx_{w_{I}} = v_{w_{I}} \nonumber
+\end{align}
+と表すことができる．\\
+出力層$ u_{c} $は，隠れ層$ h $に隠れ層から出力層への重み$ W^{\prime} $が掛けられたものであるので，
+\begin{align}
+u_{c} = W^{\prime}h = W^{\prime}v_{w_{I}} \nonumber
+\end{align}
+と表すことができる．
+また，出力層はコンテクストサイズに応じて出力のユニット数$ c $が変動する．したがって，任意のユニット$ C $における最終的な出力$ y_{c,i} $はsoftmax関数を掛けて，
+\begin{align}
+y_{c,i} = \frac{exp(u_{c,i})}{\sum_{v=1}^{V}}exp(u_{c,v})} \nonumber \\
+       &= \frac{exp({v^{\prime}}_{i} \cdot v_{w_{I}})}{\sum_{v=1}^{V}}exp({v^{\prime}}_{v} \cdot v_{w_{I}})} \nonumber \\
+       &= p(w_{i}|w_{I}) \nonumber
+\end{align}
+となる．
+以上をまとめるとニューラルネットは以下の図のようになる．\\
 \begin{center}
-  \includegraphics[width=100mm,height=150mm]{figures/skip-gram.pdf}
+  \includegraphics[width=80mm,height=120mm]{figures/skip-gram.pdf}
 \end{center}
 
 %%% Local Variables:
