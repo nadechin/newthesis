@@ -96,36 +96,36 @@ WordNetは英単語がsynsetと呼ばれる同義語のグループに分類さ�
 ベクトル空間モデルとは文章を多次元空間上にベクトルとして表現し，それぞれのベクトルの比較を行うことで類似度を算出するためのモデルである．文章の類似度が高いほどベクトルの方向が近いということなので，比較した文章のベクトルのなす角が小さければ文章の類似度が高いということになる．\\
 m個の単語が使用されている文章dにおける各単語の重要度を$ w_{d1}，w_{d2}，w_{d3}， \ldots ，w_{dm} $とすると，文章dのベクトルは以下のように表される．
 
-\[
+\begin{align}
 \vec{d} = (w_{d1}，w_{d2}，w_{d3}， \ldots ，w_{dm})
-\]
+\end{align}
 
 また，同様にしてn個の単語が使用されている文章eをベクトル表現すると，
 
-\[
+\begin{align}
 \vec{e} = (w_{e1}，w_{e2}，w_{e3}， \ldots ，w_{en})
-\]
+\end{align}
 
 と表すことができる．
 したがって，$ \vec{d} $ と $ \vec{e} $のなす角$ \theta $における$ \cos \theta $は以下のように表される．
 
-\[
+\begin{align}
 \cos \theta = \frac{\vec{d} \cdot \vec{e}}{|\vec{d}| |\vec{e}|}
-\]
+\end{align}
 
 ベクトル化した時の単語の重要度はTF-IDFのアルゴリズム(※~\ref{tech:tfidf})を用いて算出した重みを用いることで，これを表すことができる．~\cite{voctormodel}
 上記の例であれば，文章dにおける単語の重要度が$ tf(t_{1},d) \cdot idf(t_{1})，tf(t_{2},d) \cdot idf(t_{2})，tf(t_{3},d) \cdot idf(t_{3})， \ldots ，tf(t_{m},d) \cdot idf(t_{m}) $
 であるので，文章dのベクトルは以下のように表される．
 
-\[
+\begin{align}
 \vec{d} = (tf(t_{1},d) \cdot idf(t_{1})，tf(t_{2},d) \cdot idf(t_{2})，tf(t_{3},d) \cdot idf(t_{3})， \ldots ，tf(t_{m},d) \cdot idf(t_{m}))
-\]
+\end{align}
 
 また，同様にして文章eもベクトル表現すると，
 
-\[
+\begin{align}
 \vec{d} = (tf(t_{1},e) \cdot idf(t_{1})，tf(t_{2},e) \cdot idf(t_{2})，tf(t_{3},e) \cdot idf(t_{3})， \ldots ，tf(t_{n},e) \cdot idf(t_{n}))
-\]
+\end{align}
 
 と表すことができ，これを$ \cos \theta = \frac{\vec{d} \cdot \vec{e}}{|\vec{d}| |\vec{e}|} $に代入すると，
 \begin{align}
