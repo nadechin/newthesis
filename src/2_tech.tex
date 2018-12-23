@@ -161,7 +161,11 @@ word2vecは2層からなるニューラルネットワークである．word2vec
 \subsubsection{Continuous Skip-gram Model}
 \label{tech:skipgram}
 $ Skip-gram Model $は先述の通り，与えられた単語に対してその周辺語を予測するためのモデルのことである．このモデルは2層からなるニューラルネットで，入力にはOne-hotベクトルを用いる．One-hotベクトルとは$ (0，0，0， \ldots ，1， \ldots ，0) $のように，単語のインデックスから抽出する単語だけを$ 1 $と表記することで表現するベクトルのことである．\\
-入力層から隠れ層への重みは$ V \times W $のマトリクス$ W $で表され，
+入力層から隠れ層への重みは$ V \times N $のマトリクス$ W $で表され，Wの各列は単語ベクトルとなっている．隠れ層から出力層への重みはマトリクス$ W $を転置した$ N \times V $のマトリクス$ W^{\prime} $となっている．\\
+このようなモデルを条件付き確率で表現すると，
+\[
+p(w_{O}|W_{I}) = \frac{exp(\bm{v^{\prime}}^{\mathrm{T}}_{W_{O}} \cdot v_{w_{I}})}{\sum_{W_{v} \ni{V}} exp(\bm{v^{\prime}}^{\mathrm{T}}_{W_{V}} \cdot v_{w_{I}})}
+\]
 
 
 
