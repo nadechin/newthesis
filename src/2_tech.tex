@@ -164,7 +164,7 @@ $ Skip-gram Model $は先述の通り，与えられた単語に対してその�
 入力層から隠れ層への重みは$ V \times N $のマトリクス$ W $で表され，Wの各列は単語ベクトルとなっている．隠れ層から出力層への重みはマトリクス$ W $を転置した$ N \times V $のマトリクス$ W^{\prime} $となっている．\\
 このようなモデルを条件付き確率で表現すると，
 \[
-p(w_{O}|W_{I}) = \frac{exp({v^{\prime}_{W_{V}}}^{\mathrm{T}} \cdot v_{w_{I}})}{\sum_{W_{v} \ni{V}}exp({v^{\prime}_{W_{V}}}^{\mathrm{T}} \cdot v_{w_{I}})}
+p(w_{O}|w_{I}) = \frac{exp({{v^{\prime}^{\mathrm{T}}}_{W_{V}}} \cdot v_{w_{I}})}{\sum_{W_{v} \in{V}}exp({{v^{\prime}^{\mathrm{T}}}_{W_{V}}} \cdot v_{w_{I}})}
 \]
 と表せる．
 
