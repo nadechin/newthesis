@@ -10,14 +10,14 @@
 \subsection{SSH\,Honeypotの現状の問題}
 \label{appr:problemofSshHoneypot}
 Honeypotには運用する上で大きな問題が2つある．一つは設置したHoneypotに侵入した悪意のある侵入者が侵入先をHoneypotであると検知してしまう問題である．もう一つはHoneypotに侵入を許した侵入者にHoneypotを設置した機器から他のホストに攻撃を仕掛けられてしまう，所謂踏み台攻撃の踏み台にされる問題である．\\
-以下の図3.1は，悪意のある侵入者が不正に機器に侵入してから踏み台にして他の機器に攻撃を仕掛けるまでの一般的なフロ--である．問題として，2番目のフロ--の悪意のある侵入者が侵入した先がHoneypotであると検知してしまうことが考えられる．高対話型Honeypotで使用したOS自体の新たな脆弱性を突かれることに限った状況で，3番目のフロ--のHoneypotへの侵入者にHoneypotを設置した機器から攻撃が仕掛けられてしまう危険があることが問題として挙げられる．
+以下の図~\ref{fig:flow}は，悪意のある侵入者が不正に機器に侵入してから踏み台にして他の機器に攻撃を仕掛けるまでの一般的なフロ--である．問題として，2番目のフロ--の悪意のある侵入者が侵入した先がHoneypotであると検知してしまうことが考えられる．高対話型Honeypotで使用したOS自体の新たな脆弱性を突かれることに限った状況で，3番目のフロ--のHoneypotへの侵入者にHoneypotを設置した機器から攻撃が仕掛けられてしまう危険があることが問題として挙げられる．
 
 \vspace{10mm}
 \begin{figure}[H]
     \centering
     \includegraphics[width=1.0\textwidth]{figures/nagare.png}
     \caption{不正なSSH侵入者の想定行動フロー}
-    \label{fig:evo}
+    \label{fig:flow}
 \end{figure}
 
 本研究ではこの中でも，2番目のフロ--のSSHの低対話型Honeypotが設置したHoneypotに悪意のある侵入者が侵入先をHoneypotであると検知してしまう問題に着目した．
@@ -34,7 +34,7 @@ SSHの低対話型Honeypotは実際のShellの挙動をエミュレートした�
 
 \subsubsubsection{Honeypotのコマンドの実装の問題}
 \label{appr:LowHoneypotCommand}
-SSHの低対話型Honeypotは実際のShellの挙動をエミュレートしたものであるのでコマンドやその挙動についての機能が限定されており，実際のShellの機能として不足がある．~\ref{tech:BusyBox}で述べたように，"Linux上で最小の実行ファイル"となるよう設計されているBusyBoxに含まれるコマンドの数が200以上あるのに対し，現状で広く使われているSSHの低対話型HoneypotであるCowrieに実装されているコマンドは~\ref{tech:Cowrie}でも述べた通り，38しか存在しない．また，SSHの低対話型Honeypot特有の挙動が存在し，以下にその1例であるプログラム\,3.1とプログラム\,3.2を示す．
+SSHの低対話型Honeypotは実際のShellの挙動をエミュレートしたものであるのでコマンドやその挙動についての機能が限定されており，実際のShellの機能として不足がある．~\ref{tech:BusyBox}で述べたように，"Linux上で最小の実行ファイル"となるよう設計されているBusyBoxに含まれるコマンドの数が200以上あるのに対し，現状で広く使われているSSHの低対話型HoneypotであるCowrieに実装されているコマンドは~\ref{tech:Cowrie}でも述べた通り，38しか存在しない．また，SSHの低対話型Honeypot特有の挙動が存在し，以下にその1例であるプログラム~\ref{lst:usual}とプログラム~\ref{lst:usual}を示す．
 
 \vspace{5mm}
 \lstnewenvironment{mylisting}[1][]
@@ -51,12 +51,12 @@ SSHの低対話型Honeypotは実際のShellの挙動をエミュレートした�
     }
 }{}
 
-\begin{mylisting}[language=sh,caption=正しいShellの挙動]
+\begin{mylisting}[label=usual,language=sh,caption=正しいShellの挙動]
 nadechin@cpu:~$ echo -n test
 testnadechin@cpu:~$
 \end{mylisting}
 
-\begin{mylisting}[language=sh,caption=Kippo特有の異常な挙動の例]
+\begin{mylisting}[label=kippo,language=sh,caption=Kippo特有の異常な挙動の例]
 s15445ys@s15445ys-neco:~$ echo -n hello
 -n hello
 s15445ys@s15445ys-neco:~$
