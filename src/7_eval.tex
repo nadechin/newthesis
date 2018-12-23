@@ -31,18 +31,18 @@ SSHの低対話型HoneypotであるCowrieはコマンドの実装数が少なく
 
 \subsection{結果}
 \label{eval:conc}
-SSHの低対話型Honeypotの稼働期間は12/10から2/1(54日間)で，収集できたものとしてコネクション数，パターン数，コマンド数を以下の図~\ref{fig:honeypotdata}に記す．
+SSHの低対話型Honeypotの稼働期間は12/10から2/1(54日間)で，収集できたものとしてコネクション数，パターン数，コマンド数を以下の図\ref{fig:honeypotdata}に記す．
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=1.0\textwidth]{figures/term.png}
     \caption{収集したSSHの低対話型Honeypotのデータ}
     \label{fig:honeypotdata}
 \end{figure}
 
-また，モデル化を行い純正のCowrieとCowrieにBusyBoxに含まれるコマンドを実装した修正済みのCowrieのスコアリングを行なった結果を以下の図~\ref{fig:cowriecompare}に記す．横軸はコマンド拡張を行なったHoneypotか素のHoneypotであるかを示している．縦軸は予備実験の評価手法によって算出されたコマンドの表れやすさを数値化したものであり，数値が高くなればのコマンドパターンがパターンとして存在しやすいものであることを示している．予備実験ではコマンドの拡張実装をしたものの方がコマンドパターンとして存在しにくいものを観測できたという結果になった．
+また，モデル化を行い純正のCowrieとCowrieにBusyBoxに含まれるコマンドを実装した修正済みのCowrieのスコアリングを行なった結果を以下の図\ref{fig:cowriecompare}に記す．横軸はコマンド拡張を行なったHoneypotか素のHoneypotであるかを示している．縦軸は予備実験の評価手法によって算出されたコマンドの表れやすさを数値化したものであり，数値が高くなればのコマンドパターンがパターンとして存在しやすいものであることを示している．予備実験ではコマンドの拡張実装をしたものの方がコマンドパターンとして存在しにくいものを観測できたという結果になった．
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=1.0\textwidth]{figures/Figure_1.png}
     \caption{純正のCowrieと修正済みのCowrieのスコアリングによる比較}
@@ -66,18 +66,18 @@ SSHの低対話型Honeypotの稼働期間は12/10から2/1(54日間)で，収集
 
 %以上3つの純正のHoneypot，修正済みのHoneypot，高対話型Honneypotのそれぞれで侵入ログを収集する．\\
 
-また予備実験では，純正のHoneypotに実装されていないコマンドで悪意のある侵入者が使うようなコマンドを実装し，純正のHoneypotで取れた侵入者の実行コマンドログと，修正済みのHoneypotの侵入者の実行コマンドログを比較することで，修正済みのHoneypotの方がコマンドパターンとして多く収集できることを示した．予備実験における収集ログの比較の概念図を図~\ref{fig:yobigainen}に示す．
+また予備実験では，純正のHoneypotに実装されていないコマンドで悪意のある侵入者が使うようなコマンドを実装し，純正のHoneypotで取れた侵入者の実行コマンドログと，修正済みのHoneypotの侵入者の実行コマンドログを比較することで，修正済みのHoneypotの方がコマンドパターンとして多く収集できることを示した．予備実験における収集ログの比較の概念図を図\ref{fig:yobigainen}に示す．
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=1.0\textwidth]{figures/termhyoka.png}
     \caption{予備実験の評価の概念図}
     \label{fig:yobigainen}
 \end{figure}
 
-この予備実験では評価として何の追加実装も施していないSSHの低対話型Honeypotで取れた侵入者の実行コマンドログと追加実装を施したSSHの低対話型Honeypotの侵入者の実行コマンドログとを比較したのに対して，本件研究の評価手法では，純正のHoneypotで取れた侵入者の実行コマンドログと修正済みのHoneypotの侵入者の実行コマンドログをと高対話型Honeypotの侵入者の実行コマンドログを比較することで，修正済みのHoneypotの侵入者の実行コマンドログが実際のShellの挙動にどれほど近似したのかを評価した．予備実験における収集ログの比較の概念図を図~\ref{fig:gainen}に示す．
+この予備実験では評価として何の追加実装も施していないSSHの低対話型Honeypotで取れた侵入者の実行コマンドログと追加実装を施したSSHの低対話型Honeypotの侵入者の実行コマンドログとを比較したのに対して，本件研究の評価手法では，純正のHoneypotで取れた侵入者の実行コマンドログと修正済みのHoneypotの侵入者の実行コマンドログをと高対話型Honeypotの侵入者の実行コマンドログを比較することで，修正済みのHoneypotの侵入者の実行コマンドログが実際のShellの挙動にどれほど近似したのかを評価した．予備実験における収集ログの比較の概念図を図\ref{fig:gainen}に示す．
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=1.0\textwidth]{figures/sotuhyoka.png}
     \caption{本研究の評価の概念図}
@@ -100,7 +100,7 @@ SSHの低対話型Honeypotの稼働期間は12/10から2/1(54日間)で，収集
 純正の低対話型Honeypotで収集した侵入ログでskip-gramモデルの隠れ層の重みを学習させ(これをモデル1
 とする)，同様にして高対話型Honeypotで収集した侵入ログもskip-gramモデルの隠れ層の重みを学習させる(これをモデル2とする)．次に修正済みのHoneypotで収集したログをセッション開始からセッション終了までに打たれたコマンドごとに(以降これを1セッションごとと呼ぶ)モデル1とモデル2のそれぞれに入力していき，出力された数値aを活性化関数としてソフトマックス関数をかけることで，0≦a≦1の範囲を取るようにし確率的な数値として出力することでスコアリングを行う．このため入力に対して多数存在する出力を全てを合計すると1になる．
 純正の低対話型Honeypotや高対話型Honeypotの収集ログをモデル化する際、入力層として収集ログのコマンドの入力に対してそのコマンドの周辺のコマンドを出力として与えることでこれを学習させる．\\
-例えば3つのコマンドが打たれたとしたとしたものを以下のプログラム~\ref{lst:exam}に示す．
+例えば3つのコマンドが打たれたとしたとしたものを以下のプログラム\ref{lst:exam}に示す．
 
 \vspace{5mm}
 %\lstnewenvironment{mylisting}[1][]
@@ -126,9 +126,9 @@ SSHの低対話型Honeypotの稼働期間は12/10から2/1(54日間)で，収集
 
 モデルを構築する際には"free"コマンドを入力にした時に，出力として"uname"コマンド"ps"コマンドを用意しておくことで，freeが入力として与えられた時に他2つの出力される周辺のコマンドが出力する確率が高くなるようにする．また，実装としては周辺語をどこまで広げるのかはパラメータとしてwindow sizeで与えることができ，上記の例の周辺語は"1"であり，window sizeを"2"にすればモデル化する際に出力層に与えられる数は4つとなる．
 
-以下の図~\ref{fig:hyoukaflow}にモデル化のフローを示す．
+以下の図\ref{fig:hyoukaflow}にモデル化のフローを示す．
 \vspace{10mm}
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=1.0\textwidth]{figures/model.png}
     \caption{評価のフロー\cite{word2vecpaper}\cite{word2vecpaper2}}
@@ -137,9 +137,9 @@ SSHの低対話型Honeypotの稼働期間は12/10から2/1(54日間)で，収集
 \vspace{10mm}
 また，このようにして純正の低対話型Honeypotの収集ログと高対話型Honeypotの収集ログに対して各々のモデルを構築する．次にこのモデルに対して，修正済みのHoneypotで収集したログを入力して，確率的にスコアリングしていくことで数値を出力する．\\
 
-以下にこのモデルを使用した時の入力から出力のフローを図~\ref{fig:syuturyokuflow}を示す．
+以下にこのモデルを使用した時の入力から出力のフローを図\ref{fig:syuturyokuflow}を示す．
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=1.0\textwidth]{figures/evalflow.png}
     \caption{評価のフロー\cite{word2vecpaper}\cite{word2vecpaper2}}
