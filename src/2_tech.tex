@@ -103,7 +103,7 @@ m個の単語が使用されている文章dにおける各単語の重要度を
 また，同様にしてn個の単語が使用されている文章eをベクトル表現すると，
 
 \[
-\vec{e} = (w_{d1}，w_{d2}，w_{d3}， \ldots ，w_{dn})
+\vec{e} = (w_{e1}，w_{e2}，w_{e3}， \ldots ，w_{en})
 \]
 
 と表すことができる．
@@ -114,6 +114,24 @@ m個の単語が使用されている文章dにおける各単語の重要度を
 \]
 
 ベクトル化した時の単語の重要度はTF-IDFのアルゴリズム(※~\ref{tech:tfidf})を用いて算出した重みを用いることで，これを表すことができる．~\cite{voctormodel}
+上記の例であれば，文章dにおける単語の重要度が$ tf(t_{1},d) \cdot idf(t_{1})，tf(t_{2},d) \cdot idf(t_{2})，tf(t_{3},d) \cdot idf(t_{3})， \ldots ，tf(t_{m},d) \cdot idf(t_{m}) $
+であるので，文章dのベクトルは以下のように表される．
+
+\[
+\vec{d} = (tf(t_{1},d) \cdot idf(t_{1})，tf(t_{2},d) \cdot idf(t_{2})，tf(t_{3},d) \cdot idf(t_{3})， \ldots ，tf(t_{m},d) \cdot idf(t_{m}))
+\]
+
+また，同様にして文章eもベクトル表現すると，
+
+\[
+\vec{d} = (tf(t_{1},e) \cdot idf(t_{1})，tf(t_{2},e) \cdot idf(t_{2})，tf(t_{3},e) \cdot idf(t_{3})， \ldots ，tf(t_{n},e) \cdot idf(t_{n}))
+\]
+
+と表すことができ，これを$ \cos \theta = \frac{\vec{d} \cdot \vec{e}}{|\vec{d}| |\vec{e}|} $に代入すると，
+
+\[
+\cos \theta = \frac{\vec{d} \cdot \vec{e}}{|\vec{d}| |\vec{e}|}
+\]
 
 \subsubsubsection{TF-IDF}
 \label{tech:tfidf}
@@ -152,7 +170,11 @@ $ df(t) $は単語tが出現する文章の数を表す．\\
 
 を数式で表したものである．\\
 このようなTFの値とIDFの値を重みとすることで，文章を特徴付ける単語の抽出をするものがTF-IDFである．
-
+上記のTFとIDFの値より，if-idfの値は
+\[
+ifidf(t,d) = tf(t,d) \cdot idf(t)
+\]
+から算出することができる．
 
 \subsubsection{word2vec}
 \label{tech:word2vec}
@@ -175,7 +197,7 @@ p(w_{O,1}，w_{O,2}，w_{O,3}， \ldots ，w_{O,C}|w_{I}) = \prod_{c=1}^{C} \fra
 この$ p(w_{O,1}，w_{O,2}，w_{O,3}， \ldots ，w_{O,C}|w_{I}) $という確率を表す関数$ \prod_{c=1}^{C} \frac{exp({{v^{\prime}}^{\mathrm{T}}_{W_{V}}} \cdot v_{w_{I}})}{\sum_{W_{v} \in{V}}exp({{v^{\prime}}^{\mathrm{T}}_{W_{V}}} \cdot v_{w_{I}})} $を最大にするベクトル$ v $を求めることで，周辺語が適切に出力されるものとなる．\\
 このモデルを用いてニューラルネットを構築する．左から入力層，隠れ層，出力層で，Vはボキャブラリ数，Nは単語ベクトルの次元数，Cはコンテクストサイズ，Wは入力層から隠れ層への重み，W'は隠れ層から出力層への重みでWの転置マトリクスを表し，以下の図のようになる．\\
 \begin{center}
-  \includegraphics[width=0.8\textwidth]{figures/skip-gram.pdf}
+  \includegraphics[width=0.7\textwidth]{figures/skip-gram.pdf}
 \end{center}
 
 %%% Local Variables:
