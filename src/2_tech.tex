@@ -137,7 +137,7 @@ m個の単語が使用されている文章dにおける各単語の重要度を
             &= \frac{ \sum_{i=1}^{m} ((tf(t_{i},d) \cdot idf(t_{i}))(tf(t_{i},e) \cdot idf(t_{i}))}{\sum_{i=1}^{m} \sqrt{(tf(t_{i},d) \cdot idf(t_{i}))^2} \sum_{i=1}^{n} \sqrt{(tf(t_{i},e) \cdot idf(t_{i}))^2}} \nonumber
 \end{align}
 
-と表すことができる．これがベクトル空間でTF-IDFで抽出した単語の重み付けを行い，二つの文章の類似を算出するモデルである．
+と表すことができる．これがベクトル空間でTF-IDFで抽出した単語の重み付けを行い，二つの文章の類似度を算出するモデルである．
 
 
 \subsubsubsection{TF-IDF}
@@ -204,7 +204,7 @@ p(w_{O,1}，w_{O,2}，w_{O,3}， \ldots ，w_{O,C}|w_{I}) = \prod_{c=1}^{C} \fra
 この$ p(w_{O,1}，w_{O,2}，w_{O,3}， \ldots ，w_{O,C}|w_{I}) $という確率を表す関数$ \prod_{c=1}^{C} \frac{exp({{v^{\prime}}^{\mathrm{T}}_{W_{V}}} \cdot v_{w_{I}})}{\sum_{W_{v} \in{V}}exp({{v^{\prime}}^{\mathrm{T}}_{W_{V}}} \cdot v_{w_{I}})} $を最大にするベクトル$ v $を求めることで，周辺語が適切に出力されるものとなる．\\
 このモデルを用いてニューラルネットを構築する．左から入力層，隠れ層，出力層で，Vはボキャブラリ数，Nは単語ベクトルの次元数，Cはコンテクストサイズ，Wは入力層から隠れ層への重み，W'は隠れ層から出力層への重みでWの転置マトリクスを表し，以下の図のようになる．\\
 \begin{center}
-  \includegraphics[width=0.7\textwidth]{figures/skip-gram.pdf}
+  \includegraphics[width=130mm,height=60mm]{figures/skip-gram.pdf}
 \end{center}
 
 %%% Local Variables:
