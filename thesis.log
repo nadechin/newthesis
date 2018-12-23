@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  23 DEC 2018 15:18
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  23 DEC 2018 15:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -705,13 +705,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 ! Argument of \align has an extra }.
 <inserted text> 
                 \par 
-l.222 ...xp(u_{c,i})}{\sum_{v=1}^{V}}exp(u_{c,v})}
+l.223 ...V}}exp({v^{\prime}}_{v} \cdot v_{w_{I}})}
                                                    \nonumber \\
 ? 
 ! Emergency stop.
 <inserted text> 
                 \par 
-l.222 ...xp(u_{c,i})}{\sum_{v=1}^{V}}exp(u_{c,v})}
+l.223 ...V}}exp({v^{\prime}}_{v} \cdot v_{w_{I}})}
                                                    \nonumber \\
 End of file on the terminal!
 
