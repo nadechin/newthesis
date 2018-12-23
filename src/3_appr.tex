@@ -51,12 +51,12 @@ SSHの低対話型Honeypotは実際のShellの挙動をエミュレートした�
     }
 }{}
 
-\begin{mylisting}[label=usual,language=sh,caption=正しいShellの挙動]
+\begin{mylisting}[label={lst:usual},language=sh,caption=正しいShellの挙動]
 nadechin@cpu:~$ echo -n test
 testnadechin@cpu:~$
 \end{mylisting}
 
-\begin{mylisting}[label=kippo,language=sh,caption=Kippo特有の異常な挙動の例]
+\begin{mylisting}[label={lst:kippo},language=sh,caption=Kippo特有の異常な挙動の例]
 s15445ys@s15445ys-neco:~$ echo -n hello
 -n hello
 s15445ys@s15445ys-neco:~$
