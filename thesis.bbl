@@ -63,6 +63,11 @@ Number of cowrie'commands.
   \url{http://www.caa.go.jp/seikatsu/shingikai2/kako/spc13/houkoku_g/spc13-houkoku_g-4-1.html},
   1992.
 
+\bibitem{honeywall}
+honeynet.
+\newblock honeywall.
+\newblock \url{https://projects.honeynet.org/honeywall/}, 2014.
+
 \bibitem{ssh}
 Karl~DD Willis and Andrew~D Wilson.
 \newblock Secure shell.
