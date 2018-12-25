@@ -11,9 +11,9 @@ Xin Rong.
 \newblock {\em ACM Transactions on Graphics (TOG)}, 32(4):138, 2013.
 
 \bibitem{highinthoney}
-Kippo.
-\newblock Kippo.
-\newblock \url{https://github.com/desaster/kippo}, 2014.
+honeynet.
+\newblock High-interaction-honeypot.
+\newblock \url{https://projects.honeynet.org/honeywall/}, 2014.
 
 \bibitem{honeypot}
 Ken Fujiyoshi, Chihiro Fukai, Hiroya Tanaka, Jin Mitsugi, and Jun Murai.

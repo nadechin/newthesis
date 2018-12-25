@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  23 DEC 2018 16:01
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  25 DEC 2018 14:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -588,8 +588,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [4
 
 ]
+
+LaTeX Warning: Reference `highinthoney' on page 5 undefined on input line 46.
+
 File: figures/compare.png Graphic file (type bmp)
- <figures/compare.png>
+<figures/compare.png>
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
@@ -625,15 +628,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [9]
-File: figures/skip-gram.pdf Graphic file (type pdf)
- <figures/skip-gram.pdf>
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10]) (./src/3_appr.tex
+[10]
+File: figures/skip-gram.pdf Graphic file (type pdf)
+ <figures/skip-gram.pdf>) (./src/3_appr.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
@@ -641,6 +644,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [11]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[12]
 第 3 章
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -648,15 +658,9 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removed on input line 10.
 
 File: figures/nagare.png Graphic file (type bmp)
-<figures/nagare.png> [12
+<figures/nagare.png> [13
 
 ]
-
-LaTeX Warning: Reference `lst:usual' on page 13 undefined on input line 37.
-
-
-LaTeX Warning: Reference `lst:usual' on page 13 undefined on input line 37.
-
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
@@ -673,24 +677,24 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13]) (./src/5_meth.tex
+[14]) (./src/5_meth.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[14]
+[15]
 第 4 章
-) (./src/6_impl.tex [15
+) (./src/6_impl.tex [16
 
 ]
 第 5 章
-) (./src/7_eval.tex [16
+) (./src/7_eval.tex [17
 
 ]
 第 6 章
-[17
+[18
 
 ]
 File: figures/term.png Graphic file (type bmp)
@@ -703,24 +707,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[18]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 16.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
 [19]
-File: figures/termhyoka.png Graphic file (type bmp)
- <figures/termhyoka.png>
-File: figures/sotuhyoka.png Graphic file (type bmp)
- <figures/sotuhyoka.png>
-
-LaTeX Warning: Reference `tech:Markov' on page 20 undefined on input line 92.
-
-
-LaTeX Warning: Reference `tech:tokei' on page 20 undefined on input line 94.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
@@ -728,8 +715,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [20]
+File: figures/termhyoka.png Graphic file (type bmp)
+ <figures/termhyoka.png>
+File: figures/sotuhyoka.png Graphic file (type bmp)
+ <figures/sotuhyoka.png>
 
-LaTeX Warning: Reference `lst:exam' on page 21 undefined on input line 103.
+LaTeX Warning: Reference `tech:Markov' on page 21 undefined on input line 92.
+
+
+LaTeX Warning: Reference `tech:tokei' on page 21 undefined on input line 94.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -738,6 +732,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [21]
+
+LaTeX Warning: Reference `lst:exam' on page 22 undefined on input line 103.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[22]
 
 LaTeX Font Warning: Font shape `JT1/mc/m/it' undefined
 (Font)              using `JT1/mc/m/n' instead on input line 121.
@@ -756,17 +760,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[22]
-
-LaTeX Warning: Text page 23 contains only floats.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 16.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
 [23]
+
+LaTeX Warning: Text page 24 contains only floats.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
@@ -774,12 +771,19 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [24]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[25]
 第 7 章
-) (./src/9_conc.tex [25
+) (./src/9_conc.tex [26
 
 ]
 第 8 章
-[26
+[27
 
 ]) (./src/acknowledgement.tex
 
@@ -788,7 +792,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[27]) (./bib/biblio.tex (./thesis.bbl [28
+[28]) (./bib/biblio.tex (./thesis.bbl [29
 
 ]
 
@@ -817,11 +821,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 60--65
 oukoku _ g-[]4-[]1 . html$[]\OT1/cmr/m/n/12 ,
  []
 
-[29
+[30
 
 ]))
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 147.
- [30]
+ [31]
 Package atveryend Info: Executing hook `AfterLastShipout' on input line 147.
 \BKM@file=\write7
 \openout7 = `thesis.out.ps'.
@@ -842,12 +846,12 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 147.
  ) 
 Here is how much of TeX's memory you used:
- 8707 strings out of 494865
+ 8706 strings out of 494865
  123685 string characters out of 6179768
- 253254 words of memory out of 5000000
- 11924 multiletter control sequences out of 15000+600000
+ 254254 words of memory out of 5000000
+ 11923 multiletter control sequences out of 15000+600000
  23274 words of font info for 95 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
  33i,12n,58p,1799b,1217s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (37 pages, 137168 bytes).
+Output written on thesis.dvi (38 pages, 139712 bytes).
