@@ -39,9 +39,12 @@ Kippo特有の異常な挙動を改善しており，実装コマンド数は38\
 
 \subsection{高対話型Honeypot}
 \label{tech:HighInteractionHoneypot}
+高対話型Honeypotは脆弱性を残した実際のOSを用いたHoneypotである．実際のOSをそのまますると，そのOSから外部の他のホストへと攻撃することができてしまう．また，予期しないOSの脆弱性を突かれることで，OS自体を完全に侵入者に制御されてしまう問題がある．そのため，Honeypotとして適切な設定を行う必要がある．
 
-\subsubsection{Honeynet Project}
+\subsubsection{Honeynet}
 \label{tech:Honeynet}
+\ref{tech:HighInteractionHoneypot}で先述した通り，Honeypotで使用されるOSから外部への通信で他のホストを攻撃したりするなどの攻撃を行ってしまう問題や，予期しないOSの脆弱性を突かれることで，OS自体を完全に侵入者に制御されてしまう問題があるため，Honeypotとして適切な設定を行う必要がある．そのため，Honeynetではネットワーク全体をHoneywallという独自のファイアウォールの機能を実行する．これはHoneypotのネットワークの設定を管理するだけではなく，ネットワーク介して送信されるすべてのデータの中央集権のポイントして機能する．これによってネットワークが危険にさらされた侵入者からの攻撃から保護することが可能である．\ref{highinthoney}
+
 
 \subsection{SSHのHoneypotの比較}
 \label{tech:CompareHoneypot}
@@ -224,7 +227,7 @@ y_{c,i} &= \frac{exp(u_{c,i})}{\sum_{v=1}^{V}exp(u_{c,v})} \nonumber \\
         &= p(w_{i}|w_{I}) \nonumber
 \end{align}
 と表される．\\
-以上をまとめるとニューラルネットは以下の図\ref{fig:neuralnet}のようになる．
+以上をまとめると，Skip-gram Modelのニューラルネットワークは以下の図\ref{fig:neuralnet}のようになる．
 \begin{figure}[htbp]
 　\begin{center}
    \includegraphics[width=100mm,height=140mm]{figures/skip-gram.pdf}
