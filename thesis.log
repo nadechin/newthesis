@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  28 DEC 2018 12:14
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  28 DEC 2018 12:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -459,15 +459,6 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 
 LaTeX Warning: Label `intr:prex' multiply defined.
 
-
-LaTeX Warning: Label `table:compare' multiply defined.
-
-
-LaTeX Warning: Label `eval:eval' multiply defined.
-
-
-LaTeX Warning: Label `eval:impl' multiply defined.
-
 )
 \openout1 = `thesis.aux'.
 
@@ -524,23 +515,18 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24.88> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 119.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 119.
- (./thesis.toc
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 1.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 1.
- [3
-
-
-])
+ (./thesis.toc)
 \tf@toc=\write4
 \openout4 = `thesis.toc'.
 
- [4] (./thesis.lof)
+ [3
+
+
+] (./thesis.lof)
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
- [5
+ [4
 
 
 ]
@@ -548,7 +534,7 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
- [6
+ [5
 
 
 ] (./src/1_intr.tex
@@ -561,6 +547,14 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 8.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 8.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 19.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 19.
+
+Package natbib Warning: Citation `highinthoney' on page 1 undefined on input li
+ne 19.
+
 [1
 
 
@@ -579,7 +573,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2]) (./src/2_tech.tex
+[2]
+
+LaTeX Warning: Reference `rela' on page 3 undefined on input line 99.
+
+
+LaTeX Warning: Reference `conc' on page 3 undefined on input line 100.
+
+) (./src/2_tech.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
@@ -588,11 +589,52 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [3]
 第 2 章
+
+Package natbib Warning: Citation `honeypot' on page 4 undefined on input line 8
+.
+
+
+Package natbib Warning: Citation `kippo' on page 4 undefined on input line 27.
+
+
+Package natbib Warning: Citation `kojoney' on page 4 undefined on input line 27
+.
+
+
+Package natbib Warning: Citation `twisted' on page 4 undefined on input line 27
+.
+
+
+Package natbib Warning: Citation `rasp' on page 4 undefined on input line 27.
+
+
+Package natbib Warning: Citation `singleboard' on page 4 undefined on input lin
+e 27.
+
+
+Package natbib Warning: Citation `kippowiki' on page 4 undefined on input line 
+28.
+
+
+Package natbib Warning: Citation `kippocommand' on page 4 undefined on input li
+ne 29.
+
 [4
 
 ]
-\myheight=\skip77
 
+Package natbib Warning: Citation `cowriecommand' on page 5 undefined on input l
+ine 34.
+
+
+Package natbib Warning: Citation `differfromkippo' on page 5 undefined on input
+ line 34.
+
+
+Package natbib Warning: Citation `honeywall' on page 5 undefined on input line 
+46.
+
+\myheight=\skip77
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -604,12 +646,31 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [5]
 
+Package natbib Warning: Citation `ssh' on page 6 undefined on input line 97.
+
+
+Package natbib Warning: Citation `busybox' on page 6 undefined on input line 10
+1.
+
+
+Package natbib Warning: Citation `wordnet' on page 6 undefined on input line 11
+0.
+
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [6]
+
+Package natbib Warning: Citation `wordnetwiki' on page 7 undefined on input lin
+e 114.
+
+
+Package natbib Warning: Citation `voctormodel' on page 7 undefined on input lin
+e 142.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
@@ -624,6 +685,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [8]
+
+Package natbib Warning: Citation `word2vecpaper' on page 9 undefined on input l
+ine 214.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
@@ -693,6 +758,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 第 5 章
+
+Package natbib Warning: Citation `cowrie' on page 17 undefined on input line 91
+.
+
+
+Package natbib Warning: Citation `busybox' on page 17 undefined on input line 9
+1.
+
 ) (./src/7_eval.tex [17
 
 ]
@@ -701,8 +774,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 
-LaTeX Warning: Reference `fig:honeypotdata' on page 19 undefined on input line 
-34.
+LaTeX Warning: Reference `table:kenchi' on page 19 undefined on input line 34.
 
 
 ! LaTeX Error: Command \myheight already defined.
@@ -726,11 +798,11 @@ or  <return>  to continue without it.
 
  
 Here is how much of TeX's memory you used:
- 8600 strings out of 494865
- 122165 string characters out of 6179768
+ 8566 strings out of 494865
+ 121713 string characters out of 6179768
  253254 words of memory out of 5000000
- 11845 multiletter control sequences out of 15000+600000
+ 11811 multiletter control sequences out of 15000+600000
  22759 words of font info for 93 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
- 33i,12n,58p,1779b,1217s stack positions out of 5000i,500n,10000p,200000b,80000s
-Output written on thesis.dvi (25 pages, 104696 bytes).
+ 33i,12n,58p,1659b,1217s stack positions out of 5000i,500n,10000p,200000b,80000s
+Output written on thesis.dvi (24 pages, 77124 bytes).
