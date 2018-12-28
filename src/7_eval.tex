@@ -33,6 +33,26 @@ SSHの低対話型HoneypotであるCowrieはコマンドの実装数が少なく
 \label{eval:conc}
 SSHの低対話型Honeypotの稼働期間は12/10から2/1(54日間)で，収集できたものとしてコネクション数，パターン数，コマンド数を以下の図\ref{fig:honeypotdata}に記す．
 
+% -------------------
+\vspace{5mm}
+\begin{table}[h]
+ \caption{種類ごとのHoneypotの比較}
+ \label{table:compare}
+ \centering
+  \begin{tabular}{c||l|l}
+   \hline
+   検知数 & 純正のHoneypot & 修正済みのHoneypot \\
+    & (リスク) & \\
+   \hline \hline 
+     コネクション数  & 19829 & 27914 \\
+     パターン数  & 53 & 91 \\
+     コマンド数  & 470 & 841 \\
+   \hline
+  \end{tabular}
+\end{table}
+\vspace{5mm}
+% -------------------
+
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=1.0\textwidth]{figures/term.png}
