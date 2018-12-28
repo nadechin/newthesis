@@ -35,6 +35,8 @@ SSHの低対話型Honeypotの稼働期間は12/10から2/1(54日間)で，収集
 
 % -------------------
 \vspace{5mm}
+\newlength{\myheight}
+\setlength{\myheight}{5mm}
 \begin{table}[h]
  \caption{種類ごとのHoneypotの比較}
  \label{table:compare}
@@ -44,21 +46,23 @@ SSHの低対話型Honeypotの稼働期間は12/10から2/1(54日間)で，収集
    検知数 & 純正のHoneypot & 修正済みのHoneypot \\
     & (リスク) & \\
    \hline \hline 
-     コネクション数  & 19829 & 27914 \\
-     パターン数  & 53 & 91 \\
-     コマンド数  & 470 & 841 \\
-   \hline
+     \parbox[c][\myheight][c]{0cm}{} コネクション数  & 19829 & 27914 \\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} パターン数  & 53 & 91 \\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} コマンド数  & 470 & 841 \\
+     \hline
   \end{tabular}
 \end{table}
 \vspace{5mm}
 % -------------------
 
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=1.0\textwidth]{figures/term.png}
-    \caption{収集したSSHの低対話型Honeypotのデータ}
-    \label{fig:honeypotdata}
-\end{figure}
+%\begin{figure}[htbp]
+%    \centering
+%    \includegraphics[width=1.0\textwidth]{figures/term.png}
+%    \caption{収集したSSHの低対話型Honeypotのデータ}
+%    \label{fig:honeypotdata}
+%s\end{figure}
 
 また，モデル化を行い純正のCowrieとCowrieにBusyBoxに含まれるコマンドを実装した修正済みのCowrieのスコアリングを行なった結果を以下の図\ref{fig:cowriecompare}に記す．横軸はコマンド拡張を行なったHoneypotか素のHoneypotであるかを示している．縦軸は予備実験の評価手法によって算出されたコマンドの表れやすさを数値化したものであり，数値が高くなればのコマンドパターンがパターンとして存在しやすいものであることを示している．予備実験ではコマンドの拡張実装をしたものの方がコマンドパターンとして存在しにくいものを観測できたという結果になった．
 
