@@ -35,21 +35,21 @@ SSHの低対話型Honeypotの稼働期間は12/10から2/1(54日間)で，収集
 
 % -------------------
 \vspace{5mm}
-\newlength{\myheight}
-\setlength{\myheight}{10mm}
+\newlength{\myheighta}
+\setlength{\myheighta}{10mm}
 \begin{table}[h]
  \caption{予備実験の結果}
  \label{table:kenchi}
  \centering
-  \begin{tabular}{c||c|c}
+  \begin{tabular}{|c||c|c|}
    \hline
-   検知数 & 純正のHoneypot & 修正済みのHoneypot \\
+   \parbox[c][\myheighta][c]{0cm}{} 検知数 & 純正のHoneypot & 修正済みのHoneypot \\
    \hline \hline 
-     \parbox[c][\myheight][c]{0cm}{} コネクション数  & 19829 & 27914 \\
+     \parbox[c][\myheighta][c]{0cm}{} コネクション数  & 19829 & 27914 \\
      \hline
-     \parbox[c][\myheight][c]{0cm}{} パターン数  & 53 & 91 \\
+     \parbox[c][\myheighta][c]{0cm}{} パターン数  & 53 & 91 \\
      \hline
-     \parbox[c][\myheight][c]{0cm}{} コマンド数  & 470 & 841 \\
+     \parbox[c][\myheighta][c]{0cm}{} コマンド数  & 470 & 841 \\
      \hline
   \end{tabular}
 \end{table}
