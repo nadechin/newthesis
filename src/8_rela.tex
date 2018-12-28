@@ -10,8 +10,13 @@
 %\subsubsection{高対話型Honeypot}
 %\subsubsubsection{honeynet}
 % \makeendnotes  %make notes at the last of this chapter // if you do not  want use endnotes style， please comment out this．
-\subsection{自然言語処理}
-\subsubsection{単語の意味のベクタ表現}
+\subsection{自然言語処理における意味解析}
+~\ref{tech:NLP}で述べたように，自然言語処理とは人間が日常的に使っている自然言語をコンピュータに処理させる一連の技術である．現在，意味解析において大きくシソーラス解析とベクトル空間分析の2つが手法として多く，本研究ではこのうちベクトル空間分析を使用した．そのため関連研究ではベクトル空間解析について述べる．
+\subsubsection{ベクトル空間解析}
+~\ref{tech:Vector}で述べたように，自然言語処理の意味解析の手法の一つにベクトル空間解析というものがある．本研究で取得したHoneypotのデータを用いて，ベクトル空間解析の他の手法でもでも評価を試みた．
+\subsubsubsection{ベクトル空間モデル}
+~\ref{tech:voctorkukan}で述べたように，ベクトル空間解析にはベクトル空間モデルというものが存在する．~\ref{tech:tfidf}で述べたTF-IDFを用いて，同一文章内での単語の出現頻度と，様々な文章におけるある単語の逆文書頻度の2つを重みとし，文章を多次元のマトリクス上で表現する．文章同士の距離をなす角$ \theta $の，$ 0^\circ \leqq \theta \leqq 180^\circ $における$ \cos \theta $の値の大きさによって文章の類似度を算出する．
+
 %\subsubsubsection{マルコフモデル}
 %\subsubsubsection{隠れマルコフモデル}
 %\subsubsection{ニューラルネット}
