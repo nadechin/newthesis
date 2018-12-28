@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  28 DEC 2018 11:40
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  28 DEC 2018 11:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -589,7 +589,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 
-LaTeX Warning: Reference `tab:compare' on page 5 undefined on input line 51.
+LaTeX Warning: Reference `table:compare' on page 5 undefined on input line 51.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -843,11 +846,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 147.
  ) 
 Here is how much of TeX's memory you used:
  8708 strings out of 494865
- 123694 string characters out of 6179768
- 253254 words of memory out of 5000000
+ 123696 string characters out of 6179768
+ 254254 words of memory out of 5000000
  11926 multiletter control sequences out of 15000+600000
  23274 words of font info for 95 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
  33i,12n,58p,1799b,1217s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (37 pages, 140260 bytes).
+Output written on thesis.dvi (37 pages, 140168 bytes).
