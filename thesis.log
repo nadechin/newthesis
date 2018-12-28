@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  28 DEC 2018 13:55
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  28 DEC 2018 13:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -521,18 +521,23 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24.88> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 119.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 119.
- (./thesis.toc)
-\tf@toc=\write4
-\openout4 = `thesis.toc'.
-
+ (./thesis.toc
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 1.
  [3
 
 
-] (./thesis.lof)
+])
+\tf@toc=\write4
+\openout4 = `thesis.toc'.
+
+ [4] (./thesis.lof)
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
- [4
+ [5
 
 
 ]
@@ -540,7 +545,7 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
- [5
+ [6
 
 
 ] (./src/1_intr.tex
@@ -553,14 +558,6 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 8.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 8.
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 19.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 19.
-
-Package natbib Warning: Citation `highinthoney' on page 1 undefined on input li
-ne 19.
-
 [1
 
 
@@ -579,14 +576,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2]
-
-LaTeX Warning: Reference `rela' on page 3 undefined on input line 99.
-
-
-LaTeX Warning: Reference `conc' on page 3 undefined on input line 100.
-
-) (./src/2_tech.tex
+[2]) (./src/2_tech.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
@@ -595,52 +585,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [3]
 第 2 章
-
-Package natbib Warning: Citation `honeypot' on page 4 undefined on input line 8
-.
-
-
-Package natbib Warning: Citation `kippo' on page 4 undefined on input line 27.
-
-
-Package natbib Warning: Citation `kojoney' on page 4 undefined on input line 27
-.
-
-
-Package natbib Warning: Citation `twisted' on page 4 undefined on input line 27
-.
-
-
-Package natbib Warning: Citation `rasp' on page 4 undefined on input line 27.
-
-
-Package natbib Warning: Citation `singleboard' on page 4 undefined on input lin
-e 27.
-
-
-Package natbib Warning: Citation `kippowiki' on page 4 undefined on input line 
-28.
-
-
-Package natbib Warning: Citation `kippocommand' on page 4 undefined on input li
-ne 29.
-
 [4
 
 ]
-
-Package natbib Warning: Citation `cowriecommand' on page 5 undefined on input l
-ine 34.
-
-
-Package natbib Warning: Citation `differfromkippo' on page 5 undefined on input
- line 34.
-
-
-Package natbib Warning: Citation `honeywall' on page 5 undefined on input line 
-46.
-
 \myheight=\skip77
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -652,31 +601,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [5]
 
-Package natbib Warning: Citation `ssh' on page 6 undefined on input line 95.
-
-
-Package natbib Warning: Citation `busybox' on page 6 undefined on input line 99
-.
-
-
-Package natbib Warning: Citation `wordnet' on page 6 undefined on input line 10
-8.
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [6]
-
-Package natbib Warning: Citation `wordnetwiki' on page 7 undefined on input lin
-e 112.
-
-
-Package natbib Warning: Citation `voctormodel' on page 7 undefined on input lin
-e 140.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
@@ -691,10 +621,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [8]
-
-Package natbib Warning: Citation `word2vecpaper' on page 9 undefined on input l
-ine 212.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
@@ -764,14 +690,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 第 5 章
-
-Package natbib Warning: Citation `cowrie' on page 17 undefined on input line 91
-.
-
-
-Package natbib Warning: Citation `busybox' on page 17 undefined on input line 9
-1.
-
 ) (./src/7_eval.tex [17
 
 ]
@@ -834,14 +752,6 @@ LaTeX Font Warning: Font shape `JY1/mc/m/it' undefined
 File: figures/model.png Graphic file (type bmp)
 <figures/model.png>
 
-Package natbib Warning: Citation `word2vecpaper' on page 23 undefined on input 
-line 157.
-
-
-Package natbib Warning: Citation `word2vecpaper2' on page 23 undefined on input
- line 157.
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
  We now make it that large for the rest of the document.
@@ -849,16 +759,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [23]
 File: figures/evalflow.png Graphic file (type bmp)
- <figures/evalflow.png>
-
-Package natbib Warning: Citation `word2vecpaper' on page 24 undefined on input 
-line 170.
-
-
-Package natbib Warning: Citation `word2vecpaper2' on page 24 undefined on input
- line 170.
-
-) (./src/8_rela.tex
+ <figures/evalflow.png>) (./src/8_rela.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
@@ -900,51 +801,61 @@ LaTeX Font Warning: Font shape `JT1/gt/m/it' undefined
 LaTeX Font Warning: Font shape `JY1/gt/m/it' undefined
 (Font)              using `JY1/gt/m/n' instead on input line 6.
 
+
+Underfull \hbox (badness 6559) in paragraph at lines 14--17
+[]\OT1/cmr/m/n/12 honeynet.  High-interaction-honeypot.  []$\OT1/cmtt/m/n/12 ht
+tps : / / projects . honeynet . org /
+ []
+
+
+Underfull \hbox (badness 1466) in paragraph at lines 39--41
+[]\OT1/cmr/m/n/12 Raspberry pi.  []$\OT1/cmtt/m/n/12 http : / / www . idc . com
+ / getdoc . jsp ? containerId = prUS40960716$[]\OT1/cmr/m/n/12 ,
+ []
+
+
+Underfull \hbox (badness 5374) in paragraph at lines 51--53
+[]\OT1/cmr/m/n/12 Number of kippo'commands.  []$\OT1/cmtt/m/n/12 https : / / gi
+thub . com / desaster / kippo / tree /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--65
+\OT1/cmtt/m/n/12 seikatsu / shingikai2 / kako / spc13 / houkoku _ g / spc13-[]h
+oukoku _ g-[]4-[]1 . html$[]\OT1/cmr/m/n/12 ,
+ []
+
 [30
 
 ]))
-
-Package natbib Warning: There were undefined citations.
-
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 147.
-[31]
+ [31]
 Package atveryend Info: Executing hook `AfterLastShipout' on input line 147.
 \BKM@file=\write7
 \openout7 = `thesis.out.ps'.
 
- (./thesis.aux
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-
-! Package natbib Error: Bibliography not compatible with author-year citations.
-
-(natbib)                Press <return> to continue in numerical citation style.
+ (./thesis.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 147.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 147.
 
 
-See the natbib package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.296 ...and\NAT@force@numbers{}\NAT@force@numbers
-                                                  
-? 
-! Emergency stop.
- ...                                              
-                                                  
-l.296 ...and\NAT@force@numbers{}\NAT@force@numbers
-                                                  
-Check the bibliography entries for non-compliant syntax,
-or select author-year BibTeX style, e.g. plainnat
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
- 
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 147.
+ ) 
 Here is how much of TeX's memory you used:
- 8687 strings out of 494865
- 123643 string characters out of 6179768
- 253254 words of memory out of 5000000
- 11905 multiletter control sequences out of 15000+600000
+ 8706 strings out of 494865
+ 123638 string characters out of 6179768
+ 254254 words of memory out of 5000000
+ 11925 multiletter control sequences out of 15000+600000
  23274 words of font info for 95 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
  33i,12n,58p,1800b,1217s stack positions out of 5000i,500n,10000p,200000b,80000s
-Output written on thesis.dvi (37 pages, 118484 bytes).
+
+Output written on thesis.dvi (38 pages, 146568 bytes).
