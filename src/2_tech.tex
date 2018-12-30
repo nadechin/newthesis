@@ -225,7 +225,6 @@ p(w_{O}|w_{I}) = \frac{exp({{v^{\prime}}^{\mathrm{T}}_{W_{V}}} \cdot v_{w_{I}})}
 p(w_{O,1}，w_{O,2}，w_{O,3}， \ldots ，w_{O,C}|w_{I}) = \prod_{c=1}^{C} \frac{exp({{v^{\prime}}^{\mathrm{T}}_{W_{V}}} \cdot v_{w_{I}})}{\sum_{W_{v} \in{V}}exp({{v^{\prime}}^{\mathrm{T}}_{W_{V}}} \cdot v_{w_{I}})} \label{eq:douzikakuritu}
 \end{align}\\
 この$ p(w_{O,1}，w_{O,2}，w_{O,3}， \ldots ，w_{O,C}|w_{I}) $という確率を表す関数$ \prod_{c=1}^{C} \frac{exp({{v^{\prime}}^{\mathrm{T}}_{W_{V}}} \cdot v_{w_{I}})}{\sum_{W_{v} \in{V}}exp({{v^{\prime}}^{\mathrm{T}}_{W_{V}}} \cdot v_{w_{I}})} $が最大となるような単語ベクトル$ v $を求めることが，このモデルの目的である．\\
-
 このモデルを用いてニューラルネットを構築する．先述の通り，入力層$ x $はOne-hotベクトルを用いる．One-hotベクトルとは$ (0，0，0， \ldots ，1， \ldots ，0) $のように，単語のインデックスから抽出する単語だけを$ 1 $と表記することで表現するベクトルのことである．\\
 隠れ層$ h $は，入力層から隠れ層への重み$ W $を入力データ$ x $にかけたものである．したがって隠れ層$ h $は
 \begin{align}
@@ -247,7 +246,12 @@ y_{c,i} &= \frac{exp(u_{c,i})}{\sum_{v=1}^{V}exp(u_{c,v})} \nonumber \\
         &= \frac{exp({v^{\prime}}_{i} \cdot v_{w_{I}})}{\sum_{v=1}^{V}exp({v^{\prime}}_{v} \cdot v_{w_{I}})} \nonumber \\
         &= p(w_{i}|w_{I}) \nonumber
 \end{align}
-と表され，式(~\ref{eq:douzikakuritu})で表した確率と同じになることが確認できる．
+と表され，式(~\ref{eq:kakuritu})で表した確率と同じになることが確認できる．\\
+したがって式(~\ref{eq:douzikakuritu})で表された同時確率$ p(w_{1}，w_{2}，w_{3}， \ldots ，w_{C}|w_{I}) $の最大化をするために，単語ベクトル$ v $と単語ベクトル$ v^{\prime} $を最適化する．すなわち重み$ W $と重み$ W^{\prime} $を最適化することを考える．word2vecでは最適化のために確率的勾配降下法を用いており，目的関数として以下の式(~\ref{eq:mokuteki})を定める．
+\begin{align}
+E = - \log p(w_{1}，w_{2}，w_{3}， \ldots ，w_{C}|w_{I}) \label{eq:mokuteki}
+\end{align}
+\\
 以上をまとめると，Skip-gram Modelのニューラルネットワークは以下の図\ref{fig:neuralnet}のようになる．
 \begin{figure}[htbp]
 　\begin{center}
