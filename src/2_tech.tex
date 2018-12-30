@@ -158,7 +158,7 @@ m個の単語が使用されている文章dにおける各単語の重要度を
             &+ (tf(t_{m},d) \cdot idf(t_{m}))(tf(t_{m},e) \cdot idf(t_{m}))) \cdot \nonumber \\
             &\frac{1}{\sqrt{(tf(t_{1},d) \cdot idf(t_{1}))^2 + (tf(t_{2},d) \cdot idf(t_{2}))^2 + \ldots + (tf(t_{m},d) \cdot idf(t_{m}))^2}} \cdot \nonumber \\[2mm]
             &\frac{1}{\sqrt{(tf(t_{1},e) \cdot idf(t_{1}))^2 + (tf(t_{2},e) \cdot idf(t_{2}))^2 + \ldots + (tf(t_{n},e) \cdot idf(t_{n}))^2}} \nonumber \\[2mm]
-            &= \frac{ \sum_{i=1}^{m} ((tf(t_{i},d) \cdot idf(t_{i}))(tf(t_{i},e) \cdot idf(t_{i}))}{\sum_{i=1}^{m} \sqrt{(tf(t_{i},d) \cdot idf(t_{i}))^2} \sum_{i=1}^{n} \sqrt{(tf(t_{i},e) \cdot idf(t_{i}))^2}} \nonumber
+            &= \frac{ \sum_{i=1}^{m} ((tf(t_{i},d) \cdot idf(t_{i}))(tf(t_{i},e) \cdot idf(t_{i}))}{\sum_{i=1}^{m} \sqrt{(tf(t_{i},d) \cdot idf(t_{i}))^2} \sum_{i=1}^{n} \sqrt{(tf(t_{i},e) \cdot idf(t_{i}))^2}} \label{eq:tfidf}
 \end{align}
 
 と表すことができる．これがベクトル空間でTF-IDFで抽出した単語の重み付けを行い，二つの文章の類似度を算出するモデルである．
@@ -215,17 +215,19 @@ word2vecは2層からなるニューラルネットワークである．word2vec
 \label{tech:skipgram}
 $ Skip-gram Model $は先述の通り，与えられた単語に対してその周辺語を予測するためのモデルのことである．このモデルは2層からなるニューラルネットで，入力にはOne-hotベクトルを用いる．One-hotベクトルとは$ (0，0，0， \ldots ，1， \ldots ，0) $のように，単語のインデックスから抽出する単語だけを$ 1 $と表記することで表現するベクトルのことである．\\
 入力層から隠れ層への重みは$ V \times N $のマトリクス$ W $で表され，Wの各列は単語ベクトルとなっている．隠れ層から出力層への重みはマトリクス$ W $を転置した$ N \times V $のマトリクス$ W^{\prime} $となっている．\\
-このようなモデルを条件付き確率で表現すると，
+これをモデル化したものの出力の条件付き確率を考える．
 \begin{align}
 p(w_{O}|w_{I}) = \frac{exp({{v^{\prime}}^{\mathrm{T}}_{W_{V}}} \cdot v_{w_{I}})}{\sum_{W_{v} \in{V}}exp({{v^{\prime}}^{\mathrm{T}}_{W_{V}}} \cdot v_{w_{I}})} \nonumber
+\label{eq:kakuritu}
 \end{align}
-と表せる．この$ w_{I} $は入力する単語，$ w_{O} $は$ w_{I} $の周辺語を表す．$ v_{w_{I}} $ や　$ {v^{\prime}}^{\mathrm{T}}_{W_{V}} $は単語を表すベクトルであり，$ v $は入力ベクトルで$ v^{\prime} $は出力ベクトルである．
-コンテクストサイズとは先述したように，入力単語の周辺語をどこまでとするかのサイズのことである．$ p(w_{O}|w_{I}) $はコンテクストサイズを考慮していない確率であるが，このコンテクストサイズを考慮して先述したモデルの同時確率$ p(w_{O,1}，w_{O,2}，w_{O,3}， \ldots ，w_{O,C}|w_{I}) $は，
+この$ w_{I} $は入力する単語，$ w_{O} $は$ w_{I} $の周辺語を表す．$ v_{w_{I}} $ や　$ {v^{\prime}}^{\mathrm{T}}_{W_{V}} $は単語を表すベクトルであり，$ v $は入力ベクトルで$ v^{\prime} $は出力ベクトルである．
+コンテクストサイズとは先述したように，入力単語の周辺語をどこまでとするかのサイズのことである．$ p(w_{O}|w_{I}) $はコンテクストサイズを考慮していない確率であるが，このコンテクストサイズを考慮して先述したモデルの同時確率$ p(w_{O,1}，w_{O,2}，w_{O,3}， \ldots ，w_{O,C}|w_{I}) $を考える．
 \begin{align}
 p(w_{O,1}，w_{O,2}，w_{O,3}， \ldots ，w_{O,C}|w_{I}) = \prod_{c=1}^{C} \frac{exp({{v^{\prime}}^{\mathrm{T}}_{W_{V}}} \cdot v_{w_{I}})}{\sum_{W_{v} \in{V}}exp({{v^{\prime}}^{\mathrm{T}}_{W_{V}}} \cdot v_{w_{I}})} \nonumber
-\end{align}
-と表される．\\
-この$ p(w_{O,1}，w_{O,2}，w_{O,3}， \ldots ，w_{O,C}|w_{I}) $という確率を表す関数$ \prod_{c=1}^{C} \frac{exp({{v^{\prime}}^{\mathrm{T}}_{W_{V}}} \cdot v_{w_{I}})}{\sum_{W_{v} \in{V}}exp({{v^{\prime}}^{\mathrm{T}}_{W_{V}}} \cdot v_{w_{I}})} $を最大にするベクトル$ v $を求めることで，周辺語が適切に出力されるものとなる．\\
+\label{eq:douzikakuritu}
+\end{align}\\
+この$ p(w_{O,1}，w_{O,2}，w_{O,3}， \ldots ，w_{O,C}|w_{I}) $という確率を表す関数$ \prod_{c=1}^{C} \frac{exp({{v^{\prime}}^{\mathrm{T}}_{W_{V}}} \cdot v_{w_{I}})}{\sum_{W_{v} \in{V}}exp({{v^{\prime}}^{\mathrm{T}}_{W_{V}}} \cdot v_{w_{I}})} $が最大となるような単語ベクトル$ v $を求めることが，このモデルの目的である．\\
+
 このモデルを用いてニューラルネットを構築する．先述の通り，入力層$ x $はOne-hotベクトルを用いる．One-hotベクトルとは$ (0，0，0， \ldots ，1， \ldots ，0) $のように，単語のインデックスから抽出する単語だけを$ 1 $と表記することで表現するベクトルのことである．\\
 隠れ層$ h $は，入力層から隠れ層への重み$ W $を入力データ$ x $にかけたものである．したがって隠れ層$ h $は
 \begin{align}
@@ -247,7 +249,7 @@ y_{c,i} &= \frac{exp(u_{c,i})}{\sum_{v=1}^{V}exp(u_{c,v})} \nonumber \\
         &= \frac{exp({v^{\prime}}_{i} \cdot v_{w_{I}})}{\sum_{v=1}^{V}exp({v^{\prime}}_{v} \cdot v_{w_{I}})} \nonumber \\
         &= p(w_{i}|w_{I}) \nonumber
 \end{align}
-と表される．\\
+と表され，式(\ref{eq:douzikakuritu})で表した確率と同じになることが確認できる．
 以上をまとめると，Skip-gram Modelのニューラルネットワークは以下の図\ref{fig:neuralnet}のようになる．
 \begin{figure}[htbp]
 　\begin{center}
