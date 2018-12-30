@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  30 DEC 2018 18:31
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  30 DEC 2018 18:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -653,21 +653,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [12
 
 ]
-
-LaTeX Warning: Reference `eq:ikkou' on page 13 undefined on input line 305.
-
-
-LaTeX Warning: Reference `eq:nikou' on page 13 undefined on input line 305.
-
-
-LaTeX Warning: Reference `eq:ichinikou' on page 13 undefined on input line 314.
-
-
-
-LaTeX Warning: Reference `eq:nikoume' on page 13 undefined on input line 314.
-
 File: figures/skip-gram.pdf Graphic file (type pdf)
-<figures/skip-gram.pdf>) (./src/3_appr.tex
+ <figures/skip-gram.pdf>) (./src/3_appr.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
@@ -889,4 +876,4 @@ Here is how much of TeX's memory you used:
  264 hyphenation exceptions out of 8191
  33i,12n,58p,1800b,1217s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (40 pages, 156272 bytes).
+Output written on thesis.dvi (40 pages, 156652 bytes).
