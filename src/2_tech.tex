@@ -263,7 +263,7 @@ E &= - \log p(w_{1}，w_{2}，w_{3}， \ldots ，w_{C}|w_{I}) \nonumber \\
 となる．この式(~\ref{eq:lastmokuteki})を重み$ W $と重み$ W^{\prime} $で偏微分し，誤差を求めることを考える．\\
 まずは重み$ W^{\prime} $で$ E $を偏微分し，$ W^{\prime} $を得る．
 \begin{align}
-\frac{\partial E}{\partial {v_{ij}}^{\prime}} = \sum_{C=1}^{C} \frac{\partial E}{\partial u_{c,i}} \frac{\partial u_{c,i}}{\partial {v_{ij}}^{\prime}} \label{eq:wprimeh}
+\frac{\partial E}{\partial v^{\prime}_{ij}} = \sum_{C=1}^{C} \frac{\partial E}{\partial u_{c,i}} \frac{\partial u_{c,i}}{\partial } \label{eq:wprimeh}
 \end{align}
 
 以上をまとめると，Skip-gram Modelのニューラルネットワークは以下の図\ref{fig:neuralnet}のようになる．
