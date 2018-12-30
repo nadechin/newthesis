@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  30 DEC 2018 15:54
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  30 DEC 2018 15:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -635,11 +635,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [10]
-
-LaTeX Warning: Reference `fig:uc' on page 11 undefined on input line 272.
-
 File: figures/uc.pdf Graphic file (type pdf)
-<figures/uc.pdf>
+ <figures/uc.pdf>
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
@@ -870,4 +867,4 @@ Here is how much of TeX's memory you used:
  264 hyphenation exceptions out of 8191
  33i,12n,58p,1800b,1217s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (39 pages, 151276 bytes).
+Output written on thesis.dvi (39 pages, 151708 bytes).
