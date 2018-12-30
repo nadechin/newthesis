@@ -297,6 +297,10 @@ E &= - \sum_{C=1}^{C}(u_{C,w_{C}} - \log \sum_{V=1}^{V} exp(u_{C,V})) \nonumber 
 \end{equation}
 とすることができる．次に$ \sum_{C=1}^{C} \log \sum_{V=1}^{V} exp(u_{C,V}) $の部分について，
 
+\begin{align}
+g = \sum_{V=1}^{V} exp(u_{C,V}) f
+\end{align}
+
 以上をまとめると，Skip-gram Modelのニューラルネットワークは以下の図\ref{fig:neuralnet}のようになる．
 \begin{figure}[htbp]
 　\begin{center}
