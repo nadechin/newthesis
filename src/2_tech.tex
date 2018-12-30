@@ -222,7 +222,7 @@ p(w_{O}|w_{I}) = \frac{exp({{v^{\prime}}^{\mathrm{T}}_{W_{V}}} \cdot v_{w_{I}})}
 この$ w_{I} $は入力する単語，$ w_{O} $は$ w_{I} $の周辺語を表す．$ v_{w_{I}} $ や　$ {v^{\prime}}^{\mathrm{T}}_{W_{V}} $は単語を表すベクトルであり，$ v $は入力ベクトルで$ v^{\prime} $は出力ベクトルである．
 コンテクストサイズとは先述したように，入力単語の周辺語をどこまでとするかのサイズのことである．$ p(w_{O}|w_{I}) $はコンテクストサイズを考慮していない確率であるが，このコンテクストサイズを考慮して先述したモデルの同時確率$ p(w_{O,1}，w_{O,2}，w_{O,3}， \ldots ，w_{O,C}|w_{I}) $を考える．
 \begin{align}
-p(w_{O,1}，w_{O,2}，w_{O,3}， \ldots ，w_{O,C}|w_{I}) = \prod_{c=1}^{C} \frac{exp({{v^{\prime}}^{\mathrm{T}}_{W_{V}}} \cdot v_{w_{I}})}{\sum_{W_{v} \in{V}}exp({{v^{\prime}}^{\mathrm{T}}_{W_{V}}} \cdot v_{w_{I}})} \label{eq:douzikakuritu}
+p(w_{O,1}，w_{O,2}，w_{O,3}， \ldots ，w_{O,C}|w_{I}) = \prod_{c=1}^{C} \frac{exp({{v^{\prime}}^{\mathrm{T}}_{W_{c}}} \cdot v_{w_{I}})}{\sum_{W_{v} \in{V}}exp({{v^{\prime}}^{\mathrm{T}}_{W_{V}}} \cdot v_{w_{I}})} \label{eq:douzikakuritu}
 \end{align}\\
 この$ p(w_{O,1}，w_{O,2}，w_{O,3}， \ldots ，w_{O,C}|w_{I}) $という確率を表す関数$ \prod_{c=1}^{C} \frac{exp({{v^{\prime}}^{\mathrm{T}}_{W_{V}}} \cdot v_{w_{I}})}{\sum_{W_{v} \in{V}}exp({{v^{\prime}}^{\mathrm{T}}_{W_{V}}} \cdot v_{w_{I}})} $が最大となるような単語ベクトル$ v $を求めることが，このモデルの目的である．\\
 このモデルを用いてニューラルネットを構築する．先述の通り，入力層$ x $はOne-hotベクトルを用いる．One-hotベクトルとは$ (0，0，0， \ldots ，1， \ldots ，0) $のように，単語のインデックスから抽出する単語だけを$ 1 $と表記することで表現するベクトルのことである．\\
@@ -242,7 +242,7 @@ u_{c} = W^{\prime}h = W^{\prime}v_{w_{I}} \nonumber
 と表すことができる．
 また，出力層はコンテクストサイズに応じて出力のユニット数$ c $が変動する．したがって，任意のユニット$ C $における最終的な出力$ y_{c,i} $にsoftmax関数を掛けて，
 \begin{align}
-y_{c,i} &= \frac{exp(u_{c,i})}{\sum_{v=1}^{V}exp(u_{c,v})} \nonumber \\
+y_{c,i} &= \frac{exp(u_{c,i})}{\sum_{v=1}^{V} exp(u_{c,v})} \nonumber \\
         &= \frac{exp({v^{\prime}}_{i} \cdot v_{w_{I}})}{\sum_{v=1}^{V}exp({v^{\prime}}_{v} \cdot v_{w_{I}})} \nonumber \\
         &= p(w_{i}|w_{I}) \nonumber
 \end{align}
@@ -251,6 +251,19 @@ y_{c,i} &= \frac{exp(u_{c,i})}{\sum_{v=1}^{V}exp(u_{c,v})} \nonumber \\
 \begin{align}
 E = - \log p(w_{1}，w_{2}，w_{3}， \ldots ，w_{C}|w_{I}) \label{eq:mokuteki}
 \end{align}
+後述の損失関数の導出を円滑にするため，最大化問題から最小化問題へするために負の符号を付し，また同時確率であることから確率の値が極端に小さくなる可能性を考慮し，対数を取ることで乗法から和法へと変換することでアンダーフローを防いだ．\\
+式(~\ref{eq:mokuteki})に式(~\ref{eq:douzikakuritu})を代入すると，
+\begin{align}
+E &= - \log p(w_{1}，w_{2}，w_{3}， \ldots ，w_{C}|w_{I}) \nonumber \\
+  &= - \log \prod_{c=1}^{C} \frac{exp(u_{C,w_{C}})}{exp(\sum_{v=1}^{V} exp(u_{C,V})} \nonumber \\
+  &= - \sum_{C=1}^{C} \log \frac{exp(u_{C,w_{C}})}{exp(\sum_{v=1}^{V} exp(u_{C,V})} \nonumber \\
+  &(\because \log{a} MN = \log{a} M + \log{a} N) \nonumber \\
+  &= - \sum_{C=1}^{C}(\log exp(u_{C,w_{C}}) - \log \sum_{V=1}^{V} exp(u_{C,V})) \nonumber \\
+  &(\because \log{a} \frac{M}{N} = \log{a} M - \log{a} N) \nonumber \\
+  &= - \sum_{C=1}^{C}(u_{C,w_{C}} - \log \sum_{V=1}^{V} exp(u_{C,V})) \nonumber \\
+  &(\because \log{e} exp(x) = x) \label{eq:lastmokuteki}
+\end{align}
+となる．
 \\
 以上をまとめると，Skip-gram Modelのニューラルネットワークは以下の図\ref{fig:neuralnet}のようになる．
 \begin{figure}[htbp]
