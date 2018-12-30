@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  30 DEC 2018 17:04
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  30 DEC 2018 17:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -734,13 +734,13 @@ LaTeX Warning: Reference `eq:wprimeh' on page 12 undefined on input line 278.
 LaTeX Warning: Reference `eq:daiikkou' on page 12 undefined on input line 284.
 
 ! Undefined control sequence.
-<argument> ..._{C}}}{\partial u_{c,i}} &\coloneqq 
+<argument> ...w_{C}}}{\partial u_{c,i}} \coloneqq 
                                                   t_{c,i} \nonumber \\ &= \l...
 l.293 \end{align}
                  
 ? 
 ! Emergency stop.
-<argument> ..._{C}}}{\partial u_{c,i}} &\coloneqq 
+<argument> ...w_{C}}}{\partial u_{c,i}} \coloneqq 
                                                   t_{c,i} \nonumber \\ &= \l...
 l.293 \end{align}
                  
