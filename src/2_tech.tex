@@ -262,22 +262,29 @@ E &= - \log p(w_{1}，w_{2}，w_{3}， \ldots ，w_{C}|w_{I}) \nonumber \\
 \end{align}
 となる．この式(~\ref{eq:lastmokuteki})を重み$ W $と重み$ W^{\prime} $で偏微分し，誤差を求めることを考える．\\
 まずは重み$ W^{\prime} $で$ E $を偏微分し，$ W^{\prime} $の更新式を得る．
-\begin{align}
-\frac{\partial E}{\partial v^{\prime}_{ij}} = \sum_{C=1}^{C} \frac{\partial E}{\partial u_{c,i}} \frac{\partial u_{c,i}}{\partial } \label{eq:wprimeh}
-\end{align}
-式(~\ref{eq:wprimeh})の右辺より，$ E $を$ u_{c,i} $でまずは微分することを考える．
-\begin{align}
-\frac{\partial E}{\partial v^{\prime}_{ij}} = \sum_{C=1}^{C} \frac{\partial E}{\partial u_{c,i}} \frac{\partial u_{c,i}}{\partial } \label{eq:uprimeh}
-\end{align}
 また，以下の図\ref{fig:uc}は，入力ベクトルが出力ベクトルのどこに含まれているのかを表したものである．
 \begin{figure}[htbp]
 　\begin{center}
-   \includegraphics[width=130mm,height=72mm]{figures/uc.pdf}
+   \includegraphics[width=130mm,height=75mm]{figures/uc.pdf}
    \caption{入力ベクトルが出力ベクトルのどこに含まれているか}
    \label{fig:uc}
 　\end{center}
 \end{figure}
-
+つまり，$ v^{\prime}_{ij} $は$ u_{C} $の内，$ i $番目の要素$ u_{c,i} $に含まれていると言える．コンテクストサイズはCなので，C個の多変数関数であり，連鎖律を用いると，
+\begin{align}
+\frac{\partial E}{\partial v^{\prime}_{ij}} = \sum_{C=1}^{C} \frac{\partial E}{\partial u_{c,i}} \frac{\partial u_{c,i}}{\partial } \label{eq:wprimeh}
+\end{align}
+とすることができる．
+式(~\ref{eq:wprimeh})の右辺より，$ E $を$ u_{c,i} $でまずは微分することを考える．
+式(~\ref{eq:lastmokuteki})を変形して，
+\begin{align}
+E &= - \sum_{C=1}^{C}(u_{C,w_{C}} - \log \sum_{V=1}^{V} exp(u_{C,V})) \nonumber \\
+  &= - \sum_{C=1}^{C} u_{C,w_{C}} + \sum_{C=1}^{C} \log \sum_{V=1}^{V} exp(u_{C,V}) \label{eq:daiikkou}
+\end{align}
+式(~\ref{eq:daiikkou})の内，$ \sum_{C=1}^{C} u_{C,w_{C}} $を$ u_{c,i} $で微分することを考える．
+\begin{align}
+\sum_{C=1}^{C} u_{C,w_{C}} = u_{1,w_{1}} + u_{2,w_{2}} + \cdot + u_{C,w_{C}}
+\end{align}
 
 以上をまとめると，Skip-gram Modelのニューラルネットワークは以下の図\ref{fig:neuralnet}のようになる．
 \begin{figure}[htbp]
