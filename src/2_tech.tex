@@ -256,10 +256,8 @@ E = - \log p(w_{1}，w_{2}，w_{3}， \ldots ，w_{C}|w_{I}) \label{eq:mokuteki}
 \begin{align}
 E &= - \log p(w_{1}，w_{2}，w_{3}， \ldots ，w_{C}|w_{I}) \nonumber \\
   &= - \log \prod_{c=1}^{C} \frac{exp(u_{C,w_{C}})}{exp(\sum_{v=1}^{V} exp(u_{C,V})} \nonumber \\
-  &= - \sum_{C=1}^{C} \log \frac{exp(u_{C,w_{C}})}{exp(\sum_{v=1}^{V} exp(u_{C,V})} \nonumber \\
-  &(\because \log_a MN = \log_a M + \log_a N) \nonumber \\
-  &= - \sum_{C=1}^{C}(\log exp(u_{C,w_{C}}) - \log \sum_{V=1}^{V} exp(u_{C,V})) \nonumber \\
-  &(\because \log_a \frac{M}{N} = \log_a M - \log_a N) \nonumber \\
+  &= - \sum_{C=1}^{C} \log \frac{exp(u_{C,w_{C}})}{exp(\sum_{v=1}^{V} exp(u_{C,V})} \quad (\because \log_a MN = \log_a M + \log_a N)\nonumber \\
+  &= - \sum_{C=1}^{C}(\log exp(u_{C,w_{C}}) - \log \sum_{V=1}^{V} exp(u_{C,V})) \quad (\because \log_a \frac{M}{N} = \log_a M - \log_a N)\nonumber \\
   &= - \sum_{C=1}^{C}(u_{C,w_{C}} - \log \sum_{V=1}^{V} exp(u_{C,V})) \nonumber \\
   &(\because \log_e exp(x) = x) \label{eq:lastmokuteki}
 \end{align}
