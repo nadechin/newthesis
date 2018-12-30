@@ -269,6 +269,16 @@ E &= - \log p(w_{1}，w_{2}，w_{3}， \ldots ，w_{C}|w_{I}) \nonumber \\
 \begin{align}
 \frac{\partial E}{\partial v^{\prime}_{ij}} = \sum_{C=1}^{C} \frac{\partial E}{\partial u_{c,i}} \frac{\partial u_{c,i}}{\partial } \label{eq:uprimeh}
 \end{align}
+また，以下の図\ref{fig:uc}は，入力ベクトルが出力ベクトルのどこに含まれているのかを表したものである．
+\begin{figure}[htbp]
+　\begin{center}
+   \includegraphics[width=100mm,height=140mm]{figures/uc.pdf}
+   \caption{入力ベクトルが出力ベクトルのどこに含まれているか}
+   \label{fig:uc}
+　\end{center}
+\end{figure}
+
+
 以上をまとめると，Skip-gram Modelのニューラルネットワークは以下の図\ref{fig:neuralnet}のようになる．
 \begin{figure}[htbp]
 　\begin{center}
