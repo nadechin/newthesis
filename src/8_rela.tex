@@ -17,7 +17,7 @@
 \subsubsubsection{ベクトル空間モデル}
 ~\ref{tech:voctorkukan}で述べたように，ベクトル空間解析にはベクトル空間モデルというものが存在する．~\ref{tech:tfidf}で述べたTF-IDFを用いて，同一文章内での単語の出現頻度と，様々な文章におけるある単語の逆文書頻度の2つを重みとし，文章を多次元マトリクスで表現する．文章同士の距離をなす角$ \theta $の，$ 0^\circ \leqq \theta \leqq 90^\circ $における$ \cos \theta $の値の大きさによって文章の類似度を算出する．多次元マトリクスにおける2つの文章のベクトルの方向は文章の特徴であるので，$ 0^\circ \leqq \theta \leqq 90^\circ $において$ \theta $の値が小さくなればなるほど，つまり$ \cos \theta $の値が大きくなればなるほど文章同士の類似度が高いということになる．~ref{}で示したように，TF-IDFで重み付けされたベクトル空間モデルの$ \cos \theta $の値は，m個の単語が使用されている文章dにおける各単語の重要度を$ w_{d1}，w_{d2}，w_{d3}， \ldots ，w_{dm} $とし、同様にn個の単語が使用されている文章eにおける各単語の重要度を$ w_{e1}，w_{e2}，w_{e3}， \ldots ，w_{en} $とすると，\\
 \begin{align}
-\cos \theta = \frac{ \sum_{i=1}^{m} ((tf(t_{i},d) \cdot idf(t_{i}))(tf(t_{i},e) \cdot idf(t_{i}))}{\sum_{i=1}^{m} \sqrt{(tf(t_{i},d) \cdot idf(t_{i}))^2} \sum_{i=1}^{n} \sqrt{(tf(t_{i},e) \cdot idf(t_{i}))^2}} \nonumber
+\cos \theta = \frac{ \sum_{i=1}^m ((tf(t_{i},d) \cdot idf(t_{i}))(tf(t_{i},e) \cdot idf(t_{i}))}{\sum_{i=1}^m \sqrt{(tf(t_{i},d) \cdot idf(t_{i}))^2} \sum_{i=1}^n \sqrt{(tf(t_{i},e) \cdot idf(t_{i}))^2}} \nonumber
 \end{align}
 である．
 
