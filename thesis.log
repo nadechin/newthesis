@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  30 DEC 2018 17:06
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  30 DEC 2018 17:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -734,13 +734,13 @@ LaTeX Warning: Reference `eq:wprimeh' on page 12 undefined on input line 278.
 LaTeX Warning: Reference `eq:daiikkou' on page 12 undefined on input line 284.
 
 ! Undefined control sequence.
-<argument> ...w_{C}}}{\partial u_{c,i}} \coloneqq 
+<argument> ..._{C,w_{C}}}{\partial u_{c,i}}&\cneq 
                                                   t_{c,i} \nonumber \\ &= \l...
 l.293 \end{align}
                  
 ? 
 ! Emergency stop.
-<argument> ...w_{C}}}{\partial u_{c,i}} \coloneqq 
+<argument> ..._{C,w_{C}}}{\partial u_{c,i}}&\cneq 
                                                   t_{c,i} \nonumber \\ &= \l...
 l.293 \end{align}
                  
@@ -749,7 +749,7 @@ End of file on the terminal!
  
 Here is how much of TeX's memory you used:
  8417 strings out of 494865
- 119731 string characters out of 6179768
+ 119727 string characters out of 6179768
  245254 words of memory out of 5000000
  11681 multiletter control sequences out of 15000+600000
  21496 words of font info for 87 fonts, out of 8000000 for 9000
