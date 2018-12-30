@@ -279,9 +279,9 @@ E &= - \log p(w_{1}，w_{2}，w_{3}， \ldots ，w_{C}|w_{I}) \nonumber \\
 式(~\ref{eq:lastmokuteki})を変形して，
 \begin{align}
 E &= - \sum_{C=1}^{C}(u_{C,w_{C}} - \log \sum_{V=1}^{V} exp(u_{C,V})) \nonumber \\
-  &= - \sum_{C=1}^{C} u_{C,w_{C}} + \sum_{C=1}^{C} \log \sum_{V=1}^{V} exp(u_{C,V}) \label{eq:daiikkou}
+  &= - \sum_{C=1}^{C} u_{C,w_{C}} + \sum_{C=1}^{C} \log \sum_{V=1}^{V} exp(u_{C,V}) \label{eq:zenkou}
 \end{align}
-式(~\ref{eq:daiikkou})の内，$ \sum_{C=1}^{C} u_{C,w_{C}} $を$ u_{c,i} $で微分することを考える．
+式(~\ref{eq:zenkou})の内，$ \sum_{C=1}^{C} u_{C,w_{C}} $を$ u_{c,i} $で微分することを考える．
 \begin{align}
 \sum_{C=1}^{C} u_{C,w_{C}} = u_{1,w_{1}} + u_{2,w_{2}} + \ldots + u_{C,w_{C}}
 \end{align}
@@ -290,7 +290,7 @@ E &= - \sum_{C=1}^{C}(u_{C,w_{C}} - \log \sum_{V=1}^{V} exp(u_{C,V})) \nonumber 
 \begin{equation}
 \frac{\partial \sum_{C=1}^{C} u_{C,w_{C}}}{\partial u_{c,i}} := t_{c,i} \left\{
 \begin{gathered}
-    1 \nonumber \\
+    1
     (i=w{c})\quad0 \qquad otherwise.
 \end{gathered}
 \right\}
@@ -298,7 +298,9 @@ E &= - \sum_{C=1}^{C}(u_{C,w_{C}} - \log \sum_{V=1}^{V} exp(u_{C,V})) \nonumber 
 とすることができる．次に$ \sum_{C=1}^{C} \log \sum_{V=1}^{V} exp(u_{C,V}) $の部分について，
 
 \begin{align}
-g = \sum_{V=1}^{V} exp(u_{C,V}) f
+g = \sum_{V=1}^{V} exp(u_{C,V}) f = \log g \frac{df}{dg} \frac{dg}{du_{c,i}} &= \frac{1}{g} exp(u_{c,i}) \nonumber \\
+                                                                             &= \frac{exp(u_{c,i})}{exp(\sum_{v=1}^{V} exp(u_{c,v})} \nonumber \\
+                                                                             &= y_{c,i} \nonumber \\
 \end{align}
 
 以上をまとめると，Skip-gram Modelのニューラルネットワークは以下の図\ref{fig:neuralnet}のようになる．
