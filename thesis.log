@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  16 JAN 2019 10:35
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  16 JAN 2019 10:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -889,26 +889,226 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [22]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.479       NULL& switch_
-                         root \\
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[23]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[24]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[25]) (./src/7_eval.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[26]
+第 6 章
+[27
+
+]
+
+LaTeX Warning: Reference `table:kenchi' on page 28 undefined on input line 34.
+
+\myheighta=\skip82
+
+LaTeX Warning: Reference `fig:cowriecompare' on page 28 undefined on input line
+ 66.
+
+File: figures/Figure_1.png Graphic file (type bmp)
+<figures/Figure_1.png>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[28]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[29]
+
+LaTeX Warning: Reference `fig:yobigainen' on page 30 undefined on input line 92
+.
+
+File: figures/termhyoka.png Graphic file (type bmp)
+<figures/termhyoka.png>
+
+LaTeX Warning: Reference `fig:gainen' on page 30 undefined on input line 101.
+
+File: figures/sotuhyoka.png Graphic file (type bmp)
+<figures/sotuhyoka.png>
+
+LaTeX Warning: Reference `tech:Markov' on page 30 undefined on input line 115.
+
+
+LaTeX Warning: Reference `tech:tokei' on page 30 undefined on input line 117.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[30]
+
+LaTeX Warning: Reference `lst:exam' on page 31 undefined on input line 126.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[31]
+
+LaTeX Font Warning: Font shape `JT1/mc/m/it' undefined
+(Font)              using `JT1/mc/m/n' instead on input line 144.
+
+
+LaTeX Font Warning: Font shape `JY1/mc/m/it' undefined
+(Font)              using `JY1/mc/m/n' instead on input line 144.
+
+
+LaTeX Warning: Reference `fig:hyoukaflow' on page 32 undefined on input line 15
+1.
+
+File: figures/model.png Graphic file (type bmp)
+<figures/model.png>
+
+Package natbib Warning: Citation `word2vecpaper' on page 32 undefined on input 
+line 157.
+
+
+Package natbib Warning: Citation `word2vecpaper2' on page 32 undefined on input
+ line 157.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[32]
+
+LaTeX Warning: Reference `fig:syuturyokuflow' on page 33 undefined on input lin
+e 165.
+
+File: figures/evalflow.png Graphic file (type bmp)
+<figures/evalflow.png>
+
+Package natbib Warning: Citation `word2vecpaper' on page 33 undefined on input 
+line 170.
+
+
+Package natbib Warning: Citation `word2vecpaper2' on page 33 undefined on input
+ line 170.
+
+) (./src/8_rela.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[33
+
+]
+第 7 章
+[34
+
+]) (./src/9_conc.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[35]
+第 8 章
+[36
+
+]) (./src/acknowledgement.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[37]) (./bib/biblio.tex (./thesis.bbl [38
+
+]
+
+LaTeX Font Warning: Font shape `JT1/gt/m/it' undefined
+(Font)              using `JT1/gt/m/n' instead on input line 6.
+
+
+LaTeX Font Warning: Font shape `JY1/gt/m/it' undefined
+(Font)              using `JY1/gt/m/n' instead on input line 6.
+
+[39
+
+]))
+
+Package natbib Warning: There were undefined citations.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 149.
+[40]
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 149.
+\BKM@file=\write7
+\openout7 = `thesis.out.ps'.
+
+ (./thesis.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+
+! Package natbib Error: Bibliography not compatible with author-year citations.
+
+(natbib)                Press <return> to continue in numerical citation style.
+
+
+See the natbib package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.318 ...and\NAT@force@numbers{}\NAT@force@numbers
+                                                  
 ? 
 ! Emergency stop.
-<inserted text> 
-                $
-l.479       NULL& switch_
-                         root \\
-End of file on the terminal!
+ ...                                              
+                                                  
+l.318 ...and\NAT@force@numbers{}\NAT@force@numbers
+                                                  
+Check the bibliography entries for non-compliant syntax,
+or select author-year BibTeX style, e.g. plainnat
 
  
 Here is how much of TeX's memory you used:
- 9092 strings out of 494865
- 129091 string characters out of 6179768
- 274471 words of memory out of 5000000
- 12327 multiletter control sequences out of 15000+600000
- 22759 words of font info for 93 fonts, out of 8000000 for 9000
+ 9230 strings out of 494865
+ 131386 string characters out of 6179768
+ 276471 words of memory out of 5000000
+ 12434 multiletter control sequences out of 15000+600000
+ 23274 words of font info for 95 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
- 33i,12n,58p,1659b,1217s stack positions out of 5000i,500n,10000p,200000b,80000s
-Output written on thesis.dvi (28 pages, 94644 bytes).
+ 33i,12n,58p,1800b,1217s stack positions out of 5000i,500n,10000p,200000b,80000s
+Output written on thesis.dvi (46 pages, 147216 bytes).
