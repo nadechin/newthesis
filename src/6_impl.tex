@@ -115,17 +115,39 @@
 本研究において純正のHoneypotはCowrie\cite{cowrie}を使用し，実際のShellには実装されているが，純正のHoneypotで未実装のコマンドについてはBusyBox\cite{busybox}に含まれるコマンドの実装を行なった．~\ref{tech:BusyBox}や~\ref{Cowrie}で紹介した通り，BusyBoxに含まれるコマンドの種類が219ある中で，Cowrieの実装コマンド数は92しか存在しない．この差分をPythonで実装する． \\
 またBusyBoxに含まれるコマンドとCowrieの実装コマンドの一覧を表\ref{table:command}に示す． \\
 % -------------------
-\vspace{3mm}
-%\newlength{\myheight}
-\setlength{\myheight}{10mm}
-\begin{table}[h]
- \caption{実装環境}
- \label{table:command}
- \centering
-  \begin{tabular}{|c|c|}
-   \hline
-   Busyboxに含まれるコマンド & Cowrieの実装コマンド  \\
-    \hline \hline
+
+\usepackage{longtable}
+\usepackage{geometry}
+\geometry{textwidth=160mm, textheight=225mm}
+ 
+\begin{document}
+ 
+\begin{center}
+\large{\textbf{実装コマンド一覧}
+\end{center}
+
+BusyBoxに含まれるコマンドとCowrieの実装コマンドの一覧
+ 
+\begin{longtable}{llp{60mm}p{60mm}}
+  \caption{実装コマンド一覧}
+  \label{table:command} \\
+  %------ 最初のページの表の最上部 ----
+  \hline
+  Busyboxに含まれるコマンド & Cowrieの実装コマンド \\ \hline\hline
+  \endfirsthead
+  %------ 2ページ以降の表の最上部 ----
+  \multicolumn{4}{r}{前ページからの続き} \\ \hline
+  Busyboxに含まれるコマンド & Cowrieの実装コマンド \\ \hline\hline
+  \endhead
+  %----- ページの表の最下部 --------
+  \hline
+  \multicolumn{4}{r}{次ページに続く} \\
+  \endfoot
+  %----- 最終ページの表の最下部 --------
+  \hline
+  \multicolumn{4}{r}{以上} \\
+  \endlastfoot
+
      adduser & acpid  \\
      \hline
      alias & adjtimex  \\
@@ -564,9 +586,20 @@
      \hline
       NULL& zcat \\
      \hline
-  \end{tabular}
-\end{table}
-\vspace{7mm}
+\end{longtable}
+%\vspace{3mm}
+%\setlength{\myheight}{10mm}
+%\begin{table}[h]
+% \caption{実装コマンド一覧}
+% \label{table:command}
+% \centering
+%  \begin{tabular}{|c|c|}
+%   \hline
+%   Busyboxに含まれるコマンド & Cowrieの実装コマンド  \\
+%    \hline \hline
+%  \end{tabular}
+%\end{table}
+%\vspace{7mm}
 % --------------------
 
 %%% Local Variables:
