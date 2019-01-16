@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  16 JAN 2019 10:19
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  16 JAN 2019 10:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -800,24 +800,30 @@ LaTeX Warning: Reference `Cowrie' on page 19 undefined on input line 115.
 LaTeX Warning: Reference `table:command' on page 19 undefined on input line 116
 .
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.385       NULL& pivot_
-                        root \\
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.119 \usepackage
+                 {longtable}
 ? 
 ! Emergency stop.
-<inserted text> 
-                $
-l.385       NULL& pivot_
-                        root \\
-End of file on the terminal!
+ ...                                              
+                                                  
+l.119 \usepackage
+                 {longtable}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
  
 Here is how much of TeX's memory you used:
- 8566 strings out of 494865
- 121574 string characters out of 6179768
- 255254 words of memory out of 5000000
+ 8567 strings out of 494865
+ 121711 string characters out of 6179768
+ 253254 words of memory out of 5000000
  11814 multiletter control sequences out of 15000+600000
  22759 words of font info for 93 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
