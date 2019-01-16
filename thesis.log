@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  16 JAN 2019 10:31
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  16 JAN 2019 10:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -875,26 +875,43 @@ LaTeX Warning: Reference `Cowrie' on page 19 undefined on input line 115.
 LaTeX Warning: Reference `table:command' on page 19 undefined on input line 116
 .
 
-! Missing } inserted.
+[19
+
+]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[20]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[21]
+! Missing $ inserted.
 <inserted text> 
-                }
-l.123 \end{center}
-                  
+                $
+l.403       NULL& pivot_
+                        root \\
 ? 
 ! Emergency stop.
 <inserted text> 
-                }
-l.123 \end{center}
-                  
+                $
+l.403       NULL& pivot_
+                        root \\
 End of file on the terminal!
 
  
 Here is how much of TeX's memory you used:
- 9089 strings out of 494865
- 129059 string characters out of 6179768
- 266471 words of memory out of 5000000
- 12324 multiletter control sequences out of 15000+600000
+ 9090 strings out of 494865
+ 129063 string characters out of 6179768
+ 272471 words of memory out of 5000000
+ 12325 multiletter control sequences out of 15000+600000
  22759 words of font info for 93 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
  33i,12n,58p,1659b,1217s stack positions out of 5000i,500n,10000p,200000b,80000s
-Output written on thesis.dvi (24 pages, 82472 bytes).
+Output written on thesis.dvi (27 pages, 91536 bytes).
