@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  16 JAN 2019 10:26
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  16 JAN 2019 10:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -279,6 +279,51 @@ Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
 \AP@footins=\box56
 )
 (./sty/ncodeline.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip66
+\LTright=\skip67
+\LTpre=\skip68
+\LTpost=\skip69
+\LTchunksize=\count131
+\LTcapwidth=\dimen155
+\LT@head=\box57
+\LT@firsthead=\box58
+\LT@foot=\box59
+\LT@lastfoot=\box60
+\LT@cols=\count132
+\LT@rows=\count133
+\c@LT@tables=\count134
+\c@LT@chunks=\count135
+\LT@p@ftn=\toks28
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count136
+\Gm@cntv=\count137
+\c@Gm@tempcnt=\count138
+\Gm@bindingoffset=\dimen156
+\Gm@wd@mp=\dimen157
+\Gm@odd@mp=\dimen158
+\Gm@even@mp=\dimen159
+\Gm@layoutwidth=\dimen160
+\Gm@layoutheight=\dimen161
+\Gm@layouthoffset=\dimen162
+\Gm@layoutvoffset=\dimen163
+\Gm@dimlist=\toks29
+)
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
@@ -293,11 +338,9 @@ Package hobsub Info: Skipping package `infwarerr' (already loaded).
 Package hobsub Info: Skipping package `ltxcmds' (already loaded).
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
-Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
-Package ifvtex Info: VTeX not detected.
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
 Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is not detected.
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
 Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
@@ -328,23 +371,20 @@ Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
-Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-)
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
-\@linkdim=\dimen155
-\Hy@linkcounter=\count131
-\Hy@pagecounter=\count132
+\@linkdim=\dimen164
+\Hy@linkcounter=\count139
+\Hy@pagecounter=\count140
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count133
+\Hy@SavedSpaceFactor=\count141
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -361,17 +401,17 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count134
+\c@Hy@tempcnt=\count142
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
-\XeTeXLinkMargin=\dimen156
-\Fld@menulength=\count135
-\Field@Width=\dimen157
-\Fld@charsize=\dimen158
+\XeTeXLinkMargin=\dimen165
+\Fld@menulength=\count143
+\Field@Width=\dimen166
+\Fld@charsize=\dimen167
 Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
@@ -381,20 +421,20 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count136
-\c@Item=\count137
-\c@Hfootnote=\count138
+\Hy@abspage=\count144
+\c@Item=\count145
+\c@Hfootnote=\count146
 )
 
 Package hyperref Message: Driver: hdvipdfm.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hdvipdfm.def
 File: hdvipdfm.def 2012/11/06 v6.83m Hyperref driver for dvipdfm
-\pdfm@box=\box57
-\c@Hy@AnnotLevel=\count139
-\HyField@AnnotCount=\count140
-\Fld@listcount=\count141
-\c@bookmark@seq@number=\count142
+\pdfm@box=\box61
+\c@Hy@AnnotLevel=\count147
+\HyField@AnnotCount=\count148
+\Fld@listcount=\count149
+\c@bookmark@seq@number=\count150
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
@@ -405,36 +445,36 @@ Package rerunfilecheck Info: Feature \pdfmdfivesum is not available
 tly
 (rerunfilecheck)             and the loading of the package is aborted.
 )
-\Hy@SectionHShift=\skip66
+\Hy@SectionHShift=\skip70
 )
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/bookmark.sty
 Package: bookmark 2011/12/02 v1.24 PDF bookmarks (HO)
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/bkm-dvips.def
 File: bkm-dvips.def 2011/12/02 v1.24 bookmark driver for dvips (HO)
-\BKM@id=\count143
+\BKM@id=\count151
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-\fancy@headwidth=\skip67
-\f@ncyO@elh=\skip68
-\f@ncyO@erh=\skip69
-\f@ncyO@olh=\skip70
-\f@ncyO@orh=\skip71
-\f@ncyO@elf=\skip72
-\f@ncyO@erf=\skip73
-\f@ncyO@olf=\skip74
-\f@ncyO@orf=\skip75
+\fancy@headwidth=\skip71
+\f@ncyO@elh=\skip72
+\f@ncyO@erh=\skip73
+\f@ncyO@olh=\skip74
+\f@ncyO@orh=\skip75
+\f@ncyO@elf=\skip76
+\f@ncyO@erf=\skip77
+\f@ncyO@olf=\skip78
+\f@ncyO@orf=\skip79
 )
 (./sty/doxygenorig.sty
 Package: ./sty/doxygenorig 
-\tmplength=\skip76
+\tmplength=\skip80
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
 (./sty/jlisting.sty
 Package: ./sty/jlisting 2006/02/20 0.2 (Thor)
-\lst@nextchar=\count144
+\lst@nextchar=\count152
 \lst@inputfile=\read2
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
@@ -462,38 +502,73 @@ LaTeX Warning: Label `intr:prex' multiply defined.
 )
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-\c@lstlisting=\count145
-\AtBeginShipoutBox=\box58
-Package hyperref Info: Link coloring OFF on input line 104.
- (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+\c@lstlisting=\count153
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: dvips
+*geometry* verbose mode - [ preamble ] result:
+* driver: dvips
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(89.62709pt, 418.25368pt, 89.6271pt)
+* v-part:(T,H,B)=(101.40665pt, 591.5302pt, 152.11pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24408pt
+* \textheight=657.25865pt
+* \oddsidemargin=-1.13809pt
+* \evensidemargin=-1.13809pt
+* \topmargin=-9.6739pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=9.33105pt
+* \footskip=30.0pt
+* \marginparwidth=83.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\AtBeginShipoutBox=\box62
+Package hyperref Info: Link coloring OFF on input line 106.
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count146
+\c@section@level=\count154
 )
-LaTeX Info: Redefining \ref on input line 104.
-LaTeX Info: Redefining \pageref on input line 104.
-LaTeX Info: Redefining \nameref on input line 104.
+LaTeX Info: Redefining \ref on input line 106.
+LaTeX Info: Redefining \pageref on input line 106.
+LaTeX Info: Redefining \nameref on input line 106.
 
 (./src/titlepage.tex [1
 
@@ -512,9 +587,9 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24.88> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 119.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 121.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 119.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 121.
  (./thesis.toc)
 \tf@toc=\write4
 \openout4 = `thesis.toc'.
@@ -640,7 +715,7 @@ Package natbib Warning: Citation `differfromkippo' on page 5 undefined on input
 Package natbib Warning: Citation `honeywall' on page 5 undefined on input line 
 46.
 
-\myheight=\skip77
+\myheight=\skip81
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -807,25 +882,25 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.119 \usepackage
-                 {longtable}
+l.119 \geometry
+               {textwidth=160mm, textheight=225mm}
 ? 
 ! Emergency stop.
  ...                                              
                                                   
-l.119 \usepackage
-                 {longtable}
+l.119 \geometry
+               {textwidth=160mm, textheight=225mm}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
  
 Here is how much of TeX's memory you used:
- 8567 strings out of 494865
- 121711 string characters out of 6179768
- 253254 words of memory out of 5000000
- 11814 multiletter control sequences out of 15000+600000
+ 9090 strings out of 494865
+ 129196 string characters out of 6179768
+ 266471 words of memory out of 5000000
+ 12324 multiletter control sequences out of 15000+600000
  22759 words of font info for 93 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
  33i,12n,58p,1659b,1217s stack positions out of 5000i,500n,10000p,200000b,80000s
-Output written on thesis.dvi (24 pages, 82436 bytes).
+Output written on thesis.dvi (24 pages, 82472 bytes).
