@@ -1,10 +1,32 @@
 \chapter{実装}
 \label{impl}
 
-本章では，~\ref{meth:appr}節で述べた手法を用いて純正のHoneypotにどのようなコマンドを実装し，Honeypot特有の異常な挙動を修正したのかを説明する．
+本章では，低対話型Honeypotと高対話型Honeypotの設置環境についても示し，~\ref{meth:appr}節で述べた手法を用いて純正のHoneypotにどのようなコマンドを実装し，Honeypot特有の異常な挙動を修正したのかを説明する．
 
 \section{実装環境}
 \label{impl:env}
+% -------------------
+\vspace{3mm}
+\newlength{\myheight}
+\setlength{\myheight}{10mm}
+\begin{table}[h]
+ \caption{種類ごとのHoneypotの比較}
+ \label{table:compare}
+ \centering
+  \begin{tabular}{|c|c|c|}
+   \hline
+   ハードウェア/ソフトウェア & 実装環境 & Version(date) \\
+    \hline \hline
+     \parbox[c][\myheight][c]{0cm}{} 純正のCowrie  & CentOS5 & 1．4．0 \\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} 修正済みのCowrie  & CentOS5 & 1．4．0（self made） \\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} Honeywall  & CentOS5 & 1．4 \\
+     \hline
+  \end{tabular}
+\end{table}
+\vspace{7mm}
+% --------------------
 TBD
 %本研究で実装するシステムを構成するためのハードウェアおよびソフトウェアについて説明する．表\ref{table:usedversion}に詳細なバージョンを示す．
 
