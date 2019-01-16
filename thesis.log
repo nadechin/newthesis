@@ -808,10 +808,6 @@ Package natbib Warning: Citation `busybox' on page 19 undefined on input line 3
 
 LaTeX Warning: Reference `Cowrie' on page 19 undefined on input line 35.
 
-
-LaTeX Warning: Reference `table:command' on page 19 undefined on input line 36.
-
-
 [19
 
 ]
@@ -864,4 +860,4 @@ Here is how much of TeX's memory you used:
  22759 words of font info for 93 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
  33i,12n,58p,1659b,1217s stack positions out of 5000i,500n,10000p,200000b,80000s
-Output written on thesis.dvi (26 pages, 88948 bytes).
+Output written on thesis.dvi (26 pages, 89040 bytes).
