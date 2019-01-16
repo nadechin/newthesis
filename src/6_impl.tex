@@ -112,9 +112,462 @@
 
 \subsection{純正のHoneypotで未実装のコマンドの実装}
 \label{impl:ImplBusyBox}
-本研究において純正のHoneypotはCowrie\cite{cowrie}を使用し，実際のShellには実装されているが，純正のHoneypotで未実装のコマンドについてはBusyBox\cite{busybox}に含まれるコマンドの実装を行なった．2.1.1.2や2.2.2で紹介した通り，BusyBoxに含まれるコマンドの種類が219ある中で，Cowrieの実装コマンド数は38しか存在しない．この差分をPythonで実装する．\\
-また実装したコマンド一覧を表hogeに示す．(付録にて例で紹介できなかったコマンドを掲載する)\\
-
+本研究において純正のHoneypotはCowrie\cite{cowrie}を使用し，実際のShellには実装されているが，純正のHoneypotで未実装のコマンドについてはBusyBox\cite{busybox}に含まれるコマンドの実装を行なった．~\ref{tech:BusyBox}や~\ref{Cowrie}で紹介した通り，BusyBoxに含まれるコマンドの種類が219ある中で，Cowrieの実装コマンド数は92しか存在しない．この差分をPythonで実装する．\\
+またBusyBoxに含まれるコマンドとCowrieの実装コマンドの一覧を表\ref{table:command}に示す．\\
+% -------------------
+\vspace{3mm}
+%\newlength{\myheight}
+\setlength{\myheight}{10mm}
+\begin{table}[h]
+ \caption{実装環境}
+ \label{table:imple}
+ \centering
+  \begin{tabular}{|c|c|}
+   \hline
+   Busyboxに含まれるコマンド & Cowrieの実装コマンド \\
+    \hline \hline
+     \parbox[c][\myheight][c]{0cm}{}adduser & acpid\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}alias & adjtimex\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}apt-get & ar\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}base64 & arp\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}bash & arping\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}busybox & ash\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}cat & awk\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}cd & basename\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}chattr & blockdev\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}chgrp & brctl\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}chmod & bunzip2\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}chown & bzcat\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}clear & bzip2\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}cp & cal\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}curl & cat\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}date & chgrp\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}dd & chmod\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}dget & chown\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}dir & chpasswd\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}du & chroot\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}echo & chvt\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}egrep & clear\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}env & cmp\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}ethtool & cp\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}exit & cpio\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}export & crond\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}fgrep & crontab\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}free & cttyhack\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}ftpget & cut\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}gcc & date\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}grep & dc\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}halt & dd\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}head & deallocvt\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}help & depmod\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}history & devmem\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}hostname & df\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}id & diff\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}ifconfig & dirname\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}iptables & dmesg\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}jobs & dnsdomainname\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}kill & dos2unix\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}killall & dpkg\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}killall5 & dpkg-deb\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}last & du\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}logout & dumpkmap\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}ls & dumpleases\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}mkdir & echo\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}mv & ed\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}nc & egrep\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}netstat & env\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}nohup & expand\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}passwd & expr\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}perl & FALSE\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}php & fdisk\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}ping & fgrep\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}pkill & find\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}poweroff & fold\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}printf & free\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}ps & freeramdisk\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}pwd & fstrim\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}python & ftpget\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}reboot & ftpput\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}reset & getopt\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}rm & getty\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}rmdir & grep\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}scp & groups\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}service & gunzip\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}set & gzip\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}sh & halt\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}shutdown & head\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}sleep & hexdump\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}ssh & hostid\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}su & hostname\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}sudo & httpd\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}tail & hwclock\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}tar & id\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}tftp & ifconfig\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}touch & ifdown\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}ulimit & ifup\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}umask & init\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}uname & insmod\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}unset & ionice\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}uptime & ip\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}useradd & ipcalc\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}users & kill\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}w & killall\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}wget & klogd\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}which & last\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}who & less\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}whoami & ln\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}yes & loadfont\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{}yum & loadkmap\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & logger\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & login\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & logname\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & logread\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & losetup\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & ls\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & lsmod\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & lzcat\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & lzma\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & lzop\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & lzopcat\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & md5sum\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & mdev\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & microcom\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & mkdir\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & mkfifo\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & mknod\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & mkswap\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & mktemp\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & modinfo\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & modprobe\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & more\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & mount\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & mt\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & mv\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & nameif\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & nc\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & netstat\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & nslookup\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & od\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & openvt\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & passwd\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & patch\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & pidof\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & ping\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & ping6\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & pivot_root\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & poweroff\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & printf\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & ps\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & pwd\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & rdate\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & readlink\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & realpath\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & reboot\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & renice\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & reset\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & rev\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & rm\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & rmdir\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & rmmod\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & route\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & rpm\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & rpm2cpio\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & run-parts\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & sed\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & seq\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & setkeycodes\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & setsid\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & sh\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & sha1sum\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & sha256sum\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & sha512sum\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & sleep\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & sort\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & start-stop-daemon\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & stat\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & static-sh\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & strings\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & stty\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & su\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & sulogin\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & swapoff\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & swapon\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & switch_root\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & sync\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & sysctl\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & syslogd\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & tac\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & tail\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & tar\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & taskset\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & tee\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & telnet\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & telnetd\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & test\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & tftp\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & time\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & timeout\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & top\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & touch\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & tr\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & traceroute\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & traceroute6\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & TRUE\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & tty\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & tunctl\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & udhcpc\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & udhcpd\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & umount\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & uname\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & uncompress\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & unexpand\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & uniq\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & unix2dos\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & unlzma\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & unlzop\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & unxz\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & unzip\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & uptime\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & usleep\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & uudecode\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & uuencode\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & vconfig\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & vi\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & watch\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & watchdog\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & wc\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & wget\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & which\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & who\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & whoami\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & xargs\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & xz\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & xzcat\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & yes\\
+     \hline
+     \parbox[c][\myheight][c]{0cm}{} & zcat\\
+     \hline
+  \end{tabular}
+\end{table}
+\vspace{7mm}
+% --------------------
 
 %%% Local Variables:
 %%% mode: japanese-latex
