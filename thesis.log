@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  16 JAN 2019 10:30
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  16 JAN 2019 10:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -875,29 +875,23 @@ LaTeX Warning: Reference `Cowrie' on page 19 undefined on input line 115.
 LaTeX Warning: Reference `table:command' on page 19 undefined on input line 116
 .
 
-
-! LaTeX Error: Can be used only in preamble.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.119 \geometry
-               {textwidth=160mm, textheight=225mm}
+! Missing } inserted.
+<inserted text> 
+                }
+l.123 \end{center}
+                  
 ? 
 ! Emergency stop.
- ...                                              
-                                                  
-l.119 \geometry
-               {textwidth=160mm, textheight=225mm}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+<inserted text> 
+                }
+l.123 \end{center}
+                  
+End of file on the terminal!
 
  
 Here is how much of TeX's memory you used:
- 9090 strings out of 494865
- 129196 string characters out of 6179768
+ 9089 strings out of 494865
+ 129059 string characters out of 6179768
  266471 words of memory out of 5000000
  12324 multiletter control sequences out of 15000+600000
  22759 words of font info for 93 fonts, out of 8000000 for 9000
