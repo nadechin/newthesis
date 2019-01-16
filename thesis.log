@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  16 JAN 2019 09:46
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  16 JAN 2019 09:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -793,13 +793,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.11 \newlength{\myheight}
+l.12 \newlength{\myheight}
                           
 ? 
 ! Emergency stop.
  ...                                              
                                                   
-l.11 \newlength{\myheight}
+l.12 \newlength{\myheight}
                           
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
