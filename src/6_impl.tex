@@ -65,444 +65,226 @@ BusyBoxに含まれるコマンドとCowrieの実装コマンドの一覧
   \multicolumn{2}{r}{以上} \\
   \endlastfoot
 
-     adduser & acpid  \\
-     \hline
-     alias & adjtimex  \\
-     \hline
-     apt-get & ar  \\
-     \hline
-     base64 & arp  \\
-     \hline
-     bash & arping  \\
-     \hline
-     busybox & ash  \\
-     \hline
-     cat & awk  \\
-     \hline
-     cd & basename  \\
-     \hline
-     chattr & blockdev  \\
-     \hline
-     chgrp & brctl  \\
-     \hline
-     chmod & bunzip2  \\
-     \hline
-     chown & bzcat  \\
-     \hline
-     clear & bzip2  \\
-     \hline
-     cp & cal  \\
-     \hline
-     curl & cat  \\
-     \hline
-     date & chgrp  \\
-     \hline
-     dd & chmod  \\
-     \hline
-     dget & chown  \\
-     \hline
-     dir & chpasswd \\
-     \hline
-     du & chroot \\
-     \hline
-     echo & chvt \\
-     \hline
-     egrep & clear \\
-     \hline
-     env & cmp \\
-     \hline
-     ethtool & cp \\
-     \hline
-     exit & cpio \\
-     \hline
-     export & crond \\
-     \hline
-     fgrep & crontab \\
-     \hline
-     free & cttyhack \\
-     \hline
-     ftpget & cut \\
-     \hline
-     gcc & date \\
-     \hline
-     grep & dc \\
-     \hline
-     halt & dd \\
-     \hline
-     head & deallocvt \\
-     \hline
-     help & depmod \\
-     \hline
-     history & devmem \\
-     \hline
-     hostname & df \\
-     \hline
-     id & diff \\
-     \hline
-     ifconfig & dirname \\
-     \hline
-     iptables & dmesg \\
-     \hline
-     jobs & dnsdomainname \\
-     \hline
-     kill & dos2unix \\
-     \hline
-     killall & dpkg \\
-     \hline
-     killall5 & dpkg-deb \\
-     \hline
-     last & du \\
-     \hline
-     logout & dumpkmap \\
-     \hline
-     ls & dumpleases \\
-     \hline
-     mkdir & echo \\
-     \hline
-     mv & ed \\
-     \hline
-     nc & egrep \\
-     \hline
-     netstat & env \\
-     \hline
-     nohup & expand \\
-     \hline
-     passwd & expr \\
-     \hline
-     perl & FALSE \\
-     \hline
-     php & fdisk \\
-     \hline
-     ping & fgrep \\
-     \hline
-     pkill & find \\
-     \hline
-     poweroff & fold \\
-     \hline
-     printf & free \\
-     \hline
-     ps & freeramdisk \\
-     \hline
-     pwd & fstrim \\
-     \hline
-     python & ftpget \\
-     \hline
-     reboot & ftpput \\
-     \hline
-     reset & getopt \\
-     \hline
-     rm & getty \\
-     \hline
-     rmdir & grep \\
-     \hline
-     scp & groups \\
-     \hline
-     service & gunzip \\
-     \hline
-     set & gzip \\
-     \hline
-     sh & halt \\
-     \hline
-     shutdown & head \\
-     \hline
-     sleep & hexdump \\
-     \hline
-     ssh & hostid \\
-     \hline
-     su & hostname \\
-     \hline
-     sudo & httpd \\
-     \hline
-     tail & hwclock \\
-     \hline
-     tar & id \\
-     \hline
-     tftp & ifconfig \\
-     \hline
-     touch & ifdown \\
-     \hline
-     ulimit & ifup \\
-     \hline
-     umask & init \\
-     \hline
-     uname & insmod \\
-     \hline
-     unset & ionice \\
-     \hline
-     uptime & ip \\
-     \hline
-     useradd & ipcalc \\
-     \hline
-     users & kill \\
-     \hline
-     w & killall \\
-     \hline
-     wget & klogd \\
-     \hline
-     which & last \\
-     \hline
-     who & less \\
-     \hline
-     whoami & ln \\
-     \hline
-     yes & loadfont \\
-     \hline
-     yum & loadkmap \\
-     \hline
-      & logger \\
-     \hline
-      & login \\
-     \hline
-      & logname \\
-     \hline
-      & logread \\
-     \hline
-      & losetup \\
-     \hline
-      & ls \\
-     \hline
-      & lsmod \\
-     \hline
-      & lzcat \\
-     \hline
-      & lzma \\
-     \hline
-      & lzop \\
-     \hline
-      & lzopcat \\
-     \hline
-      & md5sum \\
-     \hline
-      & mdev \\
-     \hline
-      & microcom \\
-     \hline
-      & mkdir \\
-     \hline
-      & mkfifo \\
-     \hline
-      & mknod \\
-     \hline
-      & mkswap \\
-     \hline
-      & mktemp \\
-     \hline
-      & modinfo \\
-     \hline
-      & modprobe \\
-     \hline
-      & more \\
-     \hline
-      & mount \\
-     \hline
-      & mt \\
-     \hline
-      & mv \\
-     \hline
-      & nameif \\
-     \hline
-      & nc \\
-     \hline
-      & netstat \\
-     \hline
-      & nslookup \\
-     \hline
-      & od \\
-     \hline
-      & openvt \\
-     \hline
-      & passwd \\
-     \hline
-      & patch \\
-     \hline
-      & pidof \\
-     \hline
-      & ping \\
-     \hline
-      & ping6 \\
-     \hline
-      & pivot\_root \\
-     \hline
-      & poweroff \\
-     \hline
-      & printf \\
-     \hline
-      & ps \\
-     \hline
-      & pwd \\
-     \hline
-      & rdate \\
-     \hline
-      & readlink \\
-     \hline
-      & realpath \\
-     \hline
-      & reboot \\
-     \hline
-      & renice \\
-     \hline
-      & reset \\
-     \hline
-      & rev \\
-     \hline
-      & rm \\
-     \hline
-      & rmdir \\
-     \hline
-      & rmmod \\
-     \hline
-      & route \\
-     \hline
-      & rpm \\
-     \hline
-      & rpm2cpio \\
-     \hline
-      & run-parts \\
-     \hline
-      & sed \\
-     \hline
-      & seq \\
-     \hline
-      & setkeycodes \\
-     \hline
-      & setsid \\
-     \hline
-      & sh \\
-     \hline
-      & sha1sum \\
-     \hline
-      & sha256sum \\
-     \hline
-      & sha512sum \\
-     \hline
-      & sleep \\
-     \hline
-      & sort \\
-     \hline
-      & start-stop-daemon \\
-     \hline
-      & stat \\
-     \hline
-      & static-sh \\
-     \hline
-      & strings \\
-     \hline
-      & stty \\
-     \hline
-      & su \\
-     \hline
-      & sulogin \\
-     \hline
-      & swapoff \\
-     \hline
-      & swapon \\
-     \hline
-      & switch\_root \\
-     \hline
-      & sync \\
-     \hline
-      & sysctl \\
-     \hline
-      & syslogd \\
-     \hline
-      & tac \\
-     \hline
-      & tail \\
-     \hline
-      & tar \\
-     \hline
-      & taskset \\
-     \hline
-      & tee \\
-     \hline
-      & telnet \\
-     \hline
-      & telnetd \\
-     \hline
-      & test \\
-     \hline
-      & tftp \\
-     \hline
-      & time \\
-     \hline
-      & timeout \\
-     \hline
-      & top \\
-     \hline
-      & touch \\
-     \hline
-      & tr \\
-     \hline
-      & traceroute \\
-     \hline
-      & traceroute6 \\
-     \hline
-      & TRUE \\
-     \hline
-      & tty \\
-     \hline
-      & tunctl \\
-     \hline
-      & udhcpc \\
-     \hline
-      & udhcpd \\
-     \hline
-      & umount \\
-     \hline
-      & uname \\
-     \hline
-      & uncompress \\
-     \hline
-      & unexpand \\
-     \hline
-      & uniq \\
-     \hline
-      & unix2dos \\
-     \hline
-      & unlzma \\
-     \hline
-      & unlzop \\
-     \hline
-      & unxz \\
-     \hline
-      & unzip \\
-     \hline
-      & uptime \\
-     \hline
-      & usleep \\
-     \hline
-      & uudecode \\
-     \hline
-      & uuencode \\
-     \hline
-      & vconfig \\
-     \hline
-      & vi \\
-     \hline
-      & watch \\
-     \hline
-      & watchdog \\
-     \hline
-      & wc \\
-     \hline
-      & wget \\
-     \hline
-      & which \\
-     \hline
-      & who \\
-     \hline
-      & whoami \\
-     \hline
-      & xargs \\
-     \hline
-      & xz \\
-     \hline
-      & xzcat \\
-     \hline
-      & yes \\
-     \hline
-      & zcat \\
-     \hline
+adduser & acpid & acpid \\ \hline
+alias & adjtimex & adjtimex \\ \hline
+apt-get & ar & ar \\ \hline
+base64 & arp & arp \\ \hline
+bash & arping & arping \\ \hline
+busybox & ash & ash \\ \hline
+cat & awk & awk \\ \hline
+cd & basename & basename \\ \hline
+chattr & blockdev & blockdev \\ \hline
+chgrp & brctl & brctl \\ \hline
+chmod & bunzip2 & bunzip2 \\ \hline
+chown & bzcat & bzcat \\ \hline
+clear & bzip2 & bzip2 \\ \hline
+cp & cal & cal \\ \hline
+curl & cat & chpasswd \\ \hline
+date & chgrp & chroot \\ \hline
+dd & chmod & chvt \\ \hline
+dget & chown & cmp \\ \hline
+dir & chpasswd & cpio \\ \hline
+du & chroot & crond \\ \hline
+echo & chvt & crontab \\ \hline
+egrep & clear & cttyhack \\ \hline
+env & cmp & cut \\ \hline
+ethtool & cp & dc \\ \hline
+exit & cpio & deallocvt \\ \hline
+export & crond & depmod \\ \hline
+fgrep & crontab & devmem \\ \hline
+free & cttyhack & df \\ \hline
+ftpget & cut & diff \\ \hline
+gcc & date & dirname \\ \hline
+grep & dc & dmesg \\ \hline
+halt & dd & dnsdomainname \\ \hline
+head & deallocvt & dos2unix \\ \hline
+help & depmod & dpkg \\ \hline
+history & devmem & dpkg-deb \\ \hline
+hostname & df & dumpkmap \\ \hline
+id & diff & dumpleases \\ \hline
+ifconfig & dirname & ed \\ \hline
+iptables & dmesg & expand \\ \hline
+jobs & dnsdomainname & expr \\ \hline
+kill & dos2unix & FALSE \\ \hline
+killall & dpkg & fdisk \\ \hline
+killall5 & dpkg-deb & find \\ \hline
+last & du & fold \\ \hline
+logout & dumpkmap & freeramdisk \\ \hline
+ls & dumpleases & fstrim \\ \hline
+mkdir & echo & ftpput \\ \hline
+mv & ed & getopt \\ \hline
+nc & egrep & getty \\ \hline
+netstat & env & groups \\ \hline
+nohup & expand & gunzip \\ \hline
+passwd & expr & gzip \\ \hline
+perl & FALSE & hexdump \\ \hline
+php & fdisk & hostid \\ \hline
+ping & fgrep & httpd \\ \hline
+pkill & find & hwclock \\ \hline
+poweroff & fold & ifdown \\ \hline
+printf & free & ifup \\ \hline
+ps & freeramdisk & init \\ \hline
+pwd & fstrim & insmod \\ \hline
+python & ftpget & ionice \\ \hline
+reboot & ftpput & ip \\ \hline
+reset & getopt & ipcalc \\ \hline
+rm & getty & klogd \\ \hline
+rmdir & grep & less \\ \hline
+scp & groups & ln \\ \hline
+service & gunzip & loadfont \\ \hline
+set & gzip & loadkmap \\ \hline
+sh & halt & logger \\ \hline
+shutdown & head & login \\ \hline
+sleep & hexdump & logname \\ \hline
+ssh & hostid & logread \\ \hline
+su & hostname & losetup \\ \hline
+sudo & httpd & lsmod \\ \hline
+tail & hwclock & lzcat \\ \hline
+tar & id & lzma \\ \hline
+tftp & ifconfig & lzop \\ \hline
+touch & ifdown & lzopcat \\ \hline
+ulimit & ifup & md5sum \\ \hline
+umask & init & mdev \\ \hline
+uname & insmod & microcom \\ \hline
+unset & ionice & mkfifo \\ \hline
+uptime & ip & mknod \\ \hline
+useradd & ipcalc & mkswap \\ \hline
+users & kill & mktemp \\ \hline
+w & killall & modinfo \\ \hline
+wget & klogd & modprobe \\ \hline
+which & last & more \\ \hline
+who & less & mount \\ \hline
+whoami & ln & mt \\ \hline
+yes & loadfont & nameif \\ \hline
+yum & loadkmap & nslookup \\ \hline
+NULL & logger & od \\ \hline
+NULL & login & openvt \\ \hline
+NULL & logname & patch \\ \hline
+NULL & logread & pidof \\ \hline
+NULL & losetup & ping6 \\ \hline
+NULL & ls & pivot_root \\ \hline
+NULL & lsmod & rdate \\ \hline
+NULL & lzcat & readlink \\ \hline
+NULL & lzma & realpath \\ \hline
+NULL & lzop & renice \\ \hline
+NULL & lzopcat & rev \\ \hline
+NULL & md5sum & rmmod \\ \hline
+NULL & mdev & route \\ \hline
+NULL & microcom & rpm \\ \hline
+NULL & mkdir & rpm2cpio \\ \hline
+NULL & mkfifo & run-parts \\ \hline
+NULL & mknod & sed \\ \hline
+NULL & mkswap & seq \\ \hline
+NULL & mktemp & setkeycodes \\ \hline
+NULL & modinfo & setsid \\ \hline
+NULL & modprobe & sha1sum \\ \hline
+NULL & more & sha256sum \\ \hline
+NULL & mount & sha512sum \\ \hline
+NULL & mt & sort \\ \hline
+NULL & mv & start-stop-daemon \\ \hline
+NULL & nameif & stat \\ \hline
+NULL & nc & static-sh \\ \hline
+NULL & netstat & strings \\ \hline
+NULL & nslookup & stty \\ \hline
+NULL & od & sulogin \\ \hline
+NULL & openvt & swapoff \\ \hline
+NULL & passwd & swapon \\ \hline
+NULL & patch & switch_root \\ \hline
+NULL & pidof & sync \\ \hline
+NULL & ping & sysctl \\ \hline
+NULL & ping6 & syslogd \\ \hline
+NULL & pivot_root & tac \\ \hline
+NULL & poweroff & taskset \\ \hline
+NULL & printf & tee \\ \hline
+NULL & ps & telnet \\ \hline
+NULL & pwd & telnetd \\ \hline
+NULL & rdate & test \\ \hline
+NULL & readlink & time \\ \hline
+NULL & realpath & timeout \\ \hline
+NULL & reboot & top \\ \hline
+NULL & renice & tr \\ \hline
+NULL & reset & traceroute \\ \hline
+NULL & rev & traceroute6 \\ \hline
+NULL & rm & TRUE \\ \hline
+NULL & rmdir & tty \\ \hline
+NULL & rmmod & tunctl \\ \hline
+NULL & route & udhcpc \\ \hline
+NULL & rpm & udhcpd \\ \hline
+NULL & rpm2cpio & umount \\ \hline
+NULL & run-parts & uncompress \\ \hline
+NULL & sed & unexpand \\ \hline
+NULL & seq & uniq \\ \hline
+NULL & setkeycodes & unix2dos \\ \hline
+NULL & setsid & unlzma \\ \hline
+NULL & sh & unlzop \\ \hline
+NULL & sha1sum & unxz \\ \hline
+NULL & sha256sum & unzip \\ \hline
+NULL & sha512sum & usleep \\ \hline
+NULL & sleep & uudecode \\ \hline
+NULL & sort & uuencode \\ \hline
+NULL & start-stop-daemon & vconfig \\ \hline
+NULL & stat & vi \\ \hline
+NULL & static-sh & watch \\ \hline
+NULL & strings & watchdog \\ \hline
+NULL & stty & wc \\ \hline
+NULL & su & xargs \\ \hline
+NULL & sulogin & xz \\ \hline
+NULL & swapoff & xzcat \\ \hline
+NULL & swapon & zcat \\ \hline
+NULL & switch_root & NULL \\ \hline
+NULL & sync & NULL \\ \hline
+NULL & sysctl & NULL \\ \hline
+NULL & syslogd & NULL \\ \hline
+NULL & tac & NULL \\ \hline
+NULL & tail & NULL \\ \hline
+NULL & tar & NULL \\ \hline
+NULL & taskset & NULL \\ \hline
+NULL & tee & NULL \\ \hline
+NULL & telnet & NULL \\ \hline
+NULL & telnetd & NULL \\ \hline
+NULL & test & NULL \\ \hline
+NULL & tftp & NULL \\ \hline
+NULL & time & NULL \\ \hline
+NULL & timeout & NULL \\ \hline
+NULL & top & NULL \\ \hline
+NULL & touch & NULL \\ \hline
+NULL & tr & NULL \\ \hline
+NULL & traceroute & NULL \\ \hline
+NULL & traceroute6 & NULL \\ \hline
+NULL & TRUE & NULL \\ \hline
+NULL & tty & NULL \\ \hline
+NULL & tunctl & NULL \\ \hline
+NULL & udhcpc & NULL \\ \hline
+NULL & udhcpd & NULL \\ \hline
+NULL & umount & NULL \\ \hline
+NULL & uname & NULL \\ \hline
+NULL & uncompress & NULL \\ \hline
+NULL & unexpand & NULL \\ \hline
+NULL & uniq & NULL \\ \hline
+NULL & unix2dos & NULL \\ \hline
+NULL & unlzma & NULL \\ \hline
+NULL & unlzop & NULL \\ \hline
+NULL & unxz & NULL \\ \hline
+NULL & unzip & NULL \\ \hline
+NULL & uptime & NULL \\ \hline
+NULL & usleep & NULL \\ \hline
+NULL & uudecode & NULL \\ \hline
+NULL & uuencode & NULL \\ \hline
+NULL & vconfig & NULL \\ \hline
+NULL & vi & NULL \\ \hline
+NULL & watch & NULL \\ \hline
+NULL & watchdog & NULL \\ \hline
+NULL & wc & NULL \\ \hline
+NULL & wget & NULL \\ \hline
+NULL & which & NULL \\ \hline
+NULL & who & NULL \\ \hline
+NULL & whoami & NULL \\ \hline
+NULL & xargs & NULL \\ \hline
+NULL & xz & NULL \\ \hline
+NULL & xzcat & NULL \\ \hline
+NULL & yes & NULL \\ \hline
+NULL & zcat & NULL \\ \hline
+
 \end{longtable}
 %\vspace{3mm}
 %\setlength{\myheight}{10mm}
