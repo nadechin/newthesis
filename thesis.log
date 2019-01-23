@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  16 JAN 2019 14:10
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  23 JAN 2019 07:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -729,130 +729,25 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 LaTeX Warning: Reference `Cowrie' on page 19 undefined on input line 35.
 
-[19
+
+LaTeX Warning: Reference `appendix' on page 19 undefined on input line 36.
+
+
+LaTeX Warning: Reference `appendix:implofcommand' on page 19 undefined on input
+ line 39.
+
+) (./src/7_eval.tex [19
 
 ]
-Overfull \hbox (3.9872pt too wide) in alignment at lines 54--58
- [] [] [] 
- []
-
-
-Overfull \hbox (3.9872pt too wide) in alignment at lines 58--62
- [] [] [] 
- []
-
-
-Overfull \hbox (3.9872pt too wide) in alignment at lines 62--66
- [] [] [] 
- []
-
-
-Overfull \hbox (3.9872pt too wide) in alignment at lines 66--87
- [] [] [] 
- []
-
-
-Overfull \hbox (3.9872pt too wide) in alignment at lines 87--107
- [] [] [] 
- []
-
-
-Overfull \hbox (3.9872pt too wide) in alignment at lines 107--127
- [] [] [] 
- []
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[20
-
-]
-Overfull \hbox (3.9872pt too wide) in alignment at lines 127--147
- [] [] [] 
- []
-
-
-Overfull \hbox (3.9872pt too wide) in alignment at lines 147--167
- [] [] [] 
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 16.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[21]
-Overfull \hbox (3.9872pt too wide) in alignment at lines 167--187
- [] [] [] 
- []
-
-
-Overfull \hbox (3.9872pt too wide) in alignment at lines 187--207
- [] [] [] 
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 16.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[22]
-Overfull \hbox (3.9872pt too wide) in alignment at lines 207--227
- [] [] [] 
- []
-
-
-Overfull \hbox (3.9872pt too wide) in alignment at lines 227--247
- [] [] [] 
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 16.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[23]
-Overfull \hbox (3.9872pt too wide) in alignment at lines 247--267
- [] [] [] 
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 16.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[24]
-Overfull \hbox (3.9872pt too wide) in alignment at lines 267--288
- [] [] [] 
- []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 5.2 on input line 288.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 16.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[25]) (./src/7_eval.tex
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 16.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[26]
+[20]
 第 6 章
-[27
+[21
 
 ]
 \myheighta=\skip82
@@ -864,33 +759,23 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[28]
+[22]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[29]
+[23]
 File: figures/termhyoka.png Graphic file (type bmp)
  <figures/termhyoka.png>
 File: figures/sotuhyoka.png Graphic file (type bmp)
  <figures/sotuhyoka.png>
 
-LaTeX Warning: Reference `tech:Markov' on page 30 undefined on input line 115.
+LaTeX Warning: Reference `tech:Markov' on page 24 undefined on input line 115.
 
 
-LaTeX Warning: Reference `tech:tokei' on page 30 undefined on input line 117.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 16.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[30]
-
-LaTeX Warning: Reference `lst:exam' on page 31 undefined on input line 126.
+LaTeX Warning: Reference `tech:tokei' on page 24 undefined on input line 117.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -898,7 +783,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[31]
+[24]
+
+LaTeX Warning: Reference `lst:exam' on page 25 undefined on input line 126.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[25]
 
 LaTeX Font Warning: Font shape `JT1/mc/m/it' undefined
 (Font)              using `JT1/mc/m/n' instead on input line 144.
@@ -915,7 +810,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[32]
+[26]
 File: figures/evalflow.png Graphic file (type bmp)
  <figures/evalflow.png>) (./src/8_rela.tex
 
@@ -924,11 +819,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[33
+[27
 
 ]
 第 7 章
-[34
+[28
 
 ]) (./src/9_conc.tex
 
@@ -937,18 +832,138 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[35]
+[29]
 第 8 章
-[36
+[30
 
-]) (./src/acknowledgement.tex
+]) (./src/appendix.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[37]) (./bib/biblio.tex (./thesis.bbl [38
+[31]
+付 録 A  
+! Undefined control sequence.
+l.4 \sention
+            {実装コマンド}
+? 
+
+Overfull \hbox (3.9872pt too wide) in alignment at lines 15--21
+ [] [] [] 
+ []
+
+
+Overfull \hbox (3.9872pt too wide) in alignment at lines 21--25
+ [] [] [] 
+ []
+
+
+Overfull \hbox (3.9872pt too wide) in alignment at lines 25--29
+ [] [] [] 
+ []
+
+
+Overfull \hbox (3.9872pt too wide) in alignment at lines 29--33
+ [] [] [] 
+ []
+
+
+Overfull \hbox (3.9872pt too wide) in alignment at lines 33--54
+ [] [] [] 
+ []
+
+
+Overfull \hbox (3.9872pt too wide) in alignment at lines 54--74
+ [] [] [] 
+ []
+
+
+Overfull \hbox (3.9872pt too wide) in alignment at lines 74--94
+ [] [] [] 
+ []
+
+[32
+
+]
+Overfull \hbox (3.9872pt too wide) in alignment at lines 94--114
+ [] [] [] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[33]
+Overfull \hbox (3.9872pt too wide) in alignment at lines 114--134
+ [] [] [] 
+ []
+
+
+Overfull \hbox (3.9872pt too wide) in alignment at lines 134--154
+ [] [] [] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[34]
+Overfull \hbox (3.9872pt too wide) in alignment at lines 154--174
+ [] [] [] 
+ []
+
+
+Overfull \hbox (3.9872pt too wide) in alignment at lines 174--194
+ [] [] [] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[35]
+Overfull \hbox (3.9872pt too wide) in alignment at lines 194--214
+ [] [] [] 
+ []
+
+
+Overfull \hbox (3.9872pt too wide) in alignment at lines 214--234
+ [] [] [] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[36]
+Overfull \hbox (3.9872pt too wide) in alignment at lines 234--255
+ [] [] [] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[37]) (./src/acknowledgement.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[38]) (./bib/biblio.tex (./thesis.bbl [39
 
 ]
 
@@ -983,14 +998,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 60--65
 oukoku _ g-[]4-[]1 . html$[]\OT1/cmr/m/n/12 ,
  []
 
-[39
+[40
 
 ]))
-
-Package longtable Warning: Table widths have changed. Rerun LaTeX.
-
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 149.
-[40]
+ [41]
 Package atveryend Info: Executing hook `AfterLastShipout' on input line 149.
 \BKM@file=\write7
 \openout7 = `thesis.out.ps'.
@@ -1011,12 +1023,12 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 149.
  ) 
 Here is how much of TeX's memory you used:
- 8805 strings out of 494865
- 124811 string characters out of 6179768
- 270013 words of memory out of 5000000
- 12020 multiletter control sequences out of 15000+600000
+ 8814 strings out of 494865
+ 124927 string characters out of 6179768
+ 269013 words of memory out of 5000000
+ 12027 multiletter control sequences out of 15000+600000
  23274 words of font info for 95 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
  33i,12n,58p,1800b,1217s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (47 pages, 179044 bytes).
+Output written on thesis.dvi (48 pages, 180372 bytes).
