@@ -39,7 +39,7 @@
 ~\ref{impl:ImplBusyBox}で示したCowrieに未実装のコマンドについての一部の実装を示す．他の実装は~\ref{appd:implofcommand}の表に示す．
 Cowrieに実装されているコマンドはcowrie/src/cowrie/commands/に格納されており，ここに追加コマンドを実装する．\\
 
-以下の\ref{lst:dmidecode}にcowrie/src/cowrie/commands/base.pyにdmidecodeコマンドを追加実装したものを示す．
+以下の\ref{lst:dmidecode}にcowrie/src/cowrie/commands/base.pyにdmidecodeコマンドを追加実装したものを示す．\cite{dmidecode}
 
 \begin{mylisting}[label={lst:dmidecode},language=sh,caption=dmidecode]
 class command_dmidecode(HoneyPotCommand):
@@ -66,9 +66,10 @@ Handle 0x0056, DMI type 127, 4 bytes
 End Of Table\n""")
 commands['dmidecode'] = command_dmidecode
 \end{mylisting}
-\cite{dmidecode}
 
-また，\ref{lst:diff}に追加実装以外ではファイルを追記し，コマンドを追加したものを示す．
+
+また，\ref{lst:diff}に\ref{lst:dmidecode}
+\ref{lst:dmidecode}追加実装以外ではファイルを追記し，コマンドを追加したものを示す．\cite{diff}
 
 \begin{mylisting}[label={lst:diff},language=sh,caption=diffコマンド]
 # coding: utf-8
@@ -190,7 +191,6 @@ if __name__ == "__main__":
     quit()
   diff(sys.argv[1], sys.argv[2])
 \end{mylisting}
-\cite{diff}
 
 %\vspace{3mm}
 %\setlength{\myheight}{10mm}
