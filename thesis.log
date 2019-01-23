@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  23 JAN 2019 17:15
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  23 JAN 2019 17:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -484,122 +484,553 @@ LaTeX Warning: Label `eval:eval' multiply defined.
 LaTeX Warning: Label `eval:impl' multiply defined.
 
 )
-Runaway argument?
-{twi 
-! File ended while scanning use of \bibcite.
+\openout1 = `thesis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+\c@lstlisting=\count150
+\AtBeginShipoutBox=\box62
+Package hyperref Info: Link coloring OFF on input line 106.
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count151
+)
+LaTeX Info: Redefining \ref on input line 106.
+LaTeX Info: Redefining \pageref on input line 106.
+LaTeX Info: Redefining \nameref on input line 106.
+
+(./src/titlepage.tex [1
+
+]) (./src/abstract_japanese.tex
+LaTeX Font Info:    Try loading font information for U+msa on input line 4.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 4.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)) [1]
+(./src/abstract_english.tex) [2
+
+]
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24.88> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 121.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 121.
+ (./thesis.toc
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 1.
+ [3
+
+
+])
+\tf@toc=\write4
+\openout4 = `thesis.toc'.
+
+ [4] (./thesis.lof)
+\tf@lof=\write5
+\openout5 = `thesis.lof'.
+
+ [5
+
+
+]
+(./thesis.lot)
+\tf@lot=\write6
+\openout6 = `thesis.lot'.
+
+ [6
+
+
+] (./src/1_intr.tex
+第 1 章
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 6.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 6.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 8.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 8.
+[1
+
+
+]
+
+LaTeX Font Warning: Font shape `JT1/mc/m/sl' undefined
+(Font)              using `JT1/mc/m/n' instead on input line 40.
+
+
+LaTeX Font Warning: Font shape `JY1/mc/m/sl' undefined
+(Font)              using `JY1/mc/m/n' instead on input line 40.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[2]) (./src/2_tech.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[3]
+第 2 章
+[4
+
+]
+\myheight=\skip81
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[5]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[6]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[7]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[9]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[11]
+File: figures/uc.pdf Graphic file (type pdf)
+ <figures/uc.pdf>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[12
+
+]
+File: figures/skip-gram.pdf Graphic file (type pdf)
+ <figures/skip-gram.pdf>) (./src/3_appr.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[13]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[14]
+第 3 章
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                \kern 1.95872pt
+(hyperref)                removed on input line 10.
+
+File: figures/nagare.png Graphic file (type bmp)
+<figures/nagare.png> [15
+
+]
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10.95> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 55.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10.95> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 55.
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 55.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[16]) (./src/5_meth.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[17]
+第 4 章
+) (./src/6_impl.tex [18
+
+]
+第 5 章
+
+LaTeX Warning: Reference `Cowrie' on page 19 undefined on input line 35.
+
+[19
+
+]
+
+LaTeX Font Warning: Font shape `JT1/mc/m/it' undefined
+(Font)              using `JT1/mc/m/n' instead on input line 75.
+
+
+LaTeX Font Warning: Font shape `JY1/mc/m/it' undefined
+(Font)              using `JY1/mc/m/n' instead on input line 75.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[20]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[21]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[22]) (./src/7_eval.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[23]
+第 6 章
+[24
+
+]
+\myheighta=\skip82
+File: figures/Figure_1.png Graphic file (type bmp)
+ <figures/Figure_1.png>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[25]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[26]
+File: figures/termhyoka.png Graphic file (type bmp)
+ <figures/termhyoka.png>
+File: figures/sotuhyoka.png Graphic file (type bmp)
+ <figures/sotuhyoka.png>
+
+LaTeX Warning: Reference `tech:Markov' on page 27 undefined on input line 115.
+
+
+LaTeX Warning: Reference `tech:tokei' on page 27 undefined on input line 117.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[27]
+
+LaTeX Warning: Reference `lst:exam' on page 28 undefined on input line 126.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[28]
+File: figures/model.png Graphic file (type bmp)
+ <figures/model.png>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[29]
+File: figures/evalflow.png Graphic file (type bmp)
+ <figures/evalflow.png>) (./src/8_rela.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[30
+
+]
+第 7 章
+[31
+
+]) (./src/9_conc.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[32]
+第 8 章
+[33
+
+]) (./src/appendix.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[34]
+付 録 A  
+
+Overfull \hbox (3.9872pt too wide) in alignment at lines 16--22
+ [] [] [] 
+ []
+
+
+Overfull \hbox (3.9872pt too wide) in alignment at lines 22--26
+ [] [] [] 
+ []
+
+
+Overfull \hbox (3.9872pt too wide) in alignment at lines 26--30
+ [] [] [] 
+ []
+
+
+Overfull \hbox (3.9872pt too wide) in alignment at lines 30--34
+ [] [] [] 
+ []
+
+
+Overfull \hbox (3.9872pt too wide) in alignment at lines 34--55
+ [] [] [] 
+ []
+
+
+Overfull \hbox (3.9872pt too wide) in alignment at lines 55--75
+ [] [] [] 
+ []
+
+
+Overfull \hbox (3.9872pt too wide) in alignment at lines 75--95
+ [] [] [] 
+ []
+
+[35
+
+]
+Overfull \hbox (3.9872pt too wide) in alignment at lines 95--115
+ [] [] [] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[36]
+Overfull \hbox (3.9872pt too wide) in alignment at lines 115--135
+ [] [] [] 
+ []
+
+
+Overfull \hbox (3.9872pt too wide) in alignment at lines 135--155
+ [] [] [] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[37]
+Overfull \hbox (3.9872pt too wide) in alignment at lines 155--175
+ [] [] [] 
+ []
+
+
+Overfull \hbox (3.9872pt too wide) in alignment at lines 175--195
+ [] [] [] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[38]
+Overfull \hbox (3.9872pt too wide) in alignment at lines 195--215
+ [] [] [] 
+ []
+
+
+Overfull \hbox (3.9872pt too wide) in alignment at lines 215--235
+ [] [] [] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[39]
+Overfull \hbox (3.9872pt too wide) in alignment at lines 235--256
+ [] [] [] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[40]) (./src/acknowledgement.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[41]) (./bib/biblio.tex (./thesis.bbl [42
+
+]
+
+LaTeX Font Warning: Font shape `JT1/gt/m/it' undefined
+(Font)              using `JT1/gt/m/n' instead on input line 6.
+
+
+LaTeX Font Warning: Font shape `JY1/gt/m/it' undefined
+(Font)              using `JY1/gt/m/n' instead on input line 6.
+
+
+Underfull \hbox (badness 6559) in paragraph at lines 14--17
+[]\OT1/cmr/m/n/12 honeynet.  High-interaction-honeypot.  []$\OT1/cmtt/m/n/12 ht
+tps : / / projects . honeynet . org /
+ []
+
+
+Underfull \hbox (badness 1466) in paragraph at lines 39--41
+[]\OT1/cmr/m/n/12 Raspberry pi.  []$\OT1/cmtt/m/n/12 http : / / www . idc . com
+ / getdoc . jsp ? containerId = prUS40960716$[]\OT1/cmr/m/n/12 ,
+ []
+
+
+Underfull \hbox (badness 5374) in paragraph at lines 51--53
+[]\OT1/cmr/m/n/12 Number of kippo'commands.  []$\OT1/cmtt/m/n/12 https : / / gi
+thub . com / desaster / kippo / tree /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--65
+\OT1/cmtt/m/n/12 seikatsu / shingikai2 / kako / spc13 / houkoku _ g / spc13-[]h
+oukoku _ g-[]4-[]1 . html$[]\OT1/cmr/m/n/12 ,
+ []
+
+[43
+
+]
+! Missing $ inserted.
 <inserted text> 
-                \par 
-l.106 \begin{document}
-                      
+                $
+l.105 s_
+        murakami.
 ? 
 ! Emergency stop.
 <inserted text> 
-                \par 
-l.106 \begin{document}
-                      
+                $
+l.105 s_
+        murakami.
 End of file on the terminal!
 
  
 Here is how much of TeX's memory you used:
- 8235 strings out of 494865
- 117043 string characters out of 6179768
- 238013 words of memory out of 5000000
- 11559 multiletter control sequences out of 15000+600000
- 7905 words of font info for 33 fonts, out of 8000000 for 9000
- 264 hyphenation exceptions out of 8191
- 33i,0n,58p,1779b,265s stack positions out of 5000i,500n,10000p,200000b,80000s
-No pages of output.
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
-l.107 ...k \url{https://github.com/smurakami/diff}
-                                                  , 2014.
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.107 ...k \url{https://github.com/smurakami/diff}
-                                                  , 2014.
-? 
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.107 ...k \url{https://github.com/smurakami/diff}
-                                                  , 2014.
-? 
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.107 ...k \url{https://github.com/smurakami/diff}
-                                                  , 2014.
-? 
-! Undefined control sequence.
-\Url@FormatString ...ndafter \UrlLeft \Url@String 
-                                                  \UrlRight \m@th $
-l.107 ...k \url{https://github.com/smurakami/diff}
-                                                  , 2014.
-? 
-! Extra }, or forgotten $.
-<recently read> }
-                 
-l.107 ...k \url{https://github.com/smurakami/diff}
-                                                  , 2014.
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.107 ...k \url{https://github.com/smurakami/diff}
-                                                  , 2014.
-? 
-! Extra \endgroup.
-\Hy@endcolorlink ->\endgroup 
-                             
-l.107 ...k \url{https://github.com/smurakami/diff}
-                                                  , 2014.
-? 
-
-! LaTeX Error: \begin{document} ended by \end{thebibliography}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.109 \end{thebibliography}
-                           
-? 
-! Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.109 \end{thebibliography}
-                           
-? 
-))
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 149.
- [44]
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 149.
-\BKM@file=\write7
-\openout7 = `thesis.out.ps'.
-
- (./thesis.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 149.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 149.
-
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 149.
- ) 
-Here is how much of TeX's memory you used:
- 8959 strings out of 494865
- 126446 string characters out of 6179768
+ 8954 strings out of 494865
+ 126405 string characters out of 6179768
  398013 words of memory out of 5000000
- 12172 multiletter control sequences out of 15000+600000
+ 12171 multiletter control sequences out of 15000+600000
  23274 words of font info for 95 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
- 35i,12n,58p,1800b,1823s stack positions out of 5000i,500n,10000p,200000b,80000s
-
-Output written on thesis.dvi (50 pages, 191048 bytes).
+ 35i,12n,58p,1779b,1823s stack positions out of 5000i,500n,10000p,200000b,80000s
+Output written on thesis.dvi (50 pages, 216536 bytes).
