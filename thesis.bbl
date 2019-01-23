@@ -96,4 +96,14 @@ Wordnet wikipedia.
 Cowrie.
 \newblock \url{https://github.com/cowrie/cowrie/}.
 
+\bibitem{dmidecode}
+soji256.
+\newblock dmidecode command.
+\newblock \url{https://soji256.hatenablog.jp/entry/2018/09/06/075700}, 2018.
+
+\bibitem{diff}
+s_murakami.
+\newblock diff command.
+\newblock \url{https://github.com/smurakami/diff}, 2014.
+
 \end{thebibliography}
