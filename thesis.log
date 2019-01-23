@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  23 JAN 2019 17:09
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  23 JAN 2019 17:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -539,18 +539,23 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24.88> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 121.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 121.
- (./thesis.toc)
-\tf@toc=\write4
-\openout4 = `thesis.toc'.
-
+ (./thesis.toc
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 1.
  [3
 
 
-] (./thesis.lof)
+])
+\tf@toc=\write4
+\openout4 = `thesis.toc'.
+
+ [4] (./thesis.lof)
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
- [4
+ [5
 
 
 ]
@@ -558,7 +563,7 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
- [5
+ [6
 
 
 ] (./src/1_intr.tex
@@ -598,10 +603,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [3]
 第 2 章
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 24.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 24.
 [4
 
 ]
@@ -1016,113 +1017,20 @@ oukoku _ g-[]4-[]1 . html$[]\OT1/cmr/m/n/12 ,
 l.105 s_
         murakami.
 ? 
-
-! LaTeX Error: Command $ invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.107 ...k \url{https://github.com/smurakami/diff}
-                                                  , 2014.
-? 
-
-! LaTeX Error: Command \ttfamily invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.107 ...k \url{https://github.com/smurakami/diff}
-                                                  , 2014.
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.107 ...k \url{https://github.com/smurakami/diff}
-                                                  , 2014.
-? 
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.107 ...k \url{https://github.com/smurakami/diff}
-                                                  , 2014.
-? 
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.107 ...k \url{https://github.com/smurakami/diff}
-                                                  , 2014.
-? 
-! Undefined control sequence.
-\Url@FormatString ...ndafter \UrlLeft \Url@String 
-                                                  \UrlRight \m@th $
-l.107 ...k \url{https://github.com/smurakami/diff}
-                                                  , 2014.
-? 
-! Extra }, or forgotten $.
-<recently read> }
-                 
-l.107 ...k \url{https://github.com/smurakami/diff}
-                                                  , 2014.
-? 
-! Missing $ inserted.
+! Emergency stop.
 <inserted text> 
                 $
-l.107 ...k \url{https://github.com/smurakami/diff}
-                                                  , 2014.
-? 
-! Extra \endgroup.
-\Hy@endcolorlink ->\endgroup 
-                             
-l.107 ...k \url{https://github.com/smurakami/diff}
-                                                  , 2014.
-? 
+l.105 s_
+        murakami.
+End of file on the terminal!
 
-! LaTeX Error: \begin{document} ended by \end{thebibliography}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.109 \end{thebibliography}
-                           
-? 
-! Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.109 \end{thebibliography}
-                           
-? 
-))
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 149.
- [44]
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 149.
-\BKM@file=\write7
-\openout7 = `thesis.out.ps'.
-
- (./thesis.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 149.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 149.
-
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 149.
- ) 
+ 
 Here is how much of TeX's memory you used:
- 8959 strings out of 494865
- 126446 string characters out of 6179768
+ 8954 strings out of 494865
+ 126405 string characters out of 6179768
  398013 words of memory out of 5000000
- 12172 multiletter control sequences out of 15000+600000
+ 12171 multiletter control sequences out of 15000+600000
  23274 words of font info for 95 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
- 35i,12n,58p,1800b,1823s stack positions out of 5000i,500n,10000p,200000b,80000s
-
-Output written on thesis.dvi (50 pages, 191048 bytes).
+ 35i,12n,58p,1779b,1823s stack positions out of 5000i,500n,10000p,200000b,80000s
+Output written on thesis.dvi (50 pages, 216280 bytes).
