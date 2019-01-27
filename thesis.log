@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  27 JAN 2019 04:52
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  27 JAN 2019 04:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -539,26 +539,47 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24.88> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 121.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 121.
- (./thesis.toc)
-\tf@toc=\write4
-\openout4 = `thesis.toc'.
-
+ (./thesis.toc
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 1.
  [3
 
 
-] (./thesis.lof)
+])
+\tf@toc=\write4
+\openout4 = `thesis.toc'.
+
+ [4] (./thesis.lof
+
+Package natbib Warning: Citation `word2vecpaper' on page v undefined on input l
+ine 13.
+
+
+Package natbib Warning: Citation `word2vecpaper2' on page v undefined on input 
+line 13.
+
+
+Package natbib Warning: Citation `word2vecpaper' on page v undefined on input l
+ine 14.
+
+
+Package natbib Warning: Citation `word2vecpaper2' on page v undefined on input 
+line 14.
+
+)
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
- [4
+ [5
 
 
-]
-(./thesis.lot)
+] (./thesis.lot)
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
- [5
+ [6
 
 
 ] (./src/1_intr.tex
@@ -571,6 +592,10 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 8.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 8.
+
+Package natbib Warning: Citation `highinthoney' on page 1 undefined on input li
+ne 19.
+
 [1
 
 
@@ -598,15 +623,52 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [3]
 第 2 章
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 24.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 24.
+
+Package natbib Warning: Citation `honeypot' on page 4 undefined on input line 8
+.
+
+
+Package natbib Warning: Citation `kippo' on page 4 undefined on input line 27.
+
+
+Package natbib Warning: Citation `kojoney' on page 4 undefined on input line 27
+.
+
+
+Package natbib Warning: Citation `twisted' on page 4 undefined on input line 27
+.
+
+
+Package natbib Warning: Citation `rasp' on page 4 undefined on input line 27.
+
+
+Package natbib Warning: Citation `singleboard' on page 4 undefined on input lin
+e 27.
+
+
+Package natbib Warning: Citation `kippowiki' on page 4 undefined on input line 
+28.
+
+
+Package natbib Warning: Citation `kippocommand' on page 4 undefined on input li
+ne 29.
+
 [4
 
 ]
-\myheight=\skip81
 
+Package natbib Warning: Citation `cowriecommand' on page 5 undefined on input l
+ine 34.
+
+
+Package natbib Warning: Citation `differfromkippo' on page 5 undefined on input
+ line 34.
+
+
+Package natbib Warning: Citation `honeywall' on page 5 undefined on input line 
+46.
+
+\myheight=\skip81
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -618,12 +680,31 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [5]
 
+Package natbib Warning: Citation `ssh' on page 6 undefined on input line 95.
+
+
+Package natbib Warning: Citation `busybox' on page 6 undefined on input line 99
+.
+
+
+Package natbib Warning: Citation `wordnet' on page 6 undefined on input line 10
+8.
+
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [6]
+
+Package natbib Warning: Citation `wordnetwiki' on page 7 undefined on input lin
+e 112.
+
+
+Package natbib Warning: Citation `voctormodel' on page 7 undefined on input lin
+e 140.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
@@ -638,6 +719,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [8]
+
+Package natbib Warning: Citation `word2vecpaper' on page 9 undefined on input l
+ine 212.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
@@ -726,11 +811,23 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 ]
 第 5 章
 
+Package natbib Warning: Citation `cowrie' on page 19 undefined on input line 35
+.
+
+
+Package natbib Warning: Citation `busybox' on page 19 undefined on input line 3
+5.
+
+
 LaTeX Warning: Reference `Cowrie' on page 19 undefined on input line 35.
 
 [19
 
 ]
+
+Package natbib Warning: Citation `dmidecode' on page 20 undefined on input line
+ 42.
+
 
 Package natbib Warning: Citation `diffcommand' on page 20 undefined on input li
 ne 72.
@@ -822,6 +919,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: figures/model.png Graphic file (type bmp)
  <figures/model.png>
 
+Package natbib Warning: Citation `word2vecpaper' on page 29 undefined on input 
+line 157.
+
+
+Package natbib Warning: Citation `word2vecpaper2' on page 29 undefined on input
+ line 157.
+
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
  We now make it that large for the rest of the document.
@@ -829,7 +934,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [29]
 File: figures/evalflow.png Graphic file (type bmp)
- <figures/evalflow.png>) (./src/8_rela.tex
+ <figures/evalflow.png>
+
+Package natbib Warning: Citation `word2vecpaper' on page 30 undefined on input 
+line 170.
+
+
+Package natbib Warning: Citation `word2vecpaper2' on page 30 undefined on input
+ line 170.
+
+) (./src/8_rela.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
@@ -980,7 +1094,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[41])
+[41]) (./bib/biblio.tex (./thesis.bbl))
 
 Package natbib Warning: There were undefined citations.
 
@@ -1008,12 +1122,12 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 149.
  ) 
 Here is how much of TeX's memory you used:
- 8904 strings out of 494865
- 125457 string characters out of 6179768
+ 8889 strings out of 494865
+ 125261 string characters out of 6179768
  398081 words of memory out of 5000000
- 12125 multiletter control sequences out of 15000+600000
+ 12103 multiletter control sequences out of 15000+600000
  22927 words of font info for 94 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
  35i,12n,58p,1800b,1823s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (48 pages, 183932 bytes).
+Output written on thesis.dvi (49 pages, 209572 bytes).
