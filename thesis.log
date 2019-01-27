@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  27 JAN 2019 10:07
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  27 JAN 2019 10:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -482,6 +482,9 @@ LaTeX Warning: Label `eval:eval' multiply defined.
 
 
 LaTeX Warning: Label `eval:impl' multiply defined.
+
+
+LaTeX Warning: Label `lst:acpid' multiply defined.
 
 
 LaTeX Warning: Label `lst:acpid' multiply defined.
@@ -1008,14 +1011,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[42]) (./src/acknowledgement.tex
+[42]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[43]) (./bib/biblio.tex (./thesis.bbl [44
+[43]) (./src/acknowledgement.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[44]) (./bib/biblio.tex (./thesis.bbl [45
 
 ]
 
@@ -1038,14 +1048,14 @@ Underfull \hbox (badness 5374) in paragraph at lines 37--39
 thub . com / desaster / kippo / tree /
  []
 
-[45
+[46
 
 ]))
 
 Package natbib Warning: There were undefined citations.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 149.
-[46]
+[47]
 Package atveryend Info: Executing hook `AfterLastShipout' on input line 149.
 \BKM@file=\write7
 \openout7 = `thesis.out.ps'.
@@ -1066,12 +1076,12 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 149.
  ) 
 Here is how much of TeX's memory you used:
- 9145 strings out of 494865
- 128480 string characters out of 6179768
+ 9155 strings out of 494865
+ 128574 string characters out of 6179768
  438081 words of memory out of 5000000
- 12357 multiletter control sequences out of 15000+600000
+ 12367 multiletter control sequences out of 15000+600000
  23274 words of font info for 95 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
  35i,12n,58p,1800b,1823s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (53 pages, 250628 bytes).
+Output written on thesis.dvi (54 pages, 252308 bytes).
