@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  27 JAN 2019 08:43
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  27 JAN 2019 09:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -745,15 +745,15 @@ LaTeX Warning: Reference `Cowrie' on page 19 undefined on input line 35.
 ]
 
 Package natbib Warning: Citation `diffcommand' on page 20 undefined on input li
-ne 72.
+ne 70.
 
 
 LaTeX Font Warning: Font shape `JT1/mc/m/it' undefined
-(Font)              using `JT1/mc/m/n' instead on input line 75.
+(Font)              using `JT1/mc/m/n' instead on input line 73.
 
 
 LaTeX Font Warning: Font shape `JY1/mc/m/it' undefined
-(Font)              using `JY1/mc/m/n' instead on input line 75.
+(Font)              using `JY1/mc/m/n' instead on input line 73.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -775,16 +775,26 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[22]) (./src/7_eval.tex
+[22]
+
+LaTeX Warning: Reference `lst:mount' on page 23 undefined on input line 193.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[23]
+[23]) (./src/7_eval.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[24]
 第 6 章
-[24
+[25
 
 ]
 \myheighta=\skip82
@@ -796,24 +806,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[25]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 16.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
 [26]
-File: figures/termhyoka.png Graphic file (type bmp)
- <figures/termhyoka.png>
-File: figures/sotuhyoka.png Graphic file (type bmp)
- <figures/sotuhyoka.png>
-
-LaTeX Warning: Reference `tech:Markov' on page 27 undefined on input line 115.
-
-
-LaTeX Warning: Reference `tech:tokei' on page 27 undefined on input line 117.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
@@ -821,8 +814,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [27]
+File: figures/termhyoka.png Graphic file (type bmp)
+ <figures/termhyoka.png>
+File: figures/sotuhyoka.png Graphic file (type bmp)
+ <figures/sotuhyoka.png>
 
-LaTeX Warning: Reference `lst:exam' on page 28 undefined on input line 126.
+LaTeX Warning: Reference `tech:Markov' on page 28 undefined on input line 115.
+
+
+LaTeX Warning: Reference `tech:tokei' on page 28 undefined on input line 117.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -831,6 +831,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [28]
+
+LaTeX Warning: Reference `lst:exam' on page 29 undefined on input line 126.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[29]
 File: figures/model.png Graphic file (type bmp)
  <figures/model.png>
 
@@ -839,7 +849,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[29]
+[30]
 File: figures/evalflow.png Graphic file (type bmp)
  <figures/evalflow.png>) (./src/8_rela.tex
 
@@ -848,12 +858,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[30
+[31
 
 ]
 第 7 章
 File: figures/hiddenmarkov.pdf Graphic file (type pdf)
-<figures/hiddenmarkov.pdf> [31
+<figures/hiddenmarkov.pdf> [32
 
 ]) (./src/9_conc.tex
 
@@ -862,9 +872,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[32]
+[33]
 第 8 章
-[33
+[34
 
 ]) (./src/appendix.tex
 
@@ -873,7 +883,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[34]
+[35]
 付 録 A  
 
 Overfull \hbox (3.9872pt too wide) in alignment at lines 16--22
@@ -910,7 +920,7 @@ Overfull \hbox (3.9872pt too wide) in alignment at lines 75--95
  [] [] [] 
  []
 
-[35
+[36
 
 ]
 Overfull \hbox (3.9872pt too wide) in alignment at lines 95--115
@@ -923,7 +933,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[36]
+[37]
 Overfull \hbox (3.9872pt too wide) in alignment at lines 115--135
  [] [] [] 
  []
@@ -939,7 +949,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[37]
+[38]
 Overfull \hbox (3.9872pt too wide) in alignment at lines 155--175
  [] [] [] 
  []
@@ -955,7 +965,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[38]
+[39]
 Overfull \hbox (3.9872pt too wide) in alignment at lines 195--215
  [] [] [] 
  []
@@ -971,7 +981,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[39]
+[40]
 Overfull \hbox (3.9872pt too wide) in alignment at lines 235--256
  [] [] [] 
  []
@@ -982,14 +992,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[40]) (./src/acknowledgement.tex
+[41]) (./src/acknowledgement.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[41]) (./bib/biblio.tex (./thesis.bbl [42
+[42]) (./bib/biblio.tex (./thesis.bbl [43
 
 ]
 
@@ -1012,14 +1022,14 @@ Underfull \hbox (badness 5374) in paragraph at lines 37--39
 thub . com / desaster / kippo / tree /
  []
 
-[43
+[44
 
 ]))
 
 Package natbib Warning: There were undefined citations.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 149.
-[44]
+[45]
 Package atveryend Info: Executing hook `AfterLastShipout' on input line 149.
 \BKM@file=\write7
 \openout7 = `thesis.out.ps'.
@@ -1040,12 +1050,12 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 149.
  ) 
 Here is how much of TeX's memory you used:
- 8956 strings out of 494865
- 126468 string characters out of 6179768
- 398081 words of memory out of 5000000
- 12168 multiletter control sequences out of 15000+600000
+ 9134 strings out of 494865
+ 128363 string characters out of 6179768
+ 440081 words of memory out of 5000000
+ 12346 multiletter control sequences out of 15000+600000
  23274 words of font info for 95 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
  35i,12n,58p,1800b,1823s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (51 pages, 220564 bytes).
+Output written on thesis.dvi (52 pages, 240548 bytes).
