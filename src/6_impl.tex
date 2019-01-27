@@ -193,8 +193,9 @@ if __name__ == "__main__":
 さらに，コマンド実行時に出力結果をprint関数で出力するのみのコマンド追加したものの例を以下の\ref{lst:mount}示す．本例ではmountコマンドを以下のように実装した．
 
 \begin{mylisting}[label={lst:mount},language=sh,caption=mountコマンド]
-root@localhost:~$ mount
-sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
+# coding: utf-8
+
+string = '''sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
 proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
 udev on /dev type devtmpfs (rw,nosuid,relatime,size=16459820k,nr_inodes=4114955,mode=755)
 devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000)
@@ -225,9 +226,12 @@ configfs on /sys/kernel/config type configfs (rw,relatime)
 fusectl on /sys/fs/fuse/connections type fusectl (rw,relatime)
 /dev/sdb1 on /mnt type ext4 (rw,relatime,data=ordered)
 lxcfs on /var/lib/lxcfs type fuse.lxcfs (rw,nosuid,nodev,relatime,user_id=0,group_id=0,allow_other)
-tmpfs on /run/user/1000 type tmpfs (rw,nosuid,nodev,relatime,size=3294084k,mode=700,uid=1000,gid=1000)
-root@localhost:~$
+tmpfs on /run/user/1000 type tmpfs (rw,nosuid,nodev,relatime,size=3294084k,mode=700,uid=1000,gid=1000)'''
+
+print(string)
 \end{mylisting}
+
+残りのコマンドについては~\ref{appd:implofcommand}に記す．
 
 %\vspace{3mm}
 %\setlength{\myheight}{10mm}
