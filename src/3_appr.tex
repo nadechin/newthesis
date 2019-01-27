@@ -57,9 +57,9 @@ testnadechin@cpu:~$
 \end{mylisting}
 
 \begin{mylisting}[label={lst:kippo},language=sh,caption=Kippo特有の異常な挙動の例]
-s15445ys@s15445ys-neco:~$ echo -n hello
+root@localhost-neco:~$ echo -n hello
 -n hello
-s15445ys@s15445ys-neco:~$
+root@localhost-neco:~$
 \end{mylisting}
 
 プログラム\,3．1が通常の挙動でプログラム\,3．2がSSHの低対話型Honeypotの挙動である．echoコマンドの-nオプションは改行出力末尾にしないようにするものである．しかし，実際のShellの出力は改行がされない一方，Honeypotの挙動ではオプション部分も出力されてしまい，末尾も改行されてしまう．これはSSHの低対話型Honeypot特有の挙動であるため，この挙動を観測することによって侵入者に侵入先がHoneypotであると検知されてしまう可能性がある．
