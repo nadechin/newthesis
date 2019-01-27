@@ -3,6 +3,10 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 The style file: unsrt.bst
 Database file #1: ./bib/cites.bib
+Repeated entry---line 140 of file ./bib/cites.bib
+ : @article{AccessTracer
+ :                      ,
+I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "kojoney"
 Warning--I didn't find a database entry for "twisted"
 Warning--I didn't find a database entry for "rasp"
@@ -11,7 +15,7 @@ Too many commas in name 1 of "Tomas Mikolov, Kai Chen, Greg Corrado, Jeffrey Dea
 while executing---line 944 of file unsrt.bst
 You've used 19 entries,
             1791 wiz_defined-function locations,
-            525 strings with 5152 characters,
+            525 strings with 5187 characters,
 and the built_in function-call counts, 2603 in all, are:
 = -- 220
 > -- 66
@@ -51,4 +55,4 @@ while$ -- 16
 width$ -- 21
 write$ -- 169
 is.kanji.str$ -- 0
-(There was 1 error message)
+(There were 2 error messages)
