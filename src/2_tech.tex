@@ -103,6 +103,17 @@ BusyBoxをインストールして実際に各コマンドを実行するため�
 \label{tech:NLP}
 人間が日常的に使っている自然言語をコンピュータに処理させる一連の技術である．本研究において，自然言語処理は意味解析のために使用した．意味解析には様々な手法があり，現在では大きくシソーラス解析とベクトル空間分析がある．
 
+\subsection{混合隠れマルコフモデル}
+\label{tech:}
+混合隠れマルコフモデルはいくつかの種類のある観測できない行動に対し，その行動に依存する何らかの観測を用いて隠れているデータのモデルを構築するモデルのことである．隠れ変数を$ Zn $とし，観測値を$ Yn $とすると，隠れマルコフモデルは以下の図\ref{fig:hiddenmarkov}のように示すことができる．
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/hiddenmarkov.pdf}
+    \caption{隠れマルコフモデル}
+    \label{fig:hiddenmarkov}
+\end{figure}
+
 \subsection{シソーラス解析}
 \label{tech:Siso}
 シソーラスとは単語を意味レベルで分解し，抽象度の高いものから低いものへと遡っていくことができ，それを体系づけた類語辞書のことである．シソーラスには様々な言語において有名な辞書が存在する．有名なシソーラスとしてはPrinceton UniversityのWordNetがある．\cite{wordnet}
