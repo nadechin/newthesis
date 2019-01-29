@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  29 JAN 2019 11:35
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  29 JAN 2019 11:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -870,13 +870,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [30]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 16.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[31]
 File: figures/evalflow.png Graphic file (type bmp)
  <figures/evalflow.png>) (./src/8_rela.tex
 
@@ -885,9 +878,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[32
+[31]
 
-]
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[32]
 第 7 章
 File: figures/hiddenmarkov.pdf Graphic file (type pdf)
 <figures/hiddenmarkov.pdf> [33
@@ -1099,4 +1097,4 @@ Here is how much of TeX's memory you used:
  264 hyphenation exceptions out of 8191
  35i,12n,58p,1800b,1823s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (55 pages, 253912 bytes).
+Output written on thesis.dvi (55 pages, 253892 bytes).
