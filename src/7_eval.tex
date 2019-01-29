@@ -98,16 +98,15 @@ SSHの低対話型Honeypotの稼働期間は12/10から2/1(54日間)で，収集
     \label{fig:yobigainen}
 \end{figure}
 
-この予備実験では評価として何の追加実装も施していないSSHの低対話型Honeypotで取れた侵入者の実行コマンドログと追加実装を施したSSHの低対話型Honeypotの侵入者の実行コマンドログとを比較したのに対して，本件研究の評価手法では，純正のHoneypotで取れた侵入者の実行コマンドログと修正済みのHoneypotの侵入者の実行コマンドログと高対話型Honeypotの侵入者の実行コマンドログを比較することで，修正済みのHoneypotの侵入者の実行コマンドログが一般的なUNIXユーザーの実行するコマンドから離れたのかを評価した．本研究における収集ログの比較の概念図を図\ref{fig:gainen}に示す．
+この予備実験では評価として何の追加実装も施していないSSHの低対話型Honeypotで取れた侵入者の実行コマンドログと追加実装を施したSSHの低対話型Honeypotの侵入者の実行コマンドログとを比較したのに対して，本件研究の評価手法では，純正のHoneypotで取れた侵入者の実行コマンドログと修正済みのHoneypotの侵入者の実行コマンドログと高対話型Honeypotの侵入者の実行コマンドログを比較することで，修正済みのHoneypotの侵入者の実行コマンドログが一般的なUNIXユーザーの実行するコマンドから離れたのかを評価した．%研究における収集ログの比較の概念図を図\ref{fig:gainen}に示す．
 
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=1.0\textwidth]{figures/sotuhyoka.png}
-    \caption{本研究の評価の概念図}
-    \label{fig:gainen}
-\end{figure}
+%\begin{figure}[htbp]
+%    \centering
+%    \includegraphics[width=1.0\textwidth]{figures/sotuhyoka.png}
+%    \caption{本研究の評価の概念図}
+%    \label{fig:gainen}
+%\end{figure}
 
-%図6，と図7で示したように，取れた収集ログを比較することでいかに高対話型Honeypotに近似できたのか検証する．
 
 
 \subsection{コマンドログのスコアリング手法の実装の提案}
