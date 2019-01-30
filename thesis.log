@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  30 JAN 2019 03:41
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  30 JAN 2019 03:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -883,21 +883,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [30]
-Overfull \hbox (28.96333pt too wide) in paragraph at lines 163--176
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Overfull \hbox (28.96333pt too wide) in paragraph at lines 190--203
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
@@ -905,26 +890,40 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [31]
+Overfull \hbox (28.96333pt too wide) in paragraph at lines 164--177
+ [][] 
+ []
+
+
+Overfull \hbox (28.96333pt too wide) in paragraph at lines 191--204
+ [][] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[32
+
+]
 File: figures/seaborn.png Graphic file (type bmp)
  <figures/seaborn.png>
 
-Package natbib Warning: Citation `scdv' on page 32 undefined on input line 224.
+Package natbib Warning: Citation `scdv' on page 33 undefined on input line 226.
 
 
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 16.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[32]) (./src/8_rela.tex
+) (./src/8_rela.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[33]
+[33
+
+]
 第 7 章
 File: figures/hiddenmarkov.pdf Graphic file (type pdf)
 <figures/hiddenmarkov.pdf> [34
@@ -1112,7 +1111,12 @@ Package atveryend Info: Executing hook `AfterLastShipout' on input line 149.
 \BKM@file=\write7
 \openout7 = `thesis.out.ps'.
 
- (./thesis.aux)
+ (./thesis.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 149.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 149.
 
@@ -1128,12 +1132,12 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 149.
  ) 
 Here is how much of TeX's memory you used:
- 9155 strings out of 494865
- 128519 string characters out of 6179768
+ 9157 strings out of 494865
+ 128549 string characters out of 6179768
  438081 words of memory out of 5000000
- 12368 multiletter control sequences out of 15000+600000
+ 12370 multiletter control sequences out of 15000+600000
  23274 words of font info for 95 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
  35i,12n,58p,1800b,1823s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (56 pages, 263164 bytes).
+Output written on thesis.dvi (56 pages, 263576 bytes).
