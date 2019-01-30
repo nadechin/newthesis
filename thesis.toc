@@ -66,16 +66,15 @@
 \contentsline {paragraph}{\numberline {7.1.2.1.1}ベクトル空間モデル}{36}{paragraph.7.1.2.1.1}
 \contentsline {chapter}{\numberline {第8章}結論}{37}{chapter.8}
 \contentsline {section}{\numberline {8.1}本研究のまとめ}{37}{section.8.1}
-\contentsline {section}{\numberline {8.2}本研究の課題}{37}{section.8.2}
+\contentsline {section}{\numberline {8.2}本研究の課題と展望}{37}{section.8.2}
 \contentsline {subsection}{\numberline {8.2.1}文章ベクトルの評価指標}{38}{subsection.8.2.1}
 \contentsline {subsection}{\numberline {8.2.2}高対話型Honeypotのログ収集の不足}{38}{subsection.8.2.2}
 \contentsline {subsection}{\numberline {8.2.3}ネットワークセグメントによるログ収集環境の違い}{38}{subsection.8.2.3}
-\contentsline {section}{\numberline {8.3}本研究の展望}{38}{section.8.3}
-\contentsline {subsection}{\numberline {8.3.1}ディストリビューションごとの実装コマンド}{38}{subsection.8.3.1}
-\contentsline {subsection}{\numberline {8.3.2}様々なHoneypotのコマンドログの精度評価への応用}{38}{subsection.8.3.2}
-\contentsline {subsection}{\numberline {8.3.3}コマンド系ごとの評価への応用}{38}{subsection.8.3.3}
+\contentsline {subsection}{\numberline {8.2.4}ディストリビューションごとの実装コマンド}{38}{subsection.8.2.4}
+\contentsline {subsection}{\numberline {8.2.5}様々なHoneypotのコマンドログの精度評価への応用}{38}{subsection.8.2.5}
+\contentsline {subsection}{\numberline {8.2.6}コマンド系ごとの評価への応用}{38}{subsection.8.2.6}
 \contentsline {chapter}{\numberline {付 録A }付録}{39}{appendix.A}
 \contentsline {section}{\numberline {A.1}実装コマンド}{39}{section.A.1}
 \contentsline {subsection}{\numberline {A.1.1}純正のHoneypotで未実装のコマンド種類}{39}{subsection.A.1.1}
-\contentsline {subsection}{\numberline {A.1.2}純正のHoneypotで未実装のコマンドの実装}{45}{subsection.A.1.2}
+\contentsline {subsection}{\numberline {A.1.2}純正のHoneypotで未実装のコマンドの実装}{46}{subsection.A.1.2}
 \contentsline {chapter}{謝辞}{48}{appendix*.4}
