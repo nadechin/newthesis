@@ -219,7 +219,6 @@ SSHの低対話型Honeypotの稼働期間は12/10から2/1(54日間)で，収集
 したがって，$ 0 < n $を満たす$ n $と任意のベクトル$ \vec{\alpha} $を使うと，$ \vec{OB} $ は $ \vec{OB} = (1+n)\vec{OA} + \vec{\alpha} $と表すことができる．したがって，修正済みのHoneypotのコマンドログは一般ユーザーのコマンドログを始点とすると，素のHoneypotのコマンドログのベクトル方向よりも正の向きに遠くに位置することが分かった．\\
 
 また，SCDVによって獲得した各々のHoneypotの攻撃ログにおける文章ベクトルを，t-SNEで次元削減することで可視化を行なった結果を図\ref{fig:tsne1}，図\ref{fig:tsne2}，図\ref{fig:tsne3}に示す．
-\clearpage
 
 \vspace{10mm}
 \begin{figure}[htbp]
@@ -247,6 +246,7 @@ SSHの低対話型Honeypotの稼働期間は12/10から2/1(54日間)で，収集
     \label{fig:tsne3}
 \end{figure}
 \vspace{10mm}
+\clearpage
 
 上記の図において，Fixed-Low-Interaction-Honeypot（修正済みのHoneypot）はPure-Low-Interaction-Honeypotよりも広く分布していることが分かり，他のログでは取れていないログを取得できたことが分かる．
 
