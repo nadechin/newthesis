@@ -12,9 +12,9 @@
 \contentsline {figure}{\numberline {6.1}{\ignorespaces 純正のCowrieと修正済みのCowrieのスコアリングによる比較}}{29}{figure.6.1}
 \contentsline {figure}{\numberline {6.2}{\ignorespaces 予備実験の評価の概念図}}{30}{figure.6.2}
 \contentsline {figure}{\numberline {6.3}{\ignorespaces 評価のフロー\cite {word2vecpaper}\cite {word2vecpaper2}}}{32}{figure.6.3}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces 修正前と後のhoneypotのコマンドログの文章ベクトルの可視化}}{35}{figure.6.4}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces 修正前のhoneypotと一般UNIXユーザーのコマンドログの文章ベクトルの可視化}}{36}{figure.6.5}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces 修正後のhoneypotと一般UNIXユーザーのコマンドログの文章ベクトルの可視化}}{36}{figure.6.6}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces 修正前と後のhoneypotのコマンドログの文章ベクトルの可視化}}{34}{figure.6.4}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces 修正前のhoneypotと一般UNIXユーザーのコマンドログの文章ベクトルの可視化}}{35}{figure.6.5}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces 修正後のhoneypotと一般UNIXユーザーのコマンドログの文章ベクトルの可視化}}{35}{figure.6.6}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

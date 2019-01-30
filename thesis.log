@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  30 JAN 2019 10:25
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  30 JAN 2019 10:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -910,6 +910,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [33
 
 ]
+File: figures/sufix.png Graphic file (type bmp)
+ <figures/sufix.png>
+File: figures/suuser.png Graphic file (type bmp)
+ <figures/suuser.png>
+File: figures/fixuser.png Graphic file (type bmp)
+ <figures/fixuser.png>
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
@@ -917,32 +923,25 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [34]
-File: figures/sufix.png Graphic file (type bmp)
- <figures/sufix.png>
-File: figures/suuser.png Graphic file (type bmp)
- <figures/suuser.png>
-File: figures/fixuser.png Graphic file (type bmp)
- <figures/fixuser.png>)
-(./src/8_rela.tex
+
+LaTeX Warning: Text page 35 contains only floats.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[35
+[35]) (./src/8_rela.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[36
 
 ]
-
-LaTeX Warning: Text page 36 contains only floats.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 16.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[36]
 第 7 章
 [37
 
