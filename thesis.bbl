@@ -15,12 +15,6 @@ honeynet.
 \newblock High-interaction-honeypot.
 \newblock \url{https://projects.honeynet.org/honeywall/}, 2014.
 
-\bibitem{honeypot}
-Ken Fujiyoshi, Chihiro Fukai, Hiroya Tanaka, Jin Mitsugi, and Jun Murai.
-\newblock Honeypot.
-\newblock {\em NIP \& Digital Fabrication Conference 2014 1}, pages 316--319,
-  2014.
-
 \bibitem{kippo}
 Kippo.
 \newblock \url{https://github.com/desaster/kippo/}.
