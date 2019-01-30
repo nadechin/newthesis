@@ -61,6 +61,11 @@ Karl~DD Willis and Andrew~D Wilson.
 Busybox.
 \newblock \url{https://proofofexistence.com/}.
 
+\bibitem{tsne}
+Geoffrey~Hinton Laurens van~der Maaten.
+\newblock Visualizing data using t-sne.
+\newblock 2008.
+
 \bibitem{wordnet}
 Wordnet.
 \newblock \url{https://wordnet.princeton.edu/}.
