@@ -3,56 +3,54 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 The style file: unsrt.bst
 Database file #1: ./bib/cites.bib
-Repeated entry---line 140 of file ./bib/cites.bib
- : @article{AccessTracer
- :                      ,
-I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "kojoney"
 Warning--I didn't find a database entry for "twisted"
 Warning--I didn't find a database entry for "rasp"
 Warning--I didn't find a database entry for "diffcommand"
 Too many commas in name 1 of "Tomas Mikolov, Kai Chen, Greg Corrado, Jeffrey Dean" for entry word2vecpaper
 while executing---line 944 of file unsrt.bst
-You've used 19 entries,
+Too many commas in name 1 of "Dheeraj Mekala, Vivek Gupta, Bhargavi Paranjape, Harish Karnick" for entry scdv
+while executing---line 944 of file unsrt.bst
+You've used 20 entries,
             1791 wiz_defined-function locations,
-            525 strings with 5187 characters,
-and the built_in function-call counts, 2603 in all, are:
-= -- 220
-> -- 66
+            532 strings with 5395 characters,
+and the built_in function-call counts, 2762 in all, are:
+= -- 234
+> -- 70
 < -- 1
-+ -- 34
-- -- 15
-* -- 69
-:= -- 354
-add.period$ -- 48
-call.type$ -- 19
-change.case$ -- 19
++ -- 36
+- -- 16
+* -- 77
+:= -- 382
+add.period$ -- 51
+call.type$ -- 20
+change.case$ -- 20
 chr.to.int$ -- 0
-cite$ -- 19
-duplicate$ -- 120
-empty$ -- 360
-format.name$ -- 15
-if$ -- 635
+cite$ -- 20
+duplicate$ -- 129
+empty$ -- 378
+format.name$ -- 16
+if$ -- 670
 int.to.chr$ -- 0
-int.to.str$ -- 19
-missing$ -- 4
-newline$ -- 89
-num.names$ -- 10
-pop$ -- 96
+int.to.str$ -- 20
+missing$ -- 5
+newline$ -- 94
+num.names$ -- 11
+pop$ -- 97
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 96
+skip$ -- 99
 stack$ -- 0
-substring$ -- 59
-swap$ -- 28
+substring$ -- 65
+swap$ -- 29
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 16
-width$ -- 21
-write$ -- 169
+while$ -- 18
+width$ -- 22
+write$ -- 180
 is.kanji.str$ -- 0
 (There were 2 error messages)

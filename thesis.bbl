@@ -76,6 +76,12 @@ Wordnet wikipedia.
   \url{http://www.gifu-nct.ac.jp/elec/deguchi/sotsuron/hayashi/node20.html/},
   2010.
 
+\bibitem{scdv}
+Bhargavi Paranjape Harish~Karnick Dheeraj~Mekala, Vivek~Gupta.
+\newblock Scdv : Sparse composite document vectors using soft clustering over
+  distributional representations.
+\newblock \url{https://arxiv.org/pdf/1612.06778.pdf}, 2017.
+
 \bibitem{cowrie}
 Cowrie.
 \newblock \url{https://github.com/cowrie/cowrie/}.
@@ -86,8 +92,8 @@ soji256.
 \newblock \url{https://soji256.hatenablog.jp/entry/2018/09/06/075700/}, 2018.
 
 \bibitem{AccessTracer}
-NEC.
+山西健司・竹内純一・丸山祐子.
 \newblock データマイニングに基づくセキュリティ・インテリジェンス技術の研究開発.
-\newblock \url{http://fbi-award.jp/sentan/jusyou/2005/nec.pdf}, 2004.
+\newblock {\em 先端技術大賞応募論文}, 19:14, 2004.
 
 \end{thebibliography}
