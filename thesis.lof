@@ -9,7 +9,7 @@
 \contentsline {figure}{\numberline {4.1}{\ignorespaces 低対話型Honeypotの拡張}}{20}{figure.4.1}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces 純正のCowrieと修正済みのCowrieのスコアリングによる比較}}{29}{figure.6.1}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces 純正のCowrieと修正済のCowrieのスコアリングによる比較}}{29}{figure.6.1}
 \contentsline {figure}{\numberline {6.2}{\ignorespaces 予備実験の評価の概念図}}{30}{figure.6.2}
 \contentsline {figure}{\numberline {6.3}{\ignorespaces 評価のフロー\cite {word2vecpaper}\cite {word2vecpaper2}}}{32}{figure.6.3}
 \contentsline {figure}{\numberline {6.4}{\ignorespaces 修正前と後のhoneypotのコマンドログの文章ベクトルの可視化}}{34}{figure.6.4}
