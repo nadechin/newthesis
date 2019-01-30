@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  30 JAN 2019 11:34
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  30 JAN 2019 11:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -989,31 +989,286 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: figures/sankaku.pdf Graphic file (type pdf)
  <figures/sankaku.pdf>
 
-! LaTeX Error: There's no line here to end.
+LaTeX Warning: Reference `fig:tsne1' on page 34 undefined on input line 229.
 
-See the LaTeX manual or LaTeX Companion for explanation.
+
+LaTeX Warning: Reference `fig:tsne2' on page 34 undefined on input line 229.
+
+
+LaTeX Warning: Reference `fig:tsne3' on page 34 undefined on input line 229.
+
+File: figures/sufix.png Graphic file (type bmp)
+<figures/sufix.png>
+File: figures/suuser.png Graphic file (type bmp)
+ <figures/suuser.png>
+File: figures/fixuser.png Graphic file (type bmp)
+ <figures/fixuser.png>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[34
+
+]
+
+LaTeX Warning: Text page 35 contains only floats.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[35]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[36]
+
+Package natbib Warning: Citation `scdv' on page 37 undefined on input line 264.
+
+
+) (./src/8_rela.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[37
+
+]
+第 7 章
+
+Package natbib Warning: Citation `AccessTracer' on page 38 undefined on input l
+ine 8.
+
+
+LaTeX Warning: Reference `table:word2veccompare' on page 38 undefined on input 
+line 20.
+
+[38
+
+]
+Overfull \hbox (28.96333pt too wide) in paragraph at lines 30--43
+ [][] 
+ []
+
+) (./src/9_conc.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[39
+
+]
+第 8 章
+[40
+
+]) (./src/appendix.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[41]
+付 録 A  
+
+Overfull \hbox (3.9872pt too wide) in alignment at lines 22--26
+ [] [] [] 
+ []
+
+
+Overfull \hbox (3.9872pt too wide) in alignment at lines 26--30
+ [] [] [] 
+ []
+
+
+Overfull \hbox (3.9872pt too wide) in alignment at lines 30--34
+ [] [] [] 
+ []
+
+
+Overfull \hbox (3.9872pt too wide) in alignment at lines 34--55
+ [] [] [] 
+ []
+
+
+Overfull \hbox (3.9872pt too wide) in alignment at lines 55--75
+ [] [] [] 
+ []
+
+
+Overfull \hbox (3.9872pt too wide) in alignment at lines 75--95
+ [] [] [] 
+ []
+
+[42
+
+]
+Overfull \hbox (3.9872pt too wide) in alignment at lines 95--115
+ [] [] [] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[43]
+Overfull \hbox (3.9872pt too wide) in alignment at lines 115--135
+ [] [] [] 
+ []
+
+
+Overfull \hbox (3.9872pt too wide) in alignment at lines 135--155
+ [] [] [] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[44]
+Overfull \hbox (3.9872pt too wide) in alignment at lines 155--175
+ [] [] [] 
+ []
+
+
+Overfull \hbox (3.9872pt too wide) in alignment at lines 175--195
+ [] [] [] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[45]
+Overfull \hbox (3.9872pt too wide) in alignment at lines 195--215
+ [] [] [] 
+ []
+
+
+Overfull \hbox (3.9872pt too wide) in alignment at lines 215--235
+ [] [] [] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[46]
+Overfull \hbox (3.9872pt too wide) in alignment at lines 235--256
+ [] [] [] 
+ []
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table A.1 on input line 256.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[47]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[48]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[49
+
+]) (./src/acknowledgement.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[50]) (./bib/biblio.tex (./thesis.bbl [51
+
+]
+
+LaTeX Font Warning: Font shape `JT1/gt/m/it' undefined
+(Font)              using `JT1/gt/m/n' instead on input line 6.
+
+
+LaTeX Font Warning: Font shape `JY1/gt/m/it' undefined
+(Font)              using `JY1/gt/m/n' instead on input line 6.
+
+[52
+
+]))
+
+Package natbib Warning: There were undefined citations.
+
+
+Package longtable Warning: Table widths have changed. Rerun LaTeX.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 149.
+[53]
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 149.
+\BKM@file=\write7
+\openout7 = `thesis.out.ps'.
+
+ (./thesis.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+
+! Package natbib Error: Bibliography not compatible with author-year citations.
+
+(natbib)                Press <return> to continue in numerical citation style.
+
+
+See the natbib package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.226 
-      
+l.376 ...and\NAT@force@numbers{}\NAT@force@numbers
+                                                  
 ? 
 ! Emergency stop.
  ...                                              
                                                   
-l.226 
-      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+l.376 ...and\NAT@force@numbers{}\NAT@force@numbers
+                                                  
+Check the bibliography entries for non-compliant syntax,
+or select author-year BibTeX style, e.g. plainnat
 
  
 Here is how much of TeX's memory you used:
- 9030 strings out of 494865
- 126961 string characters out of 6179768
+ 9158 strings out of 494865
+ 128895 string characters out of 6179768
  438081 words of memory out of 5000000
- 12264 multiletter control sequences out of 15000+600000
- 22927 words of font info for 94 fonts, out of 8000000 for 9000
+ 12366 multiletter control sequences out of 15000+600000
+ 23274 words of font info for 95 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
- 35i,12n,58p,1779b,1823s stack positions out of 5000i,500n,10000p,200000b,80000s
-Output written on thesis.dvi (39 pages, 175540 bytes).
+ 36i,12n,58p,1957b,1823s stack positions out of 5000i,500n,10000p,200000b,80000s
+Output written on thesis.dvi (59 pages, 236316 bytes).
