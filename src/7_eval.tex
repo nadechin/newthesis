@@ -215,7 +215,11 @@ SSHの低対話型Honeypotの稼働期間は12/10から2/1(54日間)で，収集
 \vspace{7mm}
 % -------------------
 
-上記の表から，素のHoneypotと一般ユーザーのコマンドログが一番近く，修正済のHoneypotと一般ユーザーのコマンドログが一番遠いことが分かった．すなわち，ベクトル空間上において一般ユーザーのコマンドログの文章ベクトルを原点Oとし，素のHoneypotコマンドログの文章ベクトルとA，修正済のHoneypotコマンドログの文章ベクトルとBとした時に，$ |\vec{OA}| < |\vec{AB}| < |\vec{OB}| $であり，なす角$ \angle AOB $は鋭角である．\\
+上記の表から，素のHoneypotと一般ユーザーのコマンドログが一番近く，修正済のHoneypotと一般ユーザーのコマンドログが一番遠いことが分かった．すなわち，ベクトル空間上において一般ユーザーのコマンドログの文章ベクトルを原点Oとし，素のHoneypotコマンドログの文章ベクトルとA，修正済のHoneypotコマンドログの文章ベクトルとBとした時に，$ |\vec{OA}| < |\vec{AB}| < |\vec{OB}| $であり，なす角$ \angle AOB $は鋭角である．以下略図を示す．
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/sankaku.pdf}
+\end{figure}\\
 したがって，$ 0 < n $を満たす$ n $と任意のベクトル$ \vec{\alpha} $を使うと，$ \vec{OB} $ は $ \vec{OB} = (1+n)\vec{OA} + \vec{\alpha} $と表すことができる．したがって，修正済のHoneypotのコマンドログは一般ユーザーのコマンドログを始点とすると，素のHoneypotのコマンドログのベクトル方向よりも正の向きに遠くに位置することが分かった．\\
 
 また，SCDVによって獲得した各々のHoneypotの攻撃ログにおける文章ベクトルを，t-SNEで次元削減することで可視化を行なった結果を図\ref{fig:tsne1}，図\ref{fig:tsne2}，図\ref{fig:tsne3}に示す．
