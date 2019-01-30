@@ -256,82 +256,81 @@ yum & loadkmap & nslookup \\ \hline
 \end{longtable}
 \clearpage
 
-\subsection{純正のHoneypotで未実装のコマンドの実装}
-\label{appd:implofcommand}
+%\subsection{純正のHoneypotで未実装のコマンドの実装}
+%\label{appd:implofcommand}
 
-\begin{mylisting}[label={lst:acpid},language=sh,caption=acpid]
-# coding: utf-8
+%\begin{mylisting}[label={lst:acpid},language=sh,caption=acpid]
+%# coding: utf-8
 
-import subprocess
+%import subprocess
 
-cmd = "acpid"
-subprocess.call(cmd.split())
-\end{mylisting}
+%cmd = "acpid"
+%subprocess.call(cmd.split())
+%\end{mylisting}
 
-\begin{mylisting}[label={lst:acpid},language=sh,caption=adjtimex]
-# coding: utf-8
+%\begin{mylisting}[label={lst:acpid},language=sh,caption=adjtimex]
+%# coding: utf-8
 
-import subprocess
+%import subprocess
 
-cmd = "adjtimex"
-subprocess.call(cmd.split())
+%cmd = "adjtimex"
+%subprocess.call(cmd.split())
 
-\end{mylisting}
-
-
-\begin{mylisting}[label={lst:acpid},language=sh,caption=adjtimex -p]
-# coding: utf-8
-
-import subprocess
-
-cmd = "adjtimex -p"
-subprocess.call(cmd.split())
-
-\end{mylisting}
+%\end{mylisting}
 
 
-\begin{mylisting}[label={lst:acpid},language=sh,caption=ar]
-# coding: utf-8
+%\begin{mylisting}[label={lst:acpid},language=sh,caption=adjtimex -p]
+%# coding: utf-8
 
-import subprocess
-import sys
+%import subprocess
 
-cmd = "ar t"
-opt = sys.argv[1]
-cmdall = cmd + " " + opt
-subprocess.call(cmdall.split())
+%cmd = "adjtimex -p"
+%subprocess.call(cmd.split())
 
-\end{mylisting}
-
-\begin{mylisting}[label={lst:acpid},language=sh,caption=arp]
-# coding: utf-8
-
-import subprocess
-
-cmd = "arp"
-subprocess.call(cmd.split())
-
-\end{mylisting}
-
-\begin{mylisting}[label={lst:acpid},language=sh,caption=arping]
-# coding: utf-8
-
-import subprocess
-
-cmd = "arping"
-subprocess.call(cmd.split())
-
-\end{mylisting}
+%\end{mylisting}
 
 
-\begin{mylisting}[label={lst:acpid},language=sh,caption=ash]
-# coding: utf-8
+%\begin{mylisting}[label={lst:acpid},language=sh,caption=ar]
+%# coding: utf-8
 
-string = '''-bash: ash: command not found'''
+%import subprocess
+%import sys
 
-print(string)
+%cmd = "ar t"
+%opt = sys.argv[1]
+%cmdall = cmd + " " + opt
+%subprocess.call(cmdall.split())
 
-\end{mylisting}
+%\end{mylisting}
+%\begin{mylisting}[label={lst:acpid},language=sh,caption=arp]
+%# coding: utf-8
+
+%import subprocess
+
+%cmd = "arp"
+%subprocess.call(cmd.split())
+
+%\end{mylisting}
+
+%\begin{mylisting}[label={lst:acpid},language=sh,caption=arping]
+%# coding: utf-8
+
+%import subprocess
+
+%cmd = "arping"
+%subprocess.call(cmd.split())
+
+%\end{mylisting}
+
+
+%\begin{mylisting}[label={lst:acpid},language=sh,caption=ash]
+%# coding: utf-8
+
+%string = '''-bash: ash: command not found'''
+
+%print(string)
+
+%\end{mylisting}
 
 %%% Local Variables:
 %%% mode: japanese-latex
