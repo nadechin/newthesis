@@ -339,6 +339,20 @@ g = \sum_{V=1}^{V} exp(u_{C,V}) f = \log g \frac{df}{dg} \frac{dg}{du_{c,i}} &= 
 　\end{center}
 \end{figure}
 
+\subsubsection{SCDV}
+\label{tech:scdv}
+SCDVとはword2vecで算出したベクトル空間をクラスタリングして，クラスタリング結果も考慮に入れてベクトル空間上に再表現する手法のことである．以下は公式ドキュメントである．
+まず，ある単語wiwiのベクトルwviwviを取得(word2vec)．
+ある単語wiwiのIDF値idf(wi)idf(wi)を計算する．
+GMMで全単語ベクトルについてクラスタリングを行い，ある単語が各クラスタckckに属する確率P(ck|wi)P(ck|wi)を取得する．
+語彙空間における各単語wiwiについて5を繰り返す．
+各クラスタckckについてクラスタの数だけ(*)を繰り返す．クラスタの数だけ計算したら，(**)を実行する．
+（*）クラスタを考慮した新たな単語ベクトルwcvikwcvikをwvi×P(ck|wi)wvi×P(ck|wi)として算出．
+（**）IDFを考慮した新たな単語ベクトルwtviwtviをidf(wi)×⊕Kk　wcvikidf(wi)×⊕kK　wcvikで算出(⊕⊕はconcatenation)．
+各ドキュメント(nからNnからN)について9の操作を繰り返す．
+ドキュメントDnDnについてベクトルを初期化し，DnDnに含まれる単語wiinDnwiinDnについてベクトルを足し合わせていき平均する．
+最後に得られた文書ベクトルDnDnをスパースにしてSCDVDnSCDVDnを得る．\cite{scdv}
+
 %%% Local Variables:
 %%% mode: japanese-latex
 %%% TeX-master: "．．/bthesis"

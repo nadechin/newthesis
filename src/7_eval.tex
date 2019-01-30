@@ -125,20 +125,6 @@ SSHの低対話型Honeypotの稼働期間は12/10から2/1(54日間)で，収集
 例えば3つのコマンドが打たれたとしたとしたものを以下のプログラム\ref{lst:exam}に示す．
 
 \vspace{5mm}
-%\lstnewenvironment{mylisting}[1][]
-%    {\lstset{
-%        frame=single，
-%        basicstyle=\ttfamily，
-%        numbers=left，
-%        numbersep=10pt，
-%        tabsize=2，
-%        extendedchars=true，
-%        xleftmargin=17pt，
-%        framexleftmargin=17pt，
-%        #1
-%    }
-%}{}
-
 \begin{mylisting}[label=exam,language=sh,caption=3つの実行コマンドの例]
  $ uname
  $ free
@@ -159,29 +145,88 @@ SSHの低対話型Honeypotの稼働期間は12/10から2/1(54日間)で，収集
 \end{figure}
 \vspace{10mm}
 
-また，このようにして純正の低対話型Honeypotの収集ログと高対話型Honeypotの収集ログに対して各々のモデルを構築する．次にこのモデルに対して，修正済みのHoneypotで収集したログを入力して，確率的にスコアリングしていくことで数値を出力する．\\
+また，このようにしてHoneypotの収集ログに対して各々のモデルを構築する．モデルは$ Hidden Layer $に単語ベクトルのインデックスとして構築される．ここでSCDV~\ref{tech:scdv}を使い，word2vecで取得した単語ベクトルを使い，idf値を計算する．~\ref{tech:tfidf}次に単語ベクトルごとにクラスタリングすることで，ある単語があるクラスタに所属する確率を算出する．クラスタを考慮した新たな単語ベクトルを再構築し，idf値を考慮した新たな単語ベクトルを再構築する．1セッションごとに含まれる単語ベクトルを平均化し，文章ベクトルを得る．\\
 
-以下にこのモデルを使用した時の入力から出力のフローを図\ref{fig:syuturyokuflow}を示す．\\
 
+
+\subsubsection{コマンド群データのベクトル表現の比較}
+\label{eval:CommandVector}
+本研究の評価手法によって任意の2つのコマンドログを比較した時の，各々のログの違いを文章分類の手法で算出した結果は以下の図\ref{table:scdvcompare}のようになった．
+% -------------------
+\vspace{3mm}
+%\newlength{\myheighta}
+\setlength{\myheighta}{10mm}
+\begin{table}[h]
+ \caption{SCDVによる各々のhoneypotのコマンドログの比較}
+ \label{table:scdvcompare}
+ \centering
+  \begin{tabular}{|c||c|c|c|c|c|}
+   \hline
+   \parbox[c][\myheighta][c]{0cm}{}  & 正解率 & 適合率 & 再現率 & F1値 & セッション数\\
+   \hline \hline 
+     \parbox[c][\myheighta][c]{0cm}{} 素の低対話型Honeypot  & 0.695454 & 0.656175 & 0.730922 & 0.733281 & 3626\\
+     \hline
+     \parbox[c][\myheighta][c]{0cm}{} 修正済みの低対話型Honeypot  & 0.801386 & 0.843684 & 0.792994 & 0.788632 & 3939\\
+     \hline
+     \parbox[c][\myheighta][c]{0cm}{} 高対話型Honeypot  & 0.618453 & 0.652482 & 0.508619 & 0.677976 & 44\\
+     \hline
+     \parbox[c][\myheighta][c]{0cm}{} 攻撃者ではないUNIXのUser & 0.721049 & 0.739031 & 0.706619 & 0.722462 & 3671\\
+     \hline
+  \end{tabular}
+\end{table}
+\vspace{5mm}
+% -------------------
+上記の表から，修正済みの低対話型Honeypotの分類が行われていることから，素のHoneypotでは取得できなかったコマンドを修正済みのHoneypotで検知することができたことによって，修正済みのHoneypotの様々な評価基準において分類できている．また，攻撃者ではないUNIXのUserと修正済みのHoneypotを比較した時においても，攻撃者ではないUNIXのUserが使用しない異常なコマンドを実行したことによって分類できた．
+
+また，word2vecだけによる比較は以下の表\ref{table:word2veccompare}の通り．
+% -------------------
+\vspace{3mm}
+%\newlength{\myheighta}
+\setlength{\myheighta}{10mm}
+\begin{table}[h]
+ \caption{word2vecによる各々のhoneypotのコマンドログの比較}
+ \label{table:word2veccompare}
+ \centering
+  \begin{tabular}{|c||c|c|c|c|c|}
+   \hline
+   \parbox[c][\myheighta][c]{0cm}{}  & 正解率 & 適合率 & 再現率 & F1値 & セッション数\\
+   \hline \hline 
+     \parbox[c][\myheighta][c]{0cm}{} 素の低対話型Honeypot  & 0.648172 & 0.638172 & 0.697262 & 0.719872 & 3629\\
+     \hline
+     \parbox[c][\myheighta][c]{0cm}{} 修正済みの低対話型Honeypot  & 0.793772 & 0.828741 & 0.768549 & 0.847428 & 3939\\
+     \hline
+     \parbox[c][\myheighta][c]{0cm}{} 高対話型Honeypot  & 0.619941 & 0.628721 & 0.559174 & 0.608271 & 44\\
+     \hline
+     \parbox[c][\myheighta][c]{0cm}{} 攻撃者ではないUNIXのUser & 0.691876 & 0.753382 & 0.691302 & 0.700291& 3671\\
+     \hline
+  \end{tabular}
+\end{table}
+\vspace{5mm}
+% -------------------
+word2vecは，単語ベクトルのクラスタリングを行なったSCDVによる評価と比較して，全ての評価基準においてやや精度の低い結果となった．\\
+
+SCDVによって獲得したHoneypotの攻撃ログにおける文章ベクトルを，t-SNEで次元削減することで可視化を行なった結果を図\ref{fig:tsne}に示す．
+
+\vspace{10mm}
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=1.0\textwidth]{figures/evalflow.png}
-    \caption{評価のフロー\cite{word2vecpaper}\cite{word2vecpaper2}}
-    \label{fig:syuturyokuflow}
+    \includegraphics[width=0.8\textwidth]{figures/seaborn.png}
+    \caption{各々のHoneypotの攻撃ログの文章ベクトルの可視化}
+    \label{fig:tsne}
 \end{figure}
+\vspace{10mm}
 
-このようにして出力された数値を1セッションごとに平均化し，また全てのセッションにおいてもセッションごとに平均化し，全てのセッションの平均化を行うことで，純正の低対話型Honeypotの収集ログと高対話型Honeypotの収集ログとの各々で構築したモデルごとに平均値を算出する．
-
-
-\subsubsection{コマンド群データのベクトル表現}
-\label{eval:CommandVector}
-
-\subsubsection{SSHの低対話型Honeypotの攻撃ログの比較}
-\label{eval:CompareLog}
+上記の図において，Fixed-Low-Interaction-Honeypot（修正済みのHoneypot）はPure-Low-Interaction-Honeypotよりも広く分布していることが分かり，他のログでは取れていないログを取得できたことが分かる．
 
 
 \section{考察}
 \label{eval:implkosatu}
+文章ベクトルの意味解析において高い精度を持つ\cite{scdv}SCDVを用いた素の低対話型Honeypotと修正済みのHoneypot，高対話型Honeypotの攻撃ログの比較を行なった結果，修正済みのHoneypotがもっとも文章ベクトルとして様々なコマンドログを取得できているということが分かった．さらに，また，高対話型Honeypotの攻撃ログの取得数が極端に少なくなってしまったのは，そのHoneypotのサポートが最新版が2009年であり，対策を施されてしまった結果ではないかと考えられる．
+
+
+
+
+
 
 %%% Local Variables:
 %%% mode: japanese-latex
