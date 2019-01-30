@@ -77,5 +77,4 @@
 \contentsline {chapter}{\numberline {付 録A }付録}{42}{appendix.A}
 \contentsline {section}{\numberline {A.1}実装コマンド}{42}{section.A.1}
 \contentsline {subsection}{\numberline {A.1.1}純正のHoneypotで未実装のコマンド種類}{42}{subsection.A.1.1}
-\contentsline {subsection}{\numberline {A.1.2}純正のHoneypotで未実装のコマンドの実装}{49}{subsection.A.1.2}
-\contentsline {chapter}{謝辞}{51}{appendix*.4}
+\contentsline {chapter}{謝辞}{49}{appendix*.4}
