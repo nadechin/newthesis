@@ -152,6 +152,7 @@ SSHの低対話型Honeypotの稼働期間は12/10から2/1(54日間)で，収集
 \subsubsection{コマンド群データのベクトル表現の比較}
 \label{eval:CommandVector}
 本研究の評価手法によって任意の2つのコマンドログを比較した時の，各々のログの違いを文章分類の手法で算出した結果は以下の図\ref{table:scdvcompare}のようになった．
+\clearpage
 % -------------------
 \vspace{3mm}
 %\newlength{\myheighta}
@@ -174,7 +175,7 @@ SSHの低対話型Honeypotの稼働期間は12/10から2/1(54日間)で，収集
      \hline
   \end{tabular}
 \end{table}
-\vspace{5mm}
+\vspace{7mm}
 % -------------------
 上記の表から，修正済みの低対話型Honeypotの分類が行われていることから，素のHoneypotでは取得できなかったコマンドを修正済みのHoneypotで検知することができたことによって，修正済みのHoneypotの様々な評価基準において分類できている．また，攻撃者ではないUNIXのUserと修正済みのHoneypotを比較した時においても，攻撃者ではないUNIXのUserが使用しない異常なコマンドを実行したことによって分類できた．
 
@@ -201,11 +202,12 @@ SSHの低対話型Honeypotの稼働期間は12/10から2/1(54日間)で，収集
      \hline
   \end{tabular}
 \end{table}
-\vspace{5mm}
+\vspace{7mm}
 % -------------------
 word2vecは，単語ベクトルのクラスタリングを行なったSCDVによる評価と比較して，全ての評価基準においてやや精度の低い結果となった．\\
 
 SCDVによって獲得したHoneypotの攻撃ログにおける文章ベクトルを，t-SNEで次元削減することで可視化を行なった結果を図\ref{fig:tsne}に示す．
+\clearpage
 
 \vspace{10mm}
 \begin{figure}[htbp]
