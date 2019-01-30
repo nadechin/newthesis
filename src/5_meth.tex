@@ -5,8 +5,16 @@
 
 \section{問題解決の為のアプローチ}
 \label{meth:appr}
- ~\ref{appr:YotenForProblem}で述べた問題解決のための2つの要件を満たすために，本研究では低対話型Honeypotに実装されていないコマンドを実装し，さらに低対話型Honeypotの既実装コマンドで，低対話型Honeypotに特有の異常な挙動をするコマンドの修正を行う．
+ ~\ref{appr:YotenForProblem}で述べた問題解決のための2つの要件を満たすために，本研究では低対話型Honeypotに実装されていないコマンドを実装し，さらに低対話型Honeypotの既実装コマンドで，低対話型Honeypotに特有の異常な挙動をするコマンドの修正を行う．略図を図\ref{fig:addcommand}に示す．
 
+\vspace{10mm}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figures/addcommand.png}
+    \caption{低対話型Honeypotの拡張}
+    \label{fig:addcommand}
+\end{figure}
+\vspace{10mm}
 
 %\subsection{コマンドの追加実装}
 %実際のShellに実装されているコマンドで，SSHの低対話型Honeypotに実装されていないコマンドを実装する．これによってコマンドの追加実装を行なった低対話型Honeypotに侵入した侵入者は，実際のShellと同じような挙動をする低対話型HoneypotをHoneypotであると検知できなくなる．
