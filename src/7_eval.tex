@@ -177,34 +177,7 @@ SSHの低対話型Honeypotの稼働期間は12/10から2/1(54日間)で，収集
 \end{table}
 \vspace{7mm}
 % -------------------
-上記の表から，修正済みの低対話型Honeypotの分類が行われていることから，素のHoneypotでは取得できなかったコマンドを修正済みのHoneypotで検知することができたことによって，修正済みのHoneypotの様々な評価基準において分類できている．また，攻撃者ではないUNIXのUserと修正済みのHoneypotを比較した時においても，攻撃者ではないUNIXのUserが使用しない異常なコマンドを実行したことによって分類できた．
-
-また，word2vecだけによる比較は以下の表\ref{table:word2veccompare}の通り．
-% -------------------
-\vspace{3mm}
-%\newlength{\myheighta}
-\setlength{\myheighta}{10mm}
-\begin{table}[h]
- \caption{word2vecによる各々のhoneypotのコマンドログの比較}
- \label{table:word2veccompare}
- \centering
-  \begin{tabular}{|c||c|c|c|c|c|}
-   \hline
-   \parbox[c][\myheighta][c]{0cm}{}  & 正解率 & 適合率 & 再現率 & F1値 & セッション数\\
-   \hline \hline 
-     \parbox[c][\myheighta][c]{0cm}{} 素の低対話型Honeypot  & 0.648172 & 0.638172 & 0.697262 & 0.719872 & 3629\\
-     \hline
-     \parbox[c][\myheighta][c]{0cm}{} 修正済みの低対話型Honeypot  & 0.793772 & 0.828741 & 0.768549 & 0.847428 & 3939\\
-     \hline
-     \parbox[c][\myheighta][c]{0cm}{} 高対話型Honeypot  & 0.619941 & 0.628721 & 0.559174 & 0.608271 & 44\\
-     \hline
-     \parbox[c][\myheighta][c]{0cm}{} 攻撃者ではないUNIXのUser & 0.691876 & 0.753382 & 0.691302 & 0.700291& 3671\\
-     \hline
-  \end{tabular}
-\end{table}
-\vspace{7mm}
-% -------------------
-word2vecは，単語ベクトルのクラスタリングを行なったSCDVによる評価と比較して，全ての評価基準においてやや精度の低い結果となった．\\
+上記の表から，修正済みの低対話型Honeypotの分類が行われていることから，素のHoneypotでは取得できなかったコマンドを修正済みのHoneypotで検知することができたことによって，修正済みのHoneypotの様々な評価基準において分類できている．また，攻撃者ではないUNIXのUserと修正済みのHoneypotを比較した時においても，攻撃者ではないUNIXのUserが使用しない異常なコマンドを実行したことによって分類できた．\\
 
 SCDVによって獲得したHoneypotの攻撃ログにおける文章ベクトルを，t-SNEで次元削減することで可視化を行なった結果を図\ref{fig:tsne}に示す．
 \clearpage

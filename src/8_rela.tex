@@ -4,18 +4,8 @@
 \section{関連研究}
 本章では，SSHのHoneypotと時系列データの処理に関連する先行研究について紹介する．
 
-\subsection{混合隠れマルコフモデル}
-混合隠れマルコフモデルはいくつかの種類のある観測できない行動に対し，その行動に依存する何らかの観測を用いて隠れているデータのモデルを構築するモデルのことである．隠れ変数を$ Zn $とし，観測値を$ Yn $とすると，隠れマルコフモデルは以下の図\ref{fig:hiddenmarkov}のように示すことができる．
-
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.8\textwidth]{figures/hiddenmarkov.pdf}
-    \caption{隠れマルコフモデル}
-    \label{fig:hiddenmarkov}
-\end{figure}
-
-
-日本電気株式会社中央研究所の開発した異常行動検出エンジンAccessTracer\cite{AccessTracer}において，ユーザーのUNIXコマンドの履歴をオンライン忘却型学習アルゴリズムによる行動モデルの学習によってユーザーの普段と違うコマンド履歴を検知することができる．本研究との差異は学習モデルの違いである．
+\subsection{AccessTracer}
+日本電気株式会社中央研究所の開発した異常行動検出エンジンAccessTracer\cite{AccessTracer}において，ユーザーのUNIXコマンドの履歴をオンライン忘却型学習アルゴリズムによる行動モデルの学習によってユーザーの普段と違うコマンド履歴を検知することができる．本研究のモデル構築におけるモデルの作成方法が異なる．
 
 %\subsubsection{低対話型Honeypot}
 %\subsubsubsection{kiipo}
@@ -26,7 +16,34 @@
 \subsection{自然言語処理における意味解析}
 ~\ref{tech:NLP}で述べたように，自然言語処理とは人間が日常的に使っている自然言語をコンピュータに処理させる一連の技術である．現在，意味解析において大きくシソーラス解析とベクトル空間分析の2つが手法として多く，本研究ではこのうちベクトル空間分析を使用した．そのため関連研究ではベクトル空間解析について述べる．
 \subsubsection{ベクトル空間解析}
-~\ref{tech:Vector}で述べたように，自然言語処理の意味解析の手法の一つにベクトル空間解析というものがある．本研究で取得したHoneypotのデータを用いて，ベクトル空間解析の他の手法でもでも評価を試みた．
+~\ref{tech:Vector}で述べたように，自然言語処理の意味解析の手法の一つにベクトル空間解析というものがある．本研究で取得したHoneypotのデータを用いて，ベクトル空間解析の方法でも評価を試みた．
+word2vecだけによる比較は以下の表\ref{table:word2veccompare}の通り．
+% -------------------
+\vspace{3mm}
+%\newlength{\myheighta}
+\setlength{\myheighta}{10mm}
+\begin{table}[h]
+ \caption{word2vecによる各々のhoneypotのコマンドログの比較}
+ \label{table:word2veccompare}
+ \centering
+  \begin{tabular}{|c||c|c|c|c|c|}
+   \hline
+   \parbox[c][\myheighta][c]{0cm}{}  & 正解率 & 適合率 & 再現率 & F1値 & セッション数\\
+   \hline \hline 
+     \parbox[c][\myheighta][c]{0cm}{} 素の低対話型Honeypot  & 0.648172 & 0.638172 & 0.697262 & 0.719872 & 3629\\
+     \hline
+     \parbox[c][\myheighta][c]{0cm}{} 修正済みの低対話型Honeypot  & 0.793772 & 0.828741 & 0.768549 & 0.847428 & 3939\\
+     \hline
+     \parbox[c][\myheighta][c]{0cm}{} 高対話型Honeypot  & 0.619941 & 0.628721 & 0.559174 & 0.608271 & 44\\
+     \hline
+     \parbox[c][\myheighta][c]{0cm}{} 攻撃者ではないUNIXのUser & 0.691876 & 0.753382 & 0.691302 & 0.700291& 3671\\
+     \hline
+  \end{tabular}
+\end{table}
+\vspace{7mm}
+% -------------------
+word2vecは，単語ベクトルのクラスタリングを行なったSCDVによる評価と比較して，全ての評価基準においてやや精度の低い結果となった．\\
+
 \subsubsubsection{ベクトル空間モデル}
 ~\ref{tech:voctorkukan}で述べたように，ベクトル空間解析にはベクトル空間モデルというものが存在する．~\ref{tech:tfidf}で述べたTF-IDFを用いて，同一文章内での単語の出現頻度と，様々な文章におけるある単語の逆文書頻度の2つを重みとし，文章を多次元マトリクスで表現する．文章同士の距離をなす角$ \theta $の，$ 0^\circ \leqq \theta \leqq 90^\circ $における$ \cos \theta $の値の大きさによって文章の類似度を算出する．多次元マトリクスにおける2つの文章のベクトルの方向は文章の特徴であるので，$ 0^\circ \leqq \theta \leqq 90^\circ $において$ \theta $の値が小さくなればなるほど，つまり$ \cos \theta $の値が大きくなればなるほど文章同士の類似度が高いということになる．~ref{}で示したように，TF-IDFで重み付けされたベクトル空間モデルの$ \cos \theta $の値は，m個の単語が使用されている文章dにおける各単語の重要度を$ w_{d1}，w_{d2}，w_{d3}， \ldots ，w_{dm} $とし、同様にn個の単語が使用されている文章eにおける各単語の重要度を$ w_{e1}，w_{e2}，w_{e3}， \ldots ，w_{en} $とすると，\\
 \begin{align}
