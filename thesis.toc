@@ -19,16 +19,17 @@
 \contentsline {section}{\numberline {2.2}Shell}{6}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Secure Shell}{6}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}BusyBox}{6}{subsection.2.2.2}
-\contentsline {section}{\numberline {2.3}自然言語処理}{6}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}混合隠れマルコフモデル}{7}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}シソーラス解析}{7}{subsection.2.3.2}
-\contentsline {subsubsection}{\numberline {2.3.2.1}Wordnet}{7}{subsubsection.2.3.2.1}
-\contentsline {subsection}{\numberline {2.3.3}ベクトル空間解析}{7}{subsection.2.3.3}
-\contentsline {subsubsection}{\numberline {2.3.3.1}ベクトル空間モデル}{8}{subsubsection.2.3.3.1}
-\contentsline {paragraph}{\numberline {2.3.3.1.1}TF-IDF}{9}{paragraph.2.3.3.1.1}
-\contentsline {subsubsection}{\numberline {2.3.3.2}word2vec}{10}{subsubsection.2.3.3.2}
-\contentsline {subsubsection}{\numberline {2.3.3.3}Continuous Skip-gram Model}{10}{subsubsection.2.3.3.3}
-\contentsline {subsubsection}{\numberline {2.3.3.4}SCDV}{15}{subsubsection.2.3.3.4}
+\contentsline {section}{\numberline {2.3}t-SNE}{6}{section.2.3}
+\contentsline {section}{\numberline {2.4}自然言語処理}{7}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}混合隠れマルコフモデル}{7}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}シソーラス解析}{7}{subsection.2.4.2}
+\contentsline {subsubsection}{\numberline {2.4.2.1}Wordnet}{7}{subsubsection.2.4.2.1}
+\contentsline {subsection}{\numberline {2.4.3}ベクトル空間解析}{8}{subsection.2.4.3}
+\contentsline {subsubsection}{\numberline {2.4.3.1}ベクトル空間モデル}{8}{subsubsection.2.4.3.1}
+\contentsline {paragraph}{\numberline {2.4.3.1.1}TF-IDF}{9}{paragraph.2.4.3.1.1}
+\contentsline {subsubsection}{\numberline {2.4.3.2}word2vec}{10}{subsubsection.2.4.3.2}
+\contentsline {subsubsection}{\numberline {2.4.3.3}Continuous Skip-gram Model}{10}{subsubsection.2.4.3.3}
+\contentsline {subsubsection}{\numberline {2.4.3.4}SCDV}{15}{subsubsection.2.4.3.4}
 \contentsline {chapter}{\numberline {第3章}本研究における問題定義と仮説}{17}{chapter.3}
 \contentsline {section}{\numberline {3.1}本研究における問題定義}{17}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}SSH\tmspace +\thinmuskip {.1667em}Honeypotの現状の問題}{17}{subsection.3.1.1}

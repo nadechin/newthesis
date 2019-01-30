@@ -97,7 +97,7 @@ UCI.
 \newblock \url{http://archive.ics.uci.edu/ml/datasets/unix+user+data}, 2012.
 
 \bibitem{AccessTracer}
-山西健司・竹内純一・丸山祐子.
+丸山祐子 山西健司, 竹内純一.
 \newblock データマイニングに基づくセキュリティ・インテリジェンス技術の研究開発.
 \newblock {\em 先端技術大賞応募論文}, 19:14, 2004.
 
