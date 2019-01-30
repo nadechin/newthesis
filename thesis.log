@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  30 JAN 2019 10:18
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  30 JAN 2019 10:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -886,65 +886,30 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [31]
 
-LaTeX Warning: Reference `table:scdvcompare1' on page 32 undefined on input lin
-e 154.
-
-
-LaTeX Warning: Reference `table:scdvcompare2' on page 32 undefined on input lin
-e 154.
-
-
-LaTeX Warning: Reference `table:scdvcompare3' on page 32 undefined on input lin
-e 154.
-
-
-Overfull \hbox (28.96333pt too wide) in paragraph at lines 164--173
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Overfull \hbox (28.96333pt too wide) in paragraph at lines 204--213
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [32]
-
-LaTeX Warning: Reference `fig:tsne1' on page 33 undefined on input line 220.
-
-
-LaTeX Warning: Reference `fig:tsne2' on page 33 undefined on input line 220.
+Overfull \hbox (28.96333pt too wide) in paragraph at lines 165--174
+ [][] 
+ []
 
 
-LaTeX Warning: Reference `fig:tsne3' on page 33 undefined on input line 220.
+Overfull \hbox (28.96333pt too wide) in paragraph at lines 205--214
+ [][] 
+ []
 
-File: figures/sufix.png Graphic file (type bmp)
-<figures/sufix.png>
-File: figures/suuser.png Graphic file (type bmp)
- <figures/suuser.png>
-File: figures/fixuser.png Graphic file (type bmp)
- <figures/fixuser.png>
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[33]) (./src/8_rela.tex
+[33
+
+]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
@@ -952,8 +917,24 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [34]
+File: figures/sufix.png Graphic file (type bmp)
+ <figures/sufix.png>
+File: figures/suuser.png Graphic file (type bmp)
+ <figures/suuser.png>
+File: figures/fixuser.png Graphic file (type bmp)
+ <figures/fixuser.png>)
+(./src/8_rela.tex
 
-LaTeX Warning: Text page 35 contains only floats.
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[35
+
+]
+
+LaTeX Warning: Text page 36 contains only floats.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -961,9 +942,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[35]
+[36]
 第 7 章
-[36
+[37
 
 ]
 Overfull \hbox (28.96333pt too wide) in paragraph at lines 30--43
@@ -977,11 +958,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[37
+[38
 
 ]
 第 8 章
-[38
+[39
 
 ]) (./src/appendix.tex
 
@@ -990,7 +971,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[39]
+[40]
 付 録 A  
 
 Overfull \hbox (3.9872pt too wide) in alignment at lines 16--22
@@ -1027,7 +1008,7 @@ Overfull \hbox (3.9872pt too wide) in alignment at lines 75--95
  [] [] [] 
  []
 
-[40
+[41
 
 ]
 Overfull \hbox (3.9872pt too wide) in alignment at lines 95--115
@@ -1040,7 +1021,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[41]
+[42]
 Overfull \hbox (3.9872pt too wide) in alignment at lines 115--135
  [] [] [] 
  []
@@ -1056,7 +1037,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[42]
+[43]
 Overfull \hbox (3.9872pt too wide) in alignment at lines 155--175
  [] [] [] 
  []
@@ -1072,7 +1053,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[43]
+[44]
 Overfull \hbox (3.9872pt too wide) in alignment at lines 195--215
  [] [] [] 
  []
@@ -1088,18 +1069,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[44]
+[45]
 Overfull \hbox (3.9872pt too wide) in alignment at lines 235--256
  [] [] [] 
  []
 
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 16.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[45]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
@@ -1113,7 +1087,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[47
+[47]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[48
 
 ]) (./src/acknowledgement.tex
 
@@ -1122,7 +1103,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[48]) (./bib/biblio.tex (./thesis.bbl [49
+[49]) (./bib/biblio.tex (./thesis.bbl [50
 
 ]
 
@@ -1145,14 +1126,14 @@ Underfull \hbox (badness 5374) in paragraph at lines 37--39
 thub . com / desaster / kippo / tree /
  []
 
-[50
+[51
 
 ]))
 
 Package natbib Warning: There were undefined citations.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 149.
-[51]
+[52]
 Package atveryend Info: Executing hook `AfterLastShipout' on input line 149.
 \BKM@file=\write7
 \openout7 = `thesis.out.ps'.
@@ -1173,12 +1154,12 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 149.
  ) 
 Here is how much of TeX's memory you used:
- 9176 strings out of 494865
- 128859 string characters out of 6179768
+ 9174 strings out of 494865
+ 128830 string characters out of 6179768
  438081 words of memory out of 5000000
- 12386 multiletter control sequences out of 15000+600000
+ 12384 multiletter control sequences out of 15000+600000
  23274 words of font info for 95 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
  36i,12n,58p,1957b,1823s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (58 pages, 268644 bytes).
+Output written on thesis.dvi (59 pages, 271340 bytes).
