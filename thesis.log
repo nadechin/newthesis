@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  31 JAN 2019 04:31
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  31 JAN 2019 04:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -539,23 +539,18 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24.88> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 121.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 121.
- (./thesis.toc
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 1.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 1.
- [3
-
-
-])
+ (./thesis.toc)
 \tf@toc=\write4
 \openout4 = `thesis.toc'.
 
- [4] (./thesis.lof)
+ [3
+
+
+] (./thesis.lof)
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
- [5
+ [4
 
 
 ]
@@ -563,7 +558,7 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
- [6
+ [5
 
 
 ] (./src/1_intr.tex
@@ -576,6 +571,14 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 8.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 8.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 19.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 19.
+
+Package natbib Warning: Citation `highinthoney' on page 1 undefined on input li
+ne 19.
+
 [1
 
 
@@ -608,6 +611,9 @@ Package natbib Warning: Citation `honeypot' on page 4 undefined on input line 8
 .
 
 
+Package natbib Warning: Citation `kippo' on page 4 undefined on input line 27.
+
+
 Package natbib Warning: Citation `kojoney' on page 4 undefined on input line 27
 .
 
@@ -618,11 +624,34 @@ Package natbib Warning: Citation `twisted' on page 4 undefined on input line 27
 
 Package natbib Warning: Citation `rasp' on page 4 undefined on input line 27.
 
+
+Package natbib Warning: Citation `singleboard' on page 4 undefined on input lin
+e 27.
+
+
+Package natbib Warning: Citation `kippowiki' on page 4 undefined on input line 
+28.
+
+
+Package natbib Warning: Citation `kippocommand' on page 4 undefined on input li
+ne 29.
+
 [4
 
 ]
-\myheight=\skip81
 
+Package natbib Warning: Citation `cowriecommand' on page 5 undefined on input l
+ine 34.
+
+
+Package natbib Warning: Citation `differfromkippo' on page 5 undefined on input
+ line 34.
+
+
+Package natbib Warning: Citation `honeywall' on page 5 undefined on input line 
+46.
+
+\myheight=\skip81
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -634,6 +663,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [5]
 
+Package natbib Warning: Citation `ssh' on page 6 undefined on input line 95.
+
+
+Package natbib Warning: Citation `busybox' on page 6 undefined on input line 99
+.
+
+
+Package natbib Warning: Citation `tsne' on page 6 undefined on input line 104.
+
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
  We now make it that large for the rest of the document.
@@ -643,12 +682,24 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: figures/hiddenmarkov.pdf Graphic file (type pdf)
  <figures/hiddenmarkov.pdf>
 
+Package natbib Warning: Citation `wordnet' on page 7 undefined on input line 12
+3.
+
+
+Package natbib Warning: Citation `wordnetwiki' on page 7 undefined on input lin
+e 127.
+
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [7]
+
+Package natbib Warning: Citation `voctormodel' on page 8 undefined on input lin
+e 155.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
@@ -663,6 +714,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [9]
+
+Package natbib Warning: Citation `word2vecpaper' on page 10 undefined on input 
+line 227.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
@@ -716,6 +771,10 @@ Missing character: There is no ^^95 in font cmr12!
 Missing character: There is no ^^e2 in font cmr12!
 Missing character: There is no ^^8a in font cmr12!
 Missing character: There is no ^^95 in font cmr12!
+
+
+Package natbib Warning: Citation `scdv' on page 15 undefined on input line 360.
+
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -774,7 +833,22 @@ File: figures/addcommand.pdf Graphic file (type pdf)
 ]
 第 5 章
 
+Package natbib Warning: Citation `cowrie' on page 21 undefined on input line 35
+.
+
+
+Package natbib Warning: Citation `busybox' on page 21 undefined on input line 3
+5.
+
+
 LaTeX Warning: Reference `Cowrie' on page 21 undefined on input line 35.
+
+
+LaTeX Warning: Reference `appd' on page 21 undefined on input line 36.
+
+
+LaTeX Warning: Reference `table:command' on page 21 undefined on input line 36.
+
 
 
 LaTeX Warning: Reference `appd:implofcommand' on page 21 undefined on input lin
@@ -783,6 +857,14 @@ e 39.
 [21
 
 ]
+
+Package natbib Warning: Citation `dmidecode' on page 22 undefined on input line
+ 42.
+
+
+Package natbib Warning: Citation `diffcommand' on page 22 undefined on input li
+ne 71.
+
 
 LaTeX Font Warning: Font shape `JT1/mc/m/it' undefined
 (Font)              using `JT1/mc/m/n' instead on input line 74.
@@ -841,6 +923,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: figures/Figure_1.png Graphic file (type bmp)
  <figures/Figure_1.png>
 
+Package natbib Warning: Citation `unixdata' on page 29 undefined on input line 
+82.
+
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
  We now make it that large for the rest of the document.
@@ -875,6 +961,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [32]
 File: figures/model.png Graphic file (type bmp)
  <figures/model.png>
+
+Package natbib Warning: Citation `word2vecpaper' on page 33 undefined on input 
+line 144.
+
+
+Package natbib Warning: Citation `word2vecpaper2' on page 33 undefined on input
+ line 144.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
@@ -916,7 +1010,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[36]) (./src/8_rela.tex
+[36]
+
+Package natbib Warning: Citation `scdv' on page 37 undefined on input line 262.
+
+
+) (./src/8_rela.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
@@ -927,6 +1026,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 第 7 章
+
+Package natbib Warning: Citation `AccessTracer' on page 38 undefined on input l
+ine 8.
+
 [38
 
 ]) (./src/9_conc.tex
@@ -973,11 +1076,11 @@ End of file on the terminal!
 
  
 Here is how much of TeX's memory you used:
- 9109 strings out of 494865
- 127760 string characters out of 6179768
+ 9085 strings out of 494865
+ 127460 string characters out of 6179768
  455078 words of memory out of 5000000
- 12333 multiletter control sequences out of 15000+600000
+ 12309 multiletter control sequences out of 15000+600000
  22927 words of font info for 94 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
  35i,12n,58p,1857b,1825s stack positions out of 5000i,500n,10000p,200000b,80000s
-Output written on thesis.dvi (49 pages, 239296 bytes).
+Output written on thesis.dvi (48 pages, 203828 bytes).
