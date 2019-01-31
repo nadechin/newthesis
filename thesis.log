@@ -1061,17 +1061,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [42]
 付 録 A  
-! Missing $ inserted.
-<inserted text> 
-                $
-l.36 acpid & \times
-                    \\ \hline
+! Missing # inserted in alignment preamble.
+<to be read again> 
+                   \cr 
+l.16 \begin{longtable}{|||}
+                           
 ? 
 ! Emergency stop.
-<inserted text> 
-                $
-l.36 acpid & \times
-                    \\ \hline
+<to be read again> 
+                   \cr 
+l.16 \begin{longtable}{|||}
+                           
 End of file on the terminal!
 
  
