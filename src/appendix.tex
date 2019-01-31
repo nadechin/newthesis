@@ -13,34 +13,34 @@
 
 BusyBoxに含まれるコマンドとCowrieの実装コマンドの違い
  
-\begin{longtable}{p{40mm}p{40mm}}
-  \caption{実装コマンド一覧}
-  \label{table:command} \\
-  %------ 最初のページの表の最上部 ----
-  \hline
-  Busyboxに含まれるコマンド & Cowrieに実装されているか \\ \hline\hline
-  \endfirsthead
-  %------ 2ページ以降の表の最上部 ----
-  \multicolumn{2}{r}{前ページからの続き} \\ \hline
-  Busyboxに含まれるコマンド & Cowrieに実装されているか \\ \hline\hline
-  \endhead
-  %----- ページの表の最下部 --------
-  \hline
-  \multicolumn{2}{r}{次ページに続く} \\
-  \endfoot
-  %----- 最終ページの表の最下部 --------
-  \hline
-  \multicolumn{2}{r}{以上} \\
-  \endlastfoot
+\begin{longtable}{p{60mm}p{60mm}}
+ \caption{実装コマンド一覧}
+ \label{table:command} \\
+ %------ 最初のページの表の最上部 ----
+ \hline
+ Busyboxに含まれるコマンド & Cowrieに実装されているか \\ \hline\hline
+ \endfirsthead
+ %------ 2ページ以降の表の最上部 ----
+ \multicolumn{2}{r}{前ページからの続き} \\ \hline
+ Busyboxに含まれるコマンド & Cowrieに実装されているか \\ \hline\hline
+ \endhead
+ %----- ページの表の最下部 --------
+ \hline
+ \multicolumn{2}{r}{次ページに続く} \\
+ \endfoot
+ %----- 最終ページの表の最下部 --------
+ \hline
+ \multicolumn{2}{r}{以上} \\
+ \endlastfoot
 acpid & ○ \\ \hline
-adjtimex &  ○ \\ \hline
-ar &  ○ \\ \hline
+adjtimex & ○ \\ \hline
+ar & ○ \\ \hline
 arp & ○ \\ \hline
-arping &  ○ \\ \hline
+arping & ○ \\ \hline
 ash & ○ \\ \hline
 awk & × \\ \hline
-basename &  ○ \\ \hline
-blockdev &  ○ \\ \hline
+basename & ○ \\ \hline
+blockdev & ○ \\ \hline
 brctl & × \\ \hline
 bunzip2 & × \\ \hline
 bzcat & × \\ \hline
@@ -50,23 +50,23 @@ cat & ○ \\ \hline
 chgrp & × \\ \hline
 chmod & × \\ \hline
 chown & ○ \\ \hline
-chpasswd &  ○ \\ \hline
+chpasswd & ○ \\ \hline
 chroot & × \\ \hline
 chvt & × \\ \hline
 clear & × \\ \hline
 cmp & × \\ \hline
-cp &  ○ \\ \hline
-cpio &  ○ \\ \hline
+cp & ○ \\ \hline
+cpio & ○ \\ \hline
 crond & ○ \\ \hline
 crontab & × \\ \hline
 cttyhack & × \\ \hline
 cut & × \\ \hline
-date &  ○ \\ \hline
+date & ○ \\ \hline
 dc & × \\ \hline
 dd & × \\ \hline
 deallocvt & × \\ \hline
-depmod &  ○ \\ \hline
-devmem &  ○ \\ \hline
+depmod & ○ \\ \hline
+devmem & ○ \\ \hline
 df & × \\ \hline
 diff & × \\ \hline
 dirname & × \\ \hline
@@ -74,183 +74,183 @@ dmesg & ○ \\ \hline
 dnsdomainname & ○ \\ \hline
 dos2unix & × \\ \hline
 dpkg & × \\ \hline
-dpkg-deb &  ○ \\ \hline
+dpkg-deb & ○ \\ \hline
 du & × \\ \hline
-dumpkmap &  ○ \\ \hline
+dumpkmap & ○ \\ \hline
 dumpleases & × \\ \hline
 echo & × \\ \hline
 ed & × \\ \hline
 egrep & × \\ \hline
 env & × \\ \hline
-expand &  ○ \\ \hline
+expand & ○ \\ \hline
 expr & × \\ \hline
 FALSE & ○ \\ \hline
 fdisk & ○ \\ \hline
 fgrep & × \\ \hline
-find &  ○ \\ \hline
+find & ○ \\ \hline
 fold & × \\ \hline
 free & × \\ \hline
 freeramdisk & × \\ \hline
 fstrim & × \\ \hline
-ftpget &  ○ \\ \hline
+ftpget & ○ \\ \hline
 ftpput & × \\ \hline
 getopt & × \\ \hline
 getty & × \\ \hline
 grep & × \\ \hline
-groups &  ○ \\ \hline
-gunzip &  ○ \\ \hline
-gzip &  ○ \\ \hline
+groups & ○ \\ \hline
+gunzip & ○ \\ \hline
+gzip & ○ \\ \hline
 halt & × \\ \hline
-head &  ○ \\ \hline
+head & ○ \\ \hline
 hexdump & × \\ \hline
-hostid &  ○ \\ \hline
+hostid & ○ \\ \hline
 hostname & × \\ \hline
 httpd & ○ \\ \hline
 hwclock & × \\ \hline
 id & × \\ \hline
 ifconfig & × \\ \hline
 ifdown & × \\ \hline
-ifup &  ○ \\ \hline
-init &  ○ \\ \hline
+ifup & ○ \\ \hline
+init & ○ \\ \hline
 insmod & × \\ \hline
-ionice &  ○ \\ \hline
+ionice & ○ \\ \hline
 ip & × \\ \hline
-ipcalc &  ○ \\ \hline
-kill &  ○ \\ \hline
+ipcalc & ○ \\ \hline
+kill & ○ \\ \hline
 killall & ○ \\ \hline
 klogd & × \\ \hline
 last & × \\ \hline
 less & × \\ \hline
 ln & × \\ \hline
 loadfont & × \\ \hline
-loadkmap &  ○ \\ \hline
-logger &  ○ \\ \hline
+loadkmap & ○ \\ \hline
+logger & ○ \\ \hline
 login & ○ \\ \hline
 logname & ○ \\ \hline
 logread & ○ \\ \hline
 losetup & ○ \\ \hline
-ls &  ○ \\ \hline
+ls & ○ \\ \hline
 lsmod & ○ \\ \hline
 lzcat & ○ \\ \hline
-lzma &  ○ \\ \hline
-lzop &  ○ \\ \hline
+lzma & ○ \\ \hline
+lzop & ○ \\ \hline
 lzopcat & ○ \\ \hline
-md5sum &  ○ \\ \hline
-mdev &  ○ \\ \hline
-microcom &  ○ \\ \hline
+md5sum & ○ \\ \hline
+mdev & ○ \\ \hline
+microcom & ○ \\ \hline
 mkdir & ○ \\ \hline
-mkfifo &  ○ \\ \hline
+mkfifo & ○ \\ \hline
 mknod & ○ \\ \hline
-mkswap &  ○ \\ \hline
-mktemp &  ○ \\ \hline
+mkswap & ○ \\ \hline
+mktemp & ○ \\ \hline
 modinfo & ○ \\ \hline
-modprobe &  ○ \\ \hline
-more &  ○ \\ \hline
+modprobe & ○ \\ \hline
+more & ○ \\ \hline
 mount & ○ \\ \hline
-mt &  ○ \\ \hline
-mv &  ○ \\ \hline
-nameif &  ○ \\ \hline
-nc &  ○ \\ \hline
+mt & ○ \\ \hline
+mv & ○ \\ \hline
+nameif & ○ \\ \hline
+nc & ○ \\ \hline
 netstat & ○ \\ \hline
-nslookup &  ○ \\ \hline
-od &  ○ \\ \hline
-openvt &  ○ \\ \hline
-passwd &  ○ \\ \hline
+nslookup & ○ \\ \hline
+od & ○ \\ \hline
+openvt & ○ \\ \hline
+passwd & ○ \\ \hline
 patch & ○ \\ \hline
 pidof & ○ \\ \hline
-ping &  ○ \\ \hline
+ping & ○ \\ \hline
 ping6 & ○ \\ \hline
-pivot_root &  ○ \\ \hline
-poweroff &  ○ \\ \hline
-printf &  ○ \\ \hline
-ps &  ○ \\ \hline
+pivot_root & ○ \\ \hline
+poweroff & ○ \\ \hline
+printf & ○ \\ \hline
+ps & ○ \\ \hline
 pwd & ○ \\ \hline
 rdate & ○ \\ \hline
-readlink &  ○ \\ \hline
-realpath &  ○ \\ \hline
-reboot &  ○ \\ \hline
-renice &  ○ \\ \hline
+readlink & ○ \\ \hline
+realpath & ○ \\ \hline
+reboot & ○ \\ \hline
+renice & ○ \\ \hline
 reset & ○ \\ \hline
 rev & ○ \\ \hline
-rm &  ○ \\ \hline
+rm & ○ \\ \hline
 rmdir & ○ \\ \hline
 rmmod & ○ \\ \hline
 route & ○ \\ \hline
 rpm & ○ \\ \hline
-rpm2cpio &  ○ \\ \hline
+rpm2cpio & ○ \\ \hline
 run-parts & ○ \\ \hline
 sed & ○ \\ \hline
 seq & ○ \\ \hline
 setkeycodes & ○ \\ \hline
-setsid &  ○ \\ \hline
-sh &  ○ \\ \hline
+setsid & ○ \\ \hline
+sh & ○ \\ \hline
 sha1sum & ○ \\ \hline
 sha256sum & ○ \\ \hline
 sha512sum & ○ \\ \hline
 sleep & ○ \\ \hline
-sort &  ○ \\ \hline
+sort & ○ \\ \hline
 start-stop-daemon & ○ \\ \hline
-stat &  ○ \\ \hline
+stat & ○ \\ \hline
 static-sh & ○ \\ \hline
 strings & ○ \\ \hline
-stty &  ○ \\ \hline
-su &  ○ \\ \hline
+stty & ○ \\ \hline
+su & ○ \\ \hline
 sulogin & ○ \\ \hline
 swapoff & ○ \\ \hline
-swapon &  ○ \\ \hline
+swapon & ○ \\ \hline
 switch_root & ○ \\ \hline
-sync &  ○ \\ \hline
-sysctl &  ○ \\ \hline
+sync & ○ \\ \hline
+sysctl & ○ \\ \hline
 syslogd & ○ \\ \hline
 tac & ○ \\ \hline
-tail &  ○ \\ \hline
+tail & ○ \\ \hline
 tar & ○ \\ \hline
 taskset & ○ \\ \hline
 tee & ○ \\ \hline
-telnet &  ○ \\ \hline
+telnet & ○ \\ \hline
 telnetd & ○ \\ \hline
-test &  ○ \\ \hline
-tftp &  ○ \\ \hline
-time &  ○ \\ \hline
+test & ○ \\ \hline
+tftp & ○ \\ \hline
+time & ○ \\ \hline
 timeout & ○ \\ \hline
 top & ○ \\ \hline
 touch & ○ \\ \hline
-tr &  ○ \\ \hline
-traceroute &  ○ \\ \hline
+tr & ○ \\ \hline
+traceroute & ○ \\ \hline
 traceroute6 & ○ \\ \hline
-TRUE &  ○ \\ \hline
+TRUE & ○ \\ \hline
 tty & ○ \\ \hline
-tunctl &  ○ \\ \hline
-udhcpc &  ○ \\ \hline
-udhcpd &  ○ \\ \hline
-umount &  ○ \\ \hline
+tunctl & ○ \\ \hline
+udhcpc & ○ \\ \hline
+udhcpd & ○ \\ \hline
+umount & ○ \\ \hline
 uname & ○ \\ \hline
-uncompress &  ○ \\ \hline
-unexpand &  ○ \\ \hline
-uniq &  ○ \\ \hline
-unix2dos &  ○ \\ \hline
-unlzma &  ○ \\ \hline
-unlzop &  ○ \\ \hline
-unxz &  ○ \\ \hline
+uncompress & ○ \\ \hline
+unexpand & ○ \\ \hline
+uniq & ○ \\ \hline
+unix2dos & ○ \\ \hline
+unlzma & ○ \\ \hline
+unlzop & ○ \\ \hline
+unxz & ○ \\ \hline
 unzip & ○ \\ \hline
-uptime &  ○ \\ \hline
-usleep &  ○ \\ \hline
-uudecode &  ○ \\ \hline
-uuencode &  ○ \\ \hline
+uptime & ○ \\ \hline
+usleep & ○ \\ \hline
+uudecode & ○ \\ \hline
+uuencode & ○ \\ \hline
 vconfig & ○ \\ \hline
-vi &  ○ \\ \hline
+vi & ○ \\ \hline
 watch & ○ \\ \hline
-watchdog &  ○ \\ \hline
-wc &  ○ \\ \hline
-wget &  ○ \\ \hline
+watchdog & ○ \\ \hline
+wc & ○ \\ \hline
+wget & ○ \\ \hline
 which & ○ \\ \hline
 who & ○ \\ \hline
-whoami &  ○ \\ \hline
+whoami & ○ \\ \hline
 xargs & ○ \\ \hline
-xz &  ○ \\ \hline
+xz & ○ \\ \hline
 xzcat & ○ \\ \hline
 yes & ○ \\ \hline
-zcat &  ○ \\ \hline
+zcat & ○ \\ \hline
 \end{longtable}
 
 %\subsection{純正のHoneypotで未実装のコマンドの実装}
