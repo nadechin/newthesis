@@ -1,5 +1,15 @@
 \begin{thebibliography}{10}
 
+\bibitem{word2vecpaper}
+Greg Corrado Jeffrey~Dean Tomas~Mikolov, Kai~Chen.
+\newblock Efficient estimation of word representations in vector space.
+\newblock {\em ACM Transactions on Graphics (TOG)}, 32(4):138, 2013.
+
+\bibitem{word2vecpaper2}
+Xin Rong.
+\newblock Word2vec parameter learning explained.
+\newblock {\em ACM Transactions on Graphics (TOG)}, 32(4):138, 2013.
+
 \bibitem{highinthoney}
 honeynet.
 \newblock High-interaction-honeypot.
@@ -61,11 +71,6 @@ Wordnet wikipedia.
   \url{http://www.gifu-nct.ac.jp/elec/deguchi/sotsuron/hayashi/node20.html/},
   2010.
 
-\bibitem{word2vecpaper}
-Greg Corrado Jeffrey~Dean Tomas~Mikolov, Kai~Chen.
-\newblock Efficient estimation of word representations in vector space.
-\newblock {\em ACM Transactions on Graphics (TOG)}, 32(4):138, 2013.
-
 \bibitem{scdv}
 Bhargavi Paranjape Harish~Karnick Dheeraj~Mekala, Vivek~Gupta.
 \newblock Scdv : Sparse composite document vectors using soft clustering over
@@ -90,11 +95,6 @@ smurakami.
 UCI.
 \newblock Unix user data data set.
 \newblock \url{http://archive.ics.uci.edu/ml/datasets/unix+user+data}, 2012.
-
-\bibitem{word2vecpaper2}
-Xin Rong.
-\newblock Word2vec parameter learning explained.
-\newblock {\em ACM Transactions on Graphics (TOG)}, 32(4):138, 2013.
 
 \bibitem{AccessTracer}
 丸山祐子 山西健司, 竹内純一.
