@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  31 JAN 2019 02:51
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  31 JAN 2019 02:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1061,16 +1061,26 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [42]
 付 録 A  
+
+Underfull \hbox (badness 1038) in paragraph at lines 21--21
+[]|\OT1/cmr/m/n/12 Cowrie \JY1/mc/m/sl/12 に実装されて
+ []
+
+
+Underfull \hbox (badness 1038) in paragraph at lines 25--25
+[]|\OT1/cmr/m/n/12 Cowrie \JY1/mc/m/sl/12 に実装されて
+ []
+
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.36 acpid & \times
+l.35 acpid & \times
                     \\ \hline
 ? 
 ! Emergency stop.
 <inserted text> 
                 $
-l.36 acpid & \times
+l.35 acpid & \times
                     \\ \hline
 End of file on the terminal!
 
