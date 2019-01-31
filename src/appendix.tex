@@ -11,18 +11,18 @@
 \large{\textbf{実装コマンド一覧}}
 \end{center}
 
-BusyBoxに含まれるコマンドとCowrieの実装コマンドの違い
+BusyBoxに含まれるコマンドとCowrieの実装コマンドの一覧
  
-\begin{longtable}{|c|c|}
+\begin{longtable}{llp{50mm}}
   \caption{実装コマンド一覧}
   \label{table:command} \\
   %------ 最初のページの表の最上部 ----
   \hline
-  Busyboxに含まれるコマンド & Cowrieに実装されているか \\ \hline\hline
+  Cowrieの実装コマンド & Busyboxに含まれるコマンド & Cowrieに未実装のコマンド \\ \hline\hline
   \endfirsthead
   %------ 2ページ以降の表の最上部 ----
   \multicolumn{3}{r}{前ページからの続き} \\ \hline
-  Busyboxに含まれるコマンド & Cowrieに実装されているか \\ \hline\hline
+  Cowrieの実装コマンド　& Busyboxに含まれるコマンド & Cowrieに未実装のコマンド \\ \hline\hline
   \endhead
   %----- ページの表の最下部 --------
   \hline
@@ -33,227 +33,228 @@ BusyBoxに含まれるコマンドとCowrieの実装コマンドの違い
   \multicolumn{3}{r}{以上} \\
   \endlastfoot
 
-acpid & \times \\ \hline
-adjtimex &  \times \\ \hline
-ar &  \times \\ \hline
-arp & \times \\ \hline
-arping &  \times \\ \hline
-ash & \times \\ \hline
-awk & \bigcirc \\ \hline
-basename &  \times \\ \hline
-blockdev &  \times \\ \hline
-brctl & \bigcirc \\ \hline
-bunzip2 & \bigcirc \\ \hline
-bzcat & \bigcirc \\ \hline
-bzip2 & \bigcirc \\ \hline
-cal & \bigcirc \\ \hline
-cat & \times \\ \hline
-chgrp & \bigcirc \\ \hline
-chmod & \bigcirc \\ \hline
-chown & \times \\ \hline
-chpasswd &  \times \\ \hline
-chroot & \bigcirc \\ \hline
-chvt & \bigcirc \\ \hline
-clear & \bigcirc \\ \hline
-cmp & \bigcirc \\ \hline
-cp &  \times \\ \hline
-cpio &  \times \\ \hline
-crond & \times \\ \hline
-crontab & \bigcirc \\ \hline
-cttyhack & \bigcirc \\ \hline
-cut & \bigcirc \\ \hline
-date &  \times \\ \hline
-dc & \bigcirc \\ \hline
-dd & \bigcirc \\ \hline
-deallocvt & \bigcirc \\ \hline
-depmod &  \times \\ \hline
-devmem &  \times \\ \hline
-df & \bigcirc \\ \hline
-diff & \bigcirc \\ \hline
-dirname & \bigcirc \\ \hline
-dmesg & \times \\ \hline
-dnsdomainname & \times \\ \hline
-dos2unix & \bigcirc \\ \hline
-dpkg & \bigcirc \\ \hline
-dpkg-deb &  \times \\ \hline
-du & \bigcirc \\ \hline
-dumpkmap &  \times \\ \hline
-dumpleases & \bigcirc \\ \hline
-echo & \bigcirc \\ \hline
-ed & \bigcirc \\ \hline
-egrep & \bigcirc \\ \hline
-env & \bigcirc \\ \hline
-expand &  \times \\ \hline
-expr & \bigcirc \\ \hline
-FALSE & \times \\ \hline
-fdisk & \times \\ \hline
-fgrep & \bigcirc \\ \hline
-find &  \times \\ \hline
-fold & \bigcirc \\ \hline
-free & \bigcirc \\ \hline
-freeramdisk & \bigcirc \\ \hline
-fstrim & \bigcirc \\ \hline
-ftpget &  \times \\ \hline
-ftpput & \bigcirc \\ \hline
-getopt & \bigcirc \\ \hline
-getty & \bigcirc \\ \hline
-grep & \bigcirc \\ \hline
-groups &  \times \\ \hline
-gunzip &  \times \\ \hline
-gzip &  \times \\ \hline
-halt & \bigcirc \\ \hline
-head &  \times \\ \hline
-hexdump & \bigcirc \\ \hline
-hostid &  \times \\ \hline
-hostname & \bigcirc \\ \hline
-httpd & \times \\ \hline
-hwclock & \bigcirc \\ \hline
-id & \bigcirc \\ \hline
-ifconfig & \bigcirc \\ \hline
-ifdown & \bigcirc \\ \hline
-ifup &  \times \\ \hline
-init &  \times \\ \hline
-insmod & \bigcirc \\ \hline
-ionice &  \times \\ \hline
-ip & \bigcirc \\ \hline
-ipcalc &  \times \\ \hline
-kill &  \times \\ \hline
-killall & \times \\ \hline
-klogd & \bigcirc \\ \hline
-last & \bigcirc \\ \hline
-less & \bigcirc \\ \hline
-ln & \bigcirc \\ \hline
-loadfont & \bigcirc \\ \hline
-loadkmap &  \times \\ \hline
-logger &  \times \\ \hline
-login & \times \\ \hline
-logname & \times \\ \hline
-logread & \times \\ \hline
-losetup & \times \\ \hline
-ls &  \times \\ \hline
-lsmod & \times \\ \hline
-lzcat & \times \\ \hline
-lzma &  \times \\ \hline
-lzop &  \times \\ \hline
-lzopcat & \times \\ \hline
-md5sum &  \times \\ \hline
-mdev &  \times \\ \hline
-microcom &  \times \\ \hline
-mkdir & \times \\ \hline
-mkfifo &  \times \\ \hline
-mknod & \times \\ \hline
-mkswap &  \times \\ \hline
-mktemp &  \times \\ \hline
-modinfo & \times \\ \hline
-modprobe &  \times \\ \hline
-more &  \times \\ \hline
-mount & \times \\ \hline
-mt &  \times \\ \hline
-mv &  \times \\ \hline
-nameif &  \times \\ \hline
-nc &  \times \\ \hline
-netstat & \times \\ \hline
-nslookup &  \times \\ \hline
-od &  \times \\ \hline
-openvt &  \times \\ \hline
-passwd &  \times \\ \hline
-patch & \times \\ \hline
-pidof & \times \\ \hline
-ping &  \times \\ \hline
-ping6 & \times \\ \hline
-pivot_root &  \times \\ \hline
-poweroff &  \times \\ \hline
-printf &  \times \\ \hline
-ps &  \times \\ \hline
-pwd & \times \\ \hline
-rdate & \times \\ \hline
-readlink &  \times \\ \hline
-realpath &  \times \\ \hline
-reboot &  \times \\ \hline
-renice &  \times \\ \hline
-reset & \times \\ \hline
-rev & \times \\ \hline
-rm &  \times \\ \hline
-rmdir & \times \\ \hline
-rmmod & \times \\ \hline
-route & \times \\ \hline
-rpm & \times \\ \hline
-rpm2cpio &  \times \\ \hline
-run-parts & \times \\ \hline
-sed & \times \\ \hline
-seq & \times \\ \hline
-setkeycodes & \times \\ \hline
-setsid &  \times \\ \hline
-sh &  \times \\ \hline
-sha1sum & \times \\ \hline
-sha256sum & \times \\ \hline
-sha512sum & \times \\ \hline
-sleep & \times \\ \hline
-sort &  \times \\ \hline
-start-stop-daemon & \times \\ \hline
-stat &  \times \\ \hline
-static-sh & \times \\ \hline
-strings & \times \\ \hline
-stty &  \times \\ \hline
-su &  \times \\ \hline
-sulogin & \times \\ \hline
-swapoff & \times \\ \hline
-swapon &  \times \\ \hline
-switch_root & \times \\ \hline
-sync &  \times \\ \hline
-sysctl &  \times \\ \hline
-syslogd & \times \\ \hline
-tac & \times \\ \hline
-tail &  \times \\ \hline
-tar & \times \\ \hline
-taskset & \times \\ \hline
-tee & \times \\ \hline
-telnet &  \times \\ \hline
-telnetd & \times \\ \hline
-test &  \times \\ \hline
-tftp &  \times \\ \hline
-time &  \times \\ \hline
-timeout & \times \\ \hline
-top & \times \\ \hline
-touch & \times \\ \hline
-tr &  \times \\ \hline
-traceroute &  \times \\ \hline
-traceroute6 & \times \\ \hline
-TRUE &  \times \\ \hline
-tty & \times \\ \hline
-tunctl &  \times \\ \hline
-udhcpc &  \times \\ \hline
-udhcpd &  \times \\ \hline
-umount &  \times \\ \hline
-uname & \times \\ \hline
-uncompress &  \times \\ \hline
-unexpand &  \times \\ \hline
-uniq &  \times \\ \hline
-unix2dos &  \times \\ \hline
-unlzma &  \times \\ \hline
-unlzop &  \times \\ \hline
-unxz &  \times \\ \hline
-unzip & \times \\ \hline
-uptime &  \times \\ \hline
-usleep &  \times \\ \hline
-uudecode &  \times \\ \hline
-uuencode &  \times \\ \hline
-vconfig & \times \\ \hline
-vi &  \times \\ \hline
-watch & \times \\ \hline
-watchdog &  \times \\ \hline
-wc &  \times \\ \hline
-wget &  \times \\ \hline
-which & \times \\ \hline
-who & \times \\ \hline
-whoami &  \times \\ \hline
-xargs & \times \\ \hline
-xz &  \times \\ \hline
-xzcat & \times \\ \hline
-yes & \times \\ \hline
-zcat &  \times \\ \hline
+adduser & acpid & acpid \\ \hline
+alias & adjtimex & adjtimex \\ \hline
+apt-get & ar & ar \\ \hline
+base64 & arp & arp \\ \hline
+bash & arping & arping \\ \hline
+busybox & ash & ash \\ \hline
+cat & awk & awk \\ \hline
+cd & basename & basename \\ \hline
+chattr & blockdev & blockdev \\ \hline
+chgrp & brctl & brctl \\ \hline
+chmod & bunzip2 & bunzip2 \\ \hline
+chown & bzcat & bzcat \\ \hline
+clear & bzip2 & bzip2 \\ \hline
+cp & cal & cal \\ \hline
+curl & cat & chpasswd \\ \hline
+date & chgrp & chroot \\ \hline
+dd & chmod & chvt \\ \hline
+dget & chown & cmp \\ \hline
+dir & chpasswd & cpio \\ \hline
+du & chroot & crond \\ \hline
+echo & chvt & crontab \\ \hline
+egrep & clear & cttyhack \\ \hline
+env & cmp & cut \\ \hline
+ethtool & cp & dc \\ \hline
+exit & cpio & deallocvt \\ \hline
+export & crond & depmod \\ \hline
+fgrep & crontab & devmem \\ \hline
+free & cttyhack & df \\ \hline
+ftpget & cut & diff \\ \hline
+gcc & date & dirname \\ \hline
+grep & dc & dmesg \\ \hline
+halt & dd & dnsdomainname \\ \hline
+head & deallocvt & dos2unix \\ \hline
+help & depmod & dpkg \\ \hline
+history & devmem & dpkg-deb \\ \hline
+hostname & df & dumpkmap \\ \hline
+id & diff & dumpleases \\ \hline
+ifconfig & dirname & ed \\ \hline
+iptables & dmesg & expand \\ \hline
+jobs & dnsdomainname & expr \\ \hline
+kill & dos2unix & FALSE \\ \hline
+killall & dpkg & fdisk \\ \hline
+killall5 & dpkg-deb & find \\ \hline
+last & du & fold \\ \hline
+logout & dumpkmap & freeramdisk \\ \hline
+ls & dumpleases & fstrim \\ \hline
+mkdir & echo & ftpput \\ \hline
+mv & ed & getopt \\ \hline
+nc & egrep & getty \\ \hline
+netstat & env & groups \\ \hline
+nohup & expand & gunzip \\ \hline
+passwd & expr & gzip \\ \hline
+perl & FALSE & hexdump \\ \hline
+php & fdisk & hostid \\ \hline
+ping & fgrep & httpd \\ \hline
+pkill & find & hwclock \\ \hline
+poweroff & fold & ifdown \\ \hline
+printf & free & ifup \\ \hline
+ps & freeramdisk & init \\ \hline
+pwd & fstrim & insmod \\ \hline
+python & ftpget & ionice \\ \hline
+reboot & ftpput & ip \\ \hline
+reset & getopt & ipcalc \\ \hline
+rm & getty & klogd \\ \hline
+rmdir & grep & less \\ \hline
+scp & groups & ln \\ \hline
+service & gunzip & loadfont \\ \hline
+set & gzip & loadkmap \\ \hline
+sh & halt & logger \\ \hline
+shutdown & head & login \\ \hline
+sleep & hexdump & logname \\ \hline
+ssh & hostid & logread \\ \hline
+su & hostname & losetup \\ \hline
+sudo & httpd & lsmod \\ \hline
+tail & hwclock & lzcat \\ \hline
+tar & id & lzma \\ \hline
+tftp & ifconfig & lzop \\ \hline
+touch & ifdown & lzopcat \\ \hline
+ulimit & ifup & md5sum \\ \hline
+umask & init & mdev \\ \hline
+uname & insmod & microcom \\ \hline
+unset & ionice & mkfifo \\ \hline
+uptime & ip & mknod \\ \hline
+useradd & ipcalc & mkswap \\ \hline
+users & kill & mktemp \\ \hline
+w & killall & modinfo \\ \hline
+wget & klogd & modprobe \\ \hline
+which & last & more \\ \hline
+who & less & mount \\ \hline
+whoami & ln & mt \\ \hline
+yes & loadfont & nameif \\ \hline
+yum & loadkmap & nslookup \\ \hline
+ & logger & od \\ \hline
+ & login & openvt \\ \hline
+ & logname & patch \\ \hline
+ & logread & pidof \\ \hline
+ & losetup & ping6 \\ \hline
+ & ls & pivot\_root \\ \hline
+ & lsmod & rdate \\ \hline
+ & lzcat & readlink \\ \hline
+ & lzma & realpath \\ \hline
+ & lzop & renice \\ \hline
+ & lzopcat & rev \\ \hline
+ & md5sum & rmmod \\ \hline
+ & mdev & route \\ \hline
+ & microcom & rpm \\ \hline
+ & mkdir & rpm2cpio \\ \hline
+ & mkfifo & run-parts \\ \hline
+ & mknod & sed \\ \hline
+ & mkswap & seq \\ \hline
+ & mktemp & setkeycodes \\ \hline
+ & modinfo & setsid \\ \hline
+ & modprobe & sha1sum \\ \hline
+ & more & sha256sum \\ \hline
+ & mount & sha512sum \\ \hline
+ & mt & sort \\ \hline
+ & mv & start-stop-daemon \\ \hline
+ & nameif & stat \\ \hline
+ & nc & static-sh \\ \hline
+ & netstat & strings \\ \hline
+ & nslookup & stty \\ \hline
+ & od & sulogin \\ \hline
+ & openvt & swapoff \\ \hline
+ & passwd & swapon \\ \hline
+ & patch & switch\_root \\ \hline
+ & pidof & sync \\ \hline
+ & ping & sysctl \\ \hline
+ & ping6 & syslogd \\ \hline
+ & pivot\_root & tac \\ \hline
+ & poweroff & taskset \\ \hline
+ & printf & tee \\ \hline
+ & ps & telnet \\ \hline
+ & pwd & telnetd \\ \hline
+ & rdate & test \\ \hline
+ & readlink & time \\ \hline
+ & realpath & timeout \\ \hline
+ & reboot & top \\ \hline
+ & renice & tr \\ \hline
+ & reset & traceroute \\ \hline
+ & rev & traceroute6 \\ \hline
+ & rm & TRUE \\ \hline
+ & rmdir & tty \\ \hline
+ & rmmod & tunctl \\ \hline
+ & route & udhcpc \\ \hline
+ & rpm & udhcpd \\ \hline
+ & rpm2cpio & umount \\ \hline
+ & run-parts & uncompress \\ \hline
+ & sed & unexpand \\ \hline
+ & seq & uniq \\ \hline
+ & setkeycodes & unix2dos \\ \hline
+ & setsid & unlzma \\ \hline
+ & sh & unlzop \\ \hline
+ & sha1sum & unxz \\ \hline
+ & sha256sum & unzip \\ \hline
+ & sha512sum & usleep \\ \hline
+ & sleep & uudecode \\ \hline
+ & sort & uuencode \\ \hline
+ & start-stop-daemon & vconfig \\ \hline
+ & stat & vi \\ \hline
+ & static-sh & watch \\ \hline
+ & strings & watchdog \\ \hline
+ & stty & wc \\ \hline
+ & su & xargs \\ \hline
+ & sulogin & xz \\ \hline
+ & swapoff & xzcat \\ \hline
+ & swapon & zcat \\ \hline
+ & switch\_root &  \\ \hline
+ & sync &  \\ \hline
+ & sysctl &  \\ \hline
+ & syslogd &  \\ \hline
+ & tac &  \\ \hline
+ & tail &  \\ \hline
+ & tar &  \\ \hline
+ & taskset &  \\ \hline
+ & tee &  \\ \hline
+ & telnet &  \\ \hline
+ & telnetd &  \\ \hline
+ & test &  \\ \hline
+ & tftp &  \\ \hline
+ & time &  \\ \hline
+ & timeout &  \\ \hline
+ & top &  \\ \hline
+ & touch &  \\ \hline
+ & tr &  \\ \hline
+ & traceroute &  \\ \hline
+ & traceroute6 &  \\ \hline
+ & TRUE &  \\ \hline
+ & tty &  \\ \hline
+ & tunctl &  \\ \hline
+ & udhcpc &  \\ \hline
+ & udhcpd &  \\ \hline
+ & umount &  \\ \hline
+ & uname &  \\ \hline
+ & uncompress &  \\ \hline
+ & unexpand &  \\ \hline
+ & uniq &  \\ \hline
+ & unix2dos &  \\ \hline
+ & unlzma &  \\ \hline
+ & unlzop &  \\ \hline
+ & unxz &  \\ \hline
+ & unzip &  \\ \hline
+ & uptime &  \\ \hline
+ & usleep &  \\ \hline
+ & uudecode &  \\ \hline
+ & uuencode &  \\ \hline
+ & vconfig &  \\ \hline
+ & vi &  \\ \hline
+ & watch &  \\ \hline
+ & watchdog &  \\ \hline
+ & wc &  \\ \hline
+ & wget &  \\ \hline
+ & which &  \\ \hline
+ & who &  \\ \hline
+ & whoami &  \\ \hline
+ & xargs &  \\ \hline
+ & xz &  \\ \hline
+ & xzcat &  \\ \hline
+ & yes &  \\ \hline
+ & zcat &  \\ \hline
 
 \end{longtable}
+\clearpage
 
 %\subsection{純正のHoneypotで未実装のコマンドの実装}
 %\label{appd:implofcommand}
