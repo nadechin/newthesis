@@ -90,6 +90,11 @@ soji256.
 \newblock dmidecodecommand.
 \newblock \url{https://soji256.hatenablog.jp/entry/2018/09/06/075700/}, 2018.
 
+\bibitem{diffcommand}
+smurakami.
+\newblock diff command with python.
+\newblock \url{https://github.com/smurakami/diff}, 2014.
+
 \bibitem{unixdata}
 UCI.
 \newblock Unix user data data set.
