@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  31 JAN 2019 04:32
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  31 JAN 2019 04:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1062,22 +1062,22 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [42]
 付 録 A  
 ! Undefined control sequence.
-<recently read> \hぃね 
-                       
-l.51 chmod & ○ \\ \hぃね
-                         
+<recently read> \hine 
+                      
+l.51 chmod & ○ \\ \hine
+                        
 ? 
 ! Emergency stop.
-<recently read> \hぃね 
-                       
-l.51 chmod & ○ \\ \hぃね
-                         
+<recently read> \hine 
+                      
+l.51 chmod & ○ \\ \hine
+                        
 End of file on the terminal!
 
  
 Here is how much of TeX's memory you used:
  9085 strings out of 494865
- 127460 string characters out of 6179768
+ 127459 string characters out of 6179768
  455078 words of memory out of 5000000
  12309 multiletter control sequences out of 15000+600000
  22927 words of font info for 94 fonts, out of 8000000 for 9000
