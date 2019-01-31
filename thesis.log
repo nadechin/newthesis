@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  31 JAN 2019 02:49
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  31 JAN 2019 02:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1064,14 +1064,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 ! Missing # inserted in alignment preamble.
 <to be read again> 
                    \cr 
-l.16 \begin{longtable}{|||}
-                           
+l.16 \begin{longtable}{||}
+                          
 ? 
 ! Emergency stop.
 <to be read again> 
                    \cr 
-l.16 \begin{longtable}{|||}
-                           
+l.16 \begin{longtable}{||}
+                          
 End of file on the terminal!
 
  
