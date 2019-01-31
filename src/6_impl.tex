@@ -41,6 +41,7 @@ Cowrieに実装されているコマンドはcowrie/src/cowrie/commands/に格�
 
 以下の\ref{lst:dmidecode}にcowrie/src/cowrie/commands/base.pyにdmidecodeコマンドを追加実装したものを示す．\cite{dmidecode}
 
+\vspace{3mm}
 \begin{mylisting}[label={lst:dmidecode},language=sh,caption=dmidecode]
 class command_dmidecode(HoneyPotCommand):
     """
@@ -66,9 +67,9 @@ Handle 0x0056, DMI type 127, 4 bytes
 End Of Table\n""")
 commands['dmidecode'] = command_dmidecode
 \end{mylisting}
-
+\vspace{3mm}
 追加実装以外ではファイルを追加することで，コマンドを追加したものを以下の\ref{lst:diff}に示す．\cite{diffcommand}
-
+\vspace{3mm}
 \begin{mylisting}[label={lst:diff},language=sh,caption=diffコマンド]
 # coding: utf-8
 import sys
@@ -189,9 +190,9 @@ if __name__ == "__main__":
     quit()
   diff(sys.argv[1], sys.argv[2])
 \end{mylisting}
-
-さらに，コマンド実行時に出力結果をprint関数で出力するのみのコマンド追加したものの例を以下の\ref{lst:mount}示す．本例ではmountコマンドを以下のように実装した．
-
+\vspace{3mm}
+さらに，コマンド実行時に出力結果をprint関数で出力するのみのコマンドを追加したものの例を以下の\ref{lst:mount}示す．本例ではmountコマンドを以下のように実装した．
+\vspace{3mm}
 \begin{mylisting}[label={lst:mount},language=sh,caption=mountコマンド]
 # coding: utf-8
 
@@ -230,7 +231,23 @@ tmpfs on /run/user/1000 type tmpfs (rw,nosuid,nodev,relatime,size=3294084k,mode=
 
 print(string)
 \end{mylisting}
+\vspace{3mm}
+print関数で出力するのみのコマンドを追加の手法としてpythonのライブラリであるsubprocessを用いて標準入出力を行う．
+以下の本例\ref{lst:ar}ではarコマンドを示す．
+\vspace{3mm}
+\begin{mylisting}[label={lst:ar},language=sh,caption=ar]
+# coding: utf-8
 
+import subprocess
+import sys
+
+cmd = "ar t"
+opt = sys.argv[1]
+cmdall = cmd + " " + opt
+subprocess.call(cmdall.split())
+
+\end{mylisting}
+\vspace{3mm}
 
 %\vspace{3mm}
 %\setlength{\myheight}{10mm}
