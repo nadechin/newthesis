@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  31 JAN 2019 04:35
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  31 JAN 2019 04:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1061,26 +1061,106 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [42]
 付 録 A  
-! Undefined control sequence.
-<recently read> \hine 
-                      
-l.51 chmod & ○ \\ \hine
-                        
+[43
+
+]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[44]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[45]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[46]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[47]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[48]) (./src/acknowledgement.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[49] [50
+
+]) (./bib/biblio.tex (./thesis.bbl [51]
+
+LaTeX Font Warning: Font shape `JT1/gt/m/it' undefined
+(Font)              using `JT1/gt/m/n' instead on input line 6.
+
+
+LaTeX Font Warning: Font shape `JY1/gt/m/it' undefined
+(Font)              using `JY1/gt/m/n' instead on input line 6.
+
+[52
+
+]))
+
+Package natbib Warning: There were undefined citations.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 149.
+[53]
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 149.
+\BKM@file=\write7
+\openout7 = `thesis.out.ps'.
+
+ (./thesis.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+
+! Package natbib Error: Bibliography not compatible with author-year citations.
+
+(natbib)                Press <return> to continue in numerical citation style.
+
+
+See the natbib package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.367 ...and\NAT@force@numbers{}\NAT@force@numbers
+                                                  
 ? 
 ! Emergency stop.
-<recently read> \hine 
-                      
-l.51 chmod & ○ \\ \hine
-                        
-End of file on the terminal!
+ ...                                              
+                                                  
+l.367 ...and\NAT@force@numbers{}\NAT@force@numbers
+                                                  
+Check the bibliography entries for non-compliant syntax,
+or select author-year BibTeX style, e.g. plainnat
 
  
 Here is how much of TeX's memory you used:
- 9085 strings out of 494865
- 127459 string characters out of 6179768
+ 9154 strings out of 494865
+ 128893 string characters out of 6179768
  455078 words of memory out of 5000000
- 12309 multiletter control sequences out of 15000+600000
- 22927 words of font info for 94 fonts, out of 8000000 for 9000
+ 12362 multiletter control sequences out of 15000+600000
+ 23274 words of font info for 95 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
- 35i,12n,58p,1857b,1825s stack positions out of 5000i,500n,10000p,200000b,80000s
-Output written on thesis.dvi (48 pages, 203828 bytes).
+ 35i,12n,58p,1878b,1825s stack positions out of 5000i,500n,10000p,200000b,80000s
+Output written on thesis.dvi (59 pages, 236572 bytes).
