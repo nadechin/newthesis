@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  31 JAN 2019 02:48
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  31 JAN 2019 02:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1061,17 +1061,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [42]
 付 録 A  
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.21   Busyboxに含まれるコマンド &
-                                   Cowrieに実装されているか \\ \hline\hline
+! Missing $ inserted.
+<inserted text> 
+                $
+l.36 acpid & \times
+                    \\ \hline
 ? 
 ! Emergency stop.
-<recently read> \endtemplate 
-                             
-l.21   Busyboxに含まれるコマンド &
-                                   Cowrieに実装されているか \\ \hline\hline
+<inserted text> 
+                $
+l.36 acpid & \times
+                    \\ \hline
 End of file on the terminal!
 
  
