@@ -5,7 +5,7 @@
 
 \section{Honeypot}
 
-使われているデバイスへの不正なSSHによって侵入された際，実際に攻撃が行えない環境へとフォワードし，その中で攻撃を試行させ，侵入者のログを収集する手段としてHoneypotがある．SSHのHoneypot\cite{honeypot}は低対話型Honeypotと高対話型Honeypotの大きく二種類に分けることができる．\\
+使われているデバイスへの不正なSSHによって侵入された際，実際に攻撃が行えない環境へとフォワードし，その中で攻撃を試行させ，侵入者のログを収集する手段としてHoneypotがある．SSHのHoneypotは低対話型Honeypotと高対話型Honeypotの大きく二種類に分けることができる．\\
 %以下に侵入者がSSHで不正に機器に侵入してから踏み台にして他の機器に攻撃を仕掛けるまでの一般的なフローを図2に示す．
 %\vspace{10mm}
 %\begin{figure}[H]
@@ -24,7 +24,7 @@ SSHの低対話型Honeypotは実際のShellの挙動をエミュレートした�
 \subsubsection{Kippo}
 \label{tech:Kippo}
 
-Kippoは，悪意のあるSSHのログイン試行者や侵入者の挙動やログを記録するために使用されるPythonで実装されたSSHの低対話型Honeypotである\cite{kippo}．Kippoは前身のKojoney\cite{kojoney}に大きく影響を受けている．ネットワークはTwisted\cite{twisted}というフレームワークで組まれている．Kippoのプロジェクトは低対話型Honeypotとして2009年に登場し，Raspberry Pi\cite{rasp}などを筆頭としたシングルボードコンピュータ\cite{singleboard}の普及と相まって広く設置された．
+Kippoは，悪意のあるSSHのログイン試行者や侵入者の挙動やログを記録するために使用されるPythonで実装されたSSHの低対話型Honeypotである\cite{kippo}．Kippoは前身のKojoney\cite{kojoney}に大きく影響を受けている．ネットワークはTwisted\cite{twisted}というフレームワークで組まれている．Kippoのプロジェクトは低対話型Honeypotとして2009年に登場し，Raspberry Piなどを筆頭としたシングルボードコンピュータの普及と相まって広く設置された．
 Kippoの機能の特徴としては収集したコマンドログ を時系列データとして保存されており，"playlog"というKippo内にあるプログラムを実行することで，過去のコマンドログ を実際にタイピングしてるかのように出力できる．また，侵入者によってダウンロードされたファイルも実行ができないように保存できる．Kippoは後述のCowrieの後継実装である．\cite{kippowiki}
 KippoはIoTデバイスの高度化広く設置されたSSHの低対話型Honeypotのうちの一つであったが，実装されているコマンドも77\cite{kippocommand}と少なく，またKippo特有の異常な挙動が存在するなどと多くの問題があった．
 
