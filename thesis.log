@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  1 FEB 2019 09:47
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  4 FEB 2019 10:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -604,23 +604,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [3]
 第 2 章
 
-Package natbib Warning: Citation `honeypot' on page 4 undefined on input line 8
-.
-
-
 Package natbib Warning: Citation `kojoney' on page 4 undefined on input line 27
 .
 
 
 Package natbib Warning: Citation `twisted' on page 4 undefined on input line 27
 .
-
-
-Package natbib Warning: Citation `rasp' on page 4 undefined on input line 27.
-
-
-Package natbib Warning: Citation `singleboard' on page 4 undefined on input lin
-e 27.
 
 [4
 
@@ -777,9 +766,6 @@ File: figures/addcommand.pdf Graphic file (type pdf)
 
 ]
 第 5 章
-
-LaTeX Warning: Reference `Cowrie' on page 21 undefined on input line 35.
-
 
 LaTeX Warning: Reference `appd:implofcommand' on page 21 undefined on input lin
 e 39.
@@ -1057,12 +1043,12 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 149.
  ) 
 Here is how much of TeX's memory you used:
- 9172 strings out of 494865
- 128858 string characters out of 6179768
+ 9168 strings out of 494865
+ 128821 string characters out of 6179768
  455078 words of memory out of 5000000
- 12381 multiletter control sequences out of 15000+600000
+ 12377 multiletter control sequences out of 15000+600000
  23274 words of font info for 95 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
  35i,12n,58p,1878b,1825s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (60 pages, 271676 bytes).
+Output written on thesis.dvi (60 pages, 271780 bytes).

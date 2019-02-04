@@ -19,6 +19,14 @@ honeynet.
 Kippo.
 \newblock \url{https://github.com/desaster/kippo/}.
 
+\bibitem{kojoney}
+kojoney.
+\newblock \url{http://kojoney.sourceforge.net/}.
+
+\bibitem{twisted}
+Twisted.
+\newblock \url{https://twistedmatrix.com/trac/}.
+
 \bibitem{kippowiki}
 Kippoのプロジェクトの現在.
 \newblock \url{http://www.thingiverse.com/}.
