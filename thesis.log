@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  4 FEB 2019 10:20
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  4 FEB 2019 10:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -473,8 +473,17 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSb=\mathgroup6
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-))
-No file thesis.aux.
+)) (./thesis.aux
+
+LaTeX Warning: Label `intr:prex' multiply defined.
+
+
+LaTeX Warning: Label `eval:eval' multiply defined.
+
+
+LaTeX Warning: Label `eval:impl' multiply defined.
+
+)
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 106.
@@ -498,7 +507,7 @@ LaTeX Font Info:    ... okay on input line 106.
 \c@lstlisting=\count150
 \AtBeginShipoutBox=\box62
 Package hyperref Info: Link coloring OFF on input line 106.
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -509,9 +518,6 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 106.
 LaTeX Info: Redefining \pageref on input line 106.
 LaTeX Info: Redefining \nameref on input line 106.
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
 
 (./src/titlepage.tex [1
 
@@ -533,34 +539,31 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24.88> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 121.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 121.
+ (./thesis.toc
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 1.
+ [3
 
 
-Package hyperref Warning: old toc file detected, not used; run LaTeX again.
-
+])
 \tf@toc=\write4
 \openout4 = `thesis.toc'.
 
-[3
-
-
-]
-
-Package hyperref Warning: old lof file detected, not used; run LaTeX again.
-
+ [4] (./thesis.lof)
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
-[4
+ [5
 
 
 ]
-
-Package hyperref Warning: old lot file detected, not used; run LaTeX again.
-
+(./thesis.lot)
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
-[5
+ [6
 
 
 ] (./src/1_intr.tex
@@ -573,14 +576,6 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 8.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 8.
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 19.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 19.
-
-Package natbib Warning: Citation `highinthoney' on page 1 undefined on input li
-ne 19.
-
 [1
 
 
@@ -599,29 +594,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2]
-
-LaTeX Warning: Reference `tech' on page 3 undefined on input line 93.
-
-
-LaTeX Warning: Reference `appr' on page 3 undefined on input line 94.
-
-
-LaTeX Warning: Reference `meth' on page 3 undefined on input line 96.
-
-
-LaTeX Warning: Reference `impl' on page 3 undefined on input line 97.
-
-
-LaTeX Warning: Reference `eval' on page 3 undefined on input line 98.
-
-
-LaTeX Warning: Reference `rela' on page 3 undefined on input line 99.
-
-
-LaTeX Warning: Reference `conc' on page 3 undefined on input line 100.
-
-) (./src/2_tech.tex
+[2]) (./src/2_tech.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
@@ -630,48 +603,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [3]
 第 2 章
-
-Package natbib Warning: Citation `kippo' on page 4 undefined on input line 27.
-
-
-Package natbib Warning: Citation `kojoney' on page 4 undefined on input line 27
-.
-
-
-Package natbib Warning: Citation `twisted' on page 4 undefined on input line 27
-.
-
-
-Package natbib Warning: Citation `kippowiki' on page 4 undefined on input line 
-28.
-
-
-Package natbib Warning: Citation `kippocommand' on page 4 undefined on input li
-ne 29.
-
 [4
 
 ]
-
-Package natbib Warning: Citation `cowriecommand' on page 5 undefined on input l
-ine 34.
-
-
-Package natbib Warning: Citation `differfromkippo' on page 5 undefined on input
- line 34.
-
-
-LaTeX Warning: Reference `tech:HighInteractionHoneypot' on page 5 undefined on 
-input line 46.
-
-
-Package natbib Warning: Citation `honeywall' on page 5 undefined on input line 
-46.
-
-
-LaTeX Warning: Reference `table:compare' on page 5 undefined on input line 51.
-
 \myheight=\skip81
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -683,36 +619,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [5]
 
-Package natbib Warning: Citation `ssh' on page 6 undefined on input line 95.
-
-
-Package natbib Warning: Citation `busybox' on page 6 undefined on input line 99
-.
-
-
-Package natbib Warning: Citation `tsne' on page 6 undefined on input line 104.
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [6]
-
-LaTeX Warning: Reference `fig:hiddenmarkov' on page 7 undefined on input line 1
-12.
-
 File: figures/hiddenmarkov.pdf Graphic file (type pdf)
-<figures/hiddenmarkov.pdf>
-
-Package natbib Warning: Citation `wordnet' on page 7 undefined on input line 12
-3.
-
-
-Package natbib Warning: Citation `wordnetwiki' on page 7 undefined on input lin
-e 127.
-
+ <figures/hiddenmarkov.pdf>
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
@@ -720,13 +634,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [7]
-
-LaTeX Warning: Reference `tech:tfidf' on page 8 undefined on input line 155.
-
-
-Package natbib Warning: Citation `voctormodel' on page 8 undefined on input lin
-e 155.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
@@ -742,10 +649,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [9]
 
-Package natbib Warning: Citation `word2vecpaper' on page 10 undefined on input 
-line 227.
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
  We now make it that large for the rest of the document.
@@ -753,36 +656,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [10]
 
-LaTeX Warning: Reference `eq:kakuritu' on page 11 undefined on input line 264.
-
-
-LaTeX Warning: Reference `eq:douzikakuritu' on page 11 undefined on input line 
-265.
-
-
-LaTeX Warning: Reference `eq:mokuteki' on page 11 undefined on input line 265.
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [11]
-
-LaTeX Warning: Reference `eq:mokuteki' on page 12 undefined on input line 270.
-
-
-LaTeX Warning: Reference `eq:douzikakuritu' on page 12 undefined on input line 
-270.
-
-
-LaTeX Warning: Reference `eq:lastmokuteki' on page 12 undefined on input line 2
-78.
-
-
-LaTeX Warning: Reference `fig:uc' on page 12 undefined on input line 280.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
@@ -793,16 +672,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: figures/uc.pdf Graphic file (type pdf)
  <figures/uc.pdf>
 
-LaTeX Warning: Reference `eq:wprimeh' on page 13 undefined on input line 293.
-
-
-LaTeX Warning: Reference `eq:lastmokuteki' on page 13 undefined on input line 2
-94.
-
-
-LaTeX Warning: Reference `eq:zenkou' on page 13 undefined on input line 299.
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
  We now make it that large for the rest of the document.
@@ -811,29 +680,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [13
 
 ]
-
-LaTeX Warning: Reference `eq:ikkou' on page 14 undefined on input line 320.
-
-
-LaTeX Warning: Reference `eq:nikou' on page 14 undefined on input line 320.
-
-
-LaTeX Warning: Reference `eq:wprimeh' on page 14 undefined on input line 324.
-
-
-LaTeX Warning: Reference `eq:wprimeh' on page 14 undefined on input line 329.
-
-
-LaTeX Warning: Reference `eq:ichinikou' on page 14 undefined on input line 329.
-
-
-
-LaTeX Warning: Reference `eq:nikoume' on page 14 undefined on input line 329.
-
-
-LaTeX Warning: Reference `fig:neuralnet' on page 14 undefined on input line 337
-.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
@@ -857,10 +703,6 @@ Missing character: There is no ^^8a in font cmr12!
 Missing character: There is no ^^95 in font cmr12!
 
 
-Package natbib Warning: Citation `scdv' on page 15 undefined on input line 360.
-
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
  We now make it that large for the rest of the document.
@@ -878,32 +720,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [16]
 第 3 章
 
-LaTeX Warning: Reference `intr' on page 17 undefined on input line 4.
-
-
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \kern 1.95872pt
 (hyperref)                removed on input line 10.
-
-
-LaTeX Warning: Reference `fig:flow' on page 17 undefined on input line 13.
 
 File: figures/nagare.png Graphic file (type bmp)
 <figures/nagare.png> [17
 
 ]
-
-LaTeX Warning: Reference `tech:BusyBox' on page 18 undefined on input line 35.
-
-
-LaTeX Warning: Reference `tech:Cowrie' on page 18 undefined on input line 35.
-
-
-LaTeX Warning: Reference `lst:usual' on page 18 undefined on input line 35.
-
-
-LaTeX Warning: Reference `lst:kippo' on page 18 undefined on input line 35.
-
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
@@ -920,24 +744,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[18]
-
-LaTeX Warning: Reference `appr:problemofSshLowHoneypot' on page 19 undefined on
- input line 71.
-
-
-LaTeX Warning: Reference `appr:subproblem' on page 19 undefined on input line 7
-5.
-
-
-LaTeX Warning: Reference `appr:addcommand' on page 19 undefined on input line 8
-6.
-
-
-LaTeX Warning: Reference `appr:repaircommand' on page 19 undefined on input lin
-e 86.
-
-) (./src/5_meth.tex
+[18]) (./src/5_meth.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
@@ -946,54 +753,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [19]
 第 4 章
-
-LaTeX Warning: Reference `appr:Hypothesis' on page 20 undefined on input line 4
-.
-
-
-LaTeX Warning: Reference `appr:YotenForProblem' on page 20 undefined on input l
-ine 8.
-
-
-LaTeX Warning: Reference `fig:addcommand' on page 20 undefined on input line 8.
-
-
 File: figures/addcommand.pdf Graphic file (type pdf)
 <figures/addcommand.pdf>) (./src/6_impl.tex [20
 
 ]
 第 5 章
-
-LaTeX Warning: Reference `meth:appr' on page 21 undefined on input line 4.
-
-
-LaTeX Warning: Reference `table:imple' on page 21 undefined on input line 7.
-
-
-Package natbib Warning: Citation `cowrie' on page 21 undefined on input line 35
-.
-
-
-Package natbib Warning: Citation `busybox' on page 21 undefined on input line 3
-5.
-
-
-LaTeX Warning: Reference `tech:BusyBox' on page 21 undefined on input line 35.
-
-
-LaTeX Warning: Reference `tech:Cowrie' on page 21 undefined on input line 35.
-
-
-LaTeX Warning: Reference `appd' on page 21 undefined on input line 36.
-
-
-LaTeX Warning: Reference `table:command' on page 21 undefined on input line 36.
-
-
-
-LaTeX Warning: Reference `impl:ImplBusyBox' on page 21 undefined on input line 
-39.
-
 
 LaTeX Warning: Reference `appd:implofcommand' on page 21 undefined on input lin
 e 39.
@@ -1001,21 +765,6 @@ e 39.
 [21
 
 ]
-
-LaTeX Warning: Reference `lst:dmidecode' on page 22 undefined on input line 42.
-
-
-
-Package natbib Warning: Citation `dmidecode' on page 22 undefined on input line
- 42.
-
-
-LaTeX Warning: Reference `lst:diff' on page 22 undefined on input line 71.
-
-
-Package natbib Warning: Citation `diffcommand' on page 22 undefined on input li
-ne 71.
-
 
 LaTeX Font Warning: Font shape `JT1/mc/m/it' undefined
 (Font)              using `JT1/mc/m/n' instead on input line 74.
@@ -1046,18 +795,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [24]
 
-LaTeX Warning: Reference `lst:mount' on page 25 undefined on input line 194.
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [25]
-
-LaTeX Warning: Reference `lst:ar' on page 26 undefined on input line 237.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
@@ -1073,30 +816,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [27]
 第 6 章
-
-LaTeX Warning: Reference `impl' on page 28 undefined on input line 4.
-
 [28
 
 ]
-
-LaTeX Warning: Reference `table:kenchi' on page 29 undefined on input line 34.
-
 \myheighta=\skip82
-
-LaTeX Warning: Reference `fig:cowriecompare' on page 29 undefined on input line
- 66.
-
 File: figures/Figure_1.png Graphic file (type bmp)
-<figures/Figure_1.png>
-
-LaTeX Warning: Reference `appr:YotenForProblem' on page 29 undefined on input l
-ine 81.
-
-
-Package natbib Warning: Citation `unixdata' on page 29 undefined on input line 
-82.
-
+ <figures/Figure_1.png>
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
@@ -1111,17 +836,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [30]
-
-LaTeX Warning: Reference `fig:yobigainen' on page 31 undefined on input line 92
-.
-
 File: figures/termhyoka.png Graphic file (type bmp)
-<figures/termhyoka.png>
+ <figures/termhyoka.png>
 
 LaTeX Warning: Reference `tech:Markov' on page 31 undefined on input line 114.
-
-
-LaTeX Warning: Reference `tech:NLP' on page 31 undefined on input line 116.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1131,13 +849,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [31]
 
-LaTeX Warning: Reference `lst:exam' on page 32 undefined on input line 125.
-
-
-LaTeX Warning: Reference `fig:hyoukaflow' on page 32 undefined on input line 13
-7.
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
  We now make it that large for the rest of the document.
@@ -1146,32 +857,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [32]
 File: figures/model.png Graphic file (type bmp)
  <figures/model.png>
-
-Package natbib Warning: Citation `word2vecpaper' on page 33 undefined on input 
-line 144.
-
-
-Package natbib Warning: Citation `word2vecpaper2' on page 33 undefined on input
- line 144.
-
-
-LaTeX Warning: Reference `tech:scdv' on page 33 undefined on input line 149.
-
-
-LaTeX Warning: Reference `tech:tfidf' on page 33 undefined on input line 149.
-
-
-LaTeX Warning: Reference `table:scdvcompare1' on page 33 undefined on input lin
-e 153.
-
-
-LaTeX Warning: Reference `table:scdvcompare2' on page 33 undefined on input lin
-e 153.
-
-
-LaTeX Warning: Reference `table:scdvcompare3' on page 33 undefined on input lin
-e 153.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
@@ -1192,17 +877,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 ]
 File: figures/sankaku.pdf Graphic file (type pdf)
  <figures/sankaku.pdf>
-
-LaTeX Warning: Reference `fig:tsne1' on page 35 undefined on input line 227.
-
-
-LaTeX Warning: Reference `fig:tsne2' on page 35 undefined on input line 227.
-
-
-LaTeX Warning: Reference `fig:tsne3' on page 35 undefined on input line 227.
-
 File: figures/sufix.png Graphic file (type bmp)
-<figures/sufix.png>
+ <figures/sufix.png>
 File: figures/suuser.png Graphic file (type bmp)
  <figures/suuser.png>
 
@@ -1222,12 +898,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[36]
-
-Package natbib Warning: Citation `scdv' on page 37 undefined on input line 262.
-
-
-) (./src/8_rela.tex
+[36]) (./src/8_rela.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
@@ -1238,31 +909,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 第 7 章
-
-Package natbib Warning: Citation `AccessTracer' on page 38 undefined on input l
-ine 8.
-
-
-LaTeX Warning: Reference `tech:NLP' on page 38 undefined on input line 17.
-
-
-LaTeX Warning: Reference `tech:Vector' on page 38 undefined on input line 19.
-
-
-LaTeX Warning: Reference `table:word2veccompare' on page 38 undefined on input 
-line 20.
-
 [38
 
-]
-
-LaTeX Warning: Reference `tech:voctorkukan' on page 39 undefined on input line 
-49.
-
-
-LaTeX Warning: Reference `tech:tfidf' on page 39 undefined on input line 49.
-
-) (./src/9_conc.tex
+]) (./src/9_conc.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
@@ -1273,17 +922,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 第 8 章
-
-LaTeX Warning: Reference `appr:problemofSshLowHoneypot' on page 40 undefined on
- input line 11.
-
 [40
 
 ]
-
-LaTeX Warning: Reference `eval:CommandVector' on page 41 undefined on input lin
-e 16.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
@@ -1354,51 +995,49 @@ LaTeX Font Warning: Font shape `JT1/gt/m/it' undefined
 LaTeX Font Warning: Font shape `JY1/gt/m/it' undefined
 (Font)              using `JY1/gt/m/n' instead on input line 6.
 
+
+Underfull \hbox (badness 6559) in paragraph at lines 14--17
+[]\OT1/cmr/m/n/12 honeynet.  High-interaction-honeypot.  []$\OT1/cmtt/m/n/12 ht
+tps : / / projects . honeynet . org /
+ []
+
+
+Underfull \hbox (badness 5374) in paragraph at lines 35--37
+[]\OT1/cmr/m/n/12 Number of kippo'commands.  []$\OT1/cmtt/m/n/12 https : / / gi
+thub . com / desaster / kippo / tree /
+ []
+
 [52
 
 ]))
-
-Package natbib Warning: There were undefined citations.
-
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 149.
-[53]
+ [53]
 Package atveryend Info: Executing hook `AfterLastShipout' on input line 149.
 \BKM@file=\write7
 \openout7 = `thesis.out.ps'.
 
- (./thesis.aux
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-
-! Package natbib Error: Bibliography not compatible with author-year citations.
-
-(natbib)                Press <return> to continue in numerical citation style.
+ (./thesis.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 149.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 149.
 
 
-See the natbib package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.365 ...and\NAT@force@numbers{}\NAT@force@numbers
-                                                  
-? 
-! Emergency stop.
- ...                                              
-                                                  
-l.365 ...and\NAT@force@numbers{}\NAT@force@numbers
-                                                  
-Check the bibliography entries for non-compliant syntax,
-or select author-year BibTeX style, e.g. plainnat
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
- 
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 149.
+ ) 
 Here is how much of TeX's memory you used:
- 9144 strings out of 494865
- 128796 string characters out of 6179768
+ 9174 strings out of 494865
+ 128913 string characters out of 6179768
  455078 words of memory out of 5000000
- 12360 multiletter control sequences out of 15000+600000
+ 12383 multiletter control sequences out of 15000+600000
  23274 words of font info for 95 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
  35i,12n,58p,1878b,1825s stack positions out of 5000i,500n,10000p,200000b,80000s
-Output written on thesis.dvi (59 pages, 229772 bytes).
+
+Output written on thesis.dvi (60 pages, 272560 bytes).
