@@ -44,27 +44,25 @@ Cowrieに実装されているコマンドはcowrie/src/cowrie/commands/に格�
 \vspace{3mm}
 \begin{mylisting}[label={lst:dmidecode},language=sh,caption=dmidecode]
 class command_dmidecode(HoneyPotCommand):
-    """
-    """
-\ \ \ \ def call(self):
-        """
-\ \ \ \ """
-        self.write(b"""# dmidecode 3.1
-Getting\ SMBIOS\ data\ from\ sysfs.
-SMBIOS\ 3.0.0\ present.
-Table\ at\ 0xDDBA4000.
+
+    def call(self):
+
+        self.write(b# dmidecode 3.1
+Getting SMBIOS data from sysfs.
+SMBIOS 3.0.0 present.
+Table at 0xDDBA4000.
 
 (snip)
 
 Handle 0x0055, DMI type 13, 22 bytes
 BIOS Language Information
-\ \ Language Description Format: Long
-\ \ Installable Languages: 1
-\ \ \ \ en|US|iso8859-1
-\ \ Currently Installed Language: en|US|iso8859-1
+    Language Description Format: Long
+    Installable Languages: 1
+        en|US|iso8859-1
+    Currently Installed Language: en|US|iso8859-1
 
-Handle\ 0x0056,\ DMI\ type\ 127,\ 4\ bytes
-End\ Of\ Table\n""")
+Handle 0x0056, DMI type 127, 4 bytes
+End Of Table\n)
 commands['dmidecode'] = command_dmidecode
 \end{mylisting}
 \vspace{3mm}
