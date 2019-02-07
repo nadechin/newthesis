@@ -290,9 +290,9 @@ subprocess.call(cmd.split())
 import subprocess
 import sys
 
-cmd = "ar t"
+cmd = "ar\ t"
 opt = sys.argv[1]
-cmdall = cmd + " " + opt
+cmdall = cmd + "\ " + opt
 subprocess.call(cmdall.split())
 
 \end{mylisting}
