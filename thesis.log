@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  7 FEB 2019 07:10
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2018.12.13)  7 FEB 2019 07:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -483,24 +483,6 @@ LaTeX Warning: Label `eval:eval' multiply defined.
 
 LaTeX Warning: Label `eval:impl' multiply defined.
 
-
-LaTeX Warning: Label `lst:acpid' multiply defined.
-
-
-LaTeX Warning: Label `lst:acpid' multiply defined.
-
-
-LaTeX Warning: Label `lst:acpid' multiply defined.
-
-
-LaTeX Warning: Label `lst:acpid' multiply defined.
-
-
-LaTeX Warning: Label `lst:acpid' multiply defined.
-
-
-LaTeX Warning: Label `lst:acpid' multiply defined.
-
 )
 \openout1 = `thesis.aux'.
 
@@ -557,23 +539,18 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24.88> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 121.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 121.
- (./thesis.toc
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 1.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 1.
- [3
-
-
-])
+ (./thesis.toc)
 \tf@toc=\write4
 \openout4 = `thesis.toc'.
 
- [4] (./thesis.lof)
+ [3
+
+
+] (./thesis.lof)
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
- [5
+ [4
 
 
 ]
@@ -581,7 +558,7 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
- [6
+ [5
 
 
 ] (./src/1_intr.tex
@@ -594,6 +571,14 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 8.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 8.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 19.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 19.
+
+Package natbib Warning: Citation `highinthoney' on page 1 undefined on input li
+ne 19.
+
 [1
 
 
@@ -612,7 +597,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2]) (./src/2_tech.tex
+[2]
+
+LaTeX Warning: Reference `rela' on page 3 undefined on input line 99.
+
+
+LaTeX Warning: Reference `conc' on page 3 undefined on input line 100.
+
+) (./src/2_tech.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
@@ -621,11 +613,41 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [3]
 第 2 章
+
+Package natbib Warning: Citation `kippo' on page 4 undefined on input line 27.
+
+
+Package natbib Warning: Citation `kojoney' on page 4 undefined on input line 27
+.
+
+
+Package natbib Warning: Citation `twisted' on page 4 undefined on input line 27
+.
+
+
+Package natbib Warning: Citation `kippowiki' on page 4 undefined on input line 
+28.
+
+
+Package natbib Warning: Citation `kippocommand' on page 4 undefined on input li
+ne 29.
+
 [4
 
 ]
-\myheight=\skip81
 
+Package natbib Warning: Citation `cowriecommand' on page 5 undefined on input l
+ine 34.
+
+
+Package natbib Warning: Citation `differfromkippo' on page 5 undefined on input
+ line 34.
+
+
+Package natbib Warning: Citation `honeywall' on page 5 undefined on input line 
+46.
+
+\myheight=\skip81
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -637,6 +659,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [5]
 
+Package natbib Warning: Citation `ssh' on page 6 undefined on input line 95.
+
+
+Package natbib Warning: Citation `busybox' on page 6 undefined on input line 99
+.
+
+
+Package natbib Warning: Citation `tsne' on page 6 undefined on input line 104.
+
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
  We now make it that large for the rest of the document.
@@ -646,12 +678,24 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: figures/hiddenmarkov.pdf Graphic file (type pdf)
  <figures/hiddenmarkov.pdf>
 
+Package natbib Warning: Citation `wordnet' on page 7 undefined on input line 12
+3.
+
+
+Package natbib Warning: Citation `wordnetwiki' on page 7 undefined on input lin
+e 127.
+
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [7]
+
+Package natbib Warning: Citation `voctormodel' on page 8 undefined on input lin
+e 155.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
@@ -666,6 +710,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [9]
+
+Package natbib Warning: Citation `word2vecpaper' on page 10 undefined on input 
+line 227.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
@@ -719,6 +767,10 @@ Missing character: There is no ^^95 in font cmr12!
 Missing character: There is no ^^e2 in font cmr12!
 Missing character: There is no ^^8a in font cmr12!
 Missing character: There is no ^^95 in font cmr12!
+
+
+Package natbib Warning: Citation `scdv' on page 15 undefined on input line 360.
+
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -776,9 +828,32 @@ File: figures/addcommand.pdf Graphic file (type pdf)
 
 ]
 第 5 章
+
+Package natbib Warning: Citation `cowrie' on page 21 undefined on input line 35
+.
+
+
+Package natbib Warning: Citation `busybox' on page 21 undefined on input line 3
+5.
+
+
+LaTeX Warning: Reference `appd' on page 21 undefined on input line 36.
+
+
+LaTeX Warning: Reference `table:command' on page 21 undefined on input line 36.
+
+
+
+LaTeX Warning: Reference `appd:implofcommand' on page 21 undefined on input lin
+e 39.
+
 [21
 
 ]
+
+Package natbib Warning: Citation `dmidecode' on page 22 undefined on input line
+ 42.
+
 
 LaTeX Font Warning: Font shape `JT1/mc/m/it' undefined
 (Font)              using `JT1/mc/m/n' instead on input line 50.
@@ -786,6 +861,10 @@ LaTeX Font Warning: Font shape `JT1/mc/m/it' undefined
 
 LaTeX Font Warning: Font shape `JY1/mc/m/it' undefined
 (Font)              using `JY1/mc/m/n' instead on input line 50.
+
+
+Package natbib Warning: Citation `diffcommand' on page 22 undefined on input li
+ne 69.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -837,6 +916,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: figures/Figure_1.png Graphic file (type bmp)
  <figures/Figure_1.png>
 
+Package natbib Warning: Citation `unixdata' on page 29 undefined on input line 
+82.
+
+
+LaTeX Warning: Reference `eval:implkosatu' on page 29 undefined on input line 8
+7.
+
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
  We now make it that large for the rest of the document.
@@ -872,6 +959,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: figures/model.png Graphic file (type bmp)
  <figures/model.png>
 
+Package natbib Warning: Citation `word2vecpaper' on page 33 undefined on input 
+line 145.
+
+
+Package natbib Warning: Citation `word2vecpaper2' on page 33 undefined on input
+ line 145.
+
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
  We now make it that large for the rest of the document.
@@ -881,6 +976,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 
+LaTeX Warning: Reference `fig:sankakuhi' on page 34 undefined on input line 219
+.
+
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 16.49998pt.
  We now make it that large for the rest of the document.
@@ -889,36 +988,392 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [34
 
 ]
+File: figures/sankakuhi.png Graphic file (type bmp)
+ <figures/sankakuhi.png>
 
-LaTeX Warning: File `figures/sankakuhi.png' not found on input line 224.
+LaTeX Warning: Reference `fig:tsne1' on page 35 undefined on input line 229.
 
 
-I try without the new options
+LaTeX Warning: Reference `fig:tsne2' on page 35 undefined on input line 229.
 
-! LaTeX Error: Cannot determine size of image (no BoundingBox).
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.224 ...dth=0.5\textwidth]{figures/sankakuhi.png}
+LaTeX Warning: Reference `fig:tsne3' on page 35 undefined on input line 229.
+
+File: figures/sufix.png Graphic file (type bmp)
+<figures/sufix.png>
+File: figures/suuser.png Graphic file (type bmp)
+ <figures/suuser.png>
+File: figures/fixuser.png Graphic file (type bmp)
+ <figures/fixuser.png>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[35
+
+]
+
+LaTeX Warning: Text page 36 contains only floats.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[36]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[37]
+
+Package natbib Warning: Citation `scdv' on page 38 undefined on input line 264.
+
+
+) (./src/8_rela.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[38
+
+]
+第 7 章
+
+Package natbib Warning: Citation `AccessTracer' on page 39 undefined on input l
+ine 8.
+
+
+LaTeX Warning: Reference `table:word2veccompare' on page 39 undefined on input 
+line 20.
+
+[39
+
+]) (./src/9_conc.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[40
+
+]
+第 8 章
+[41
+
+]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[42]) (./src/appendix.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[43]
+付 録 A  
+[44
+
+]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[45]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[46]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[47]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[48]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[49]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[50]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[51]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[52]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[53]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[54]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[55]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[56]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[57]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[58]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[59]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[60]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[61]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[62]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[63]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[64]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[65]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[66]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[67]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[68]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[69]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[70]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[71]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[72]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[73]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[74]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[75]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[76]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[77]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[78]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[79]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[80]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[81]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 16.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[82]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1811 ...t:acpid},language=sh,caption=pivot_root]
                                                   
 ? 
 ! Emergency stop.
- ...                                              
+<inserted text> 
+                $
+l.1811 ...t:acpid},language=sh,caption=pivot_root]
                                                   
-l.224 ...dth=0.5\textwidth]{figures/sankakuhi.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+End of file on the terminal!
 
  
 Here is how much of TeX's memory you used:
- 9128 strings out of 494865
- 128084 string characters out of 6179768
- 448078 words of memory out of 5000000
- 12362 multiletter control sequences out of 15000+600000
+ 9149 strings out of 494865
+ 128169 string characters out of 6179768
+ 450078 words of memory out of 5000000
+ 12373 multiletter control sequences out of 15000+600000
  22927 words of font info for 94 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
- 35i,12n,58p,1857b,1825s stack positions out of 5000i,500n,10000p,200000b,80000s
-Output written on thesis.dvi (41 pages, 214656 bytes).
+ 36i,12n,58p,1779b,1825s stack positions out of 5000i,500n,10000p,200000b,80000s
+Output written on thesis.dvi (88 pages, 480476 bytes).
